@@ -1,0 +1,29 @@
+//IMPORTED FROM BD64 AWAKENING
+//SPECIAL SPLIT DOOR OPEN/CLOSE
+:SplitDoorOpenNormal
+	play doors/dr1_open
+	nostopcutoff
+end
+
+:SplitDoorCloseNormal
+	play doors/dr1_close
+	nostopcutoff
+end
+
+:SplitDoorOpenBlazing
+	play doors/dr2_open
+	nostopcutoff
+end
+
+:SplitDoorCloseBlazing
+	play doors/dr2_close
+	nostopcutoff
+end
+
+[SplitDoorNormal
+door 0
+0 SplitDoorOpenNormal
+1 SplitDoorCloseNormal
+2 SplitDoorOpenBlazing
+3 SplitDoorCloseBlazing
+]

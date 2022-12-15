@@ -1,0 +1,15 @@
+#library "LEVELCON"
+#include "zcommon.acs"
+
+/*Script "BD64_LevelCon" Enter		//sets the scrolling sky	//r31 was 489
+{
+	Scroll_ceiling(255,50,50,0);
+	fadeto(0,0,0,1.0,0.0);
+	delay(10);
+	fadeto(0,0,0,0.0,3.0);
+}*/
+
+Script "SetJumpHeight" Enter			//R24.1	added	//r31 was script 999
+{
+SetActorProperty(0,APROP_JUMPZ,6.0);	//R26 WAS 6.5
+}

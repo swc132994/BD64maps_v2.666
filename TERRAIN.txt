@@ -1,0 +1,926 @@
+//********** Splashes **********
+splash nukage
+{
+	smallclass		nukageSplashBase
+	smallclip		6
+	//smallsound	world/lavasizzlesmall
+
+	baseclass		nukageSplashBase
+	chunkclass		sludgechunk
+	chunkxvelshift	8
+	chunkyvelshift	8
+	chunkzvelshift	6
+	chunkbasezvel	2
+	sound			world/lavasizzle
+	NoAlert
+}
+
+splash Slime
+{
+	smallclass		SlimeSplashBaseSmall
+	smallclip		16
+	smallsound		world/sludgegloopsmall
+
+	baseclass		SlimeSplashBase
+	chunkclass		SlimeChunk
+	chunkxvelshift	8
+	chunkyvelshift	8
+	chunkzvelshift	8
+	chunkbasezvel	2
+	sound			world/sludgegloop
+	NoAlert
+}
+
+splash water
+{
+	smallclass		watersplashbase2
+	smallclip		2
+	smallsound		dssplash
+
+	baseclass		watersplashbase2
+	chunkclass		watersplashbase2
+	chunkxvelshift	8
+	chunkyvelshift	8
+	chunkzvelshift	8
+	chunkbasezvel	2
+	sound			water
+	NoAlert
+}
+
+splash blood
+{
+	smallclass		bloodsplashbasesmall
+	smallclip		16
+	//smallsound	world/sludgegloopsmall
+
+	baseclass		bloodsplashbase3
+	chunkclass		bloodsplash
+	chunkxvelshift	8
+	chunkyvelshift	8
+	chunkzvelshift	8
+	chunkbasezvel	2
+	sound			world/sludgegloop
+	NoAlert
+}
+
+splash lava
+{
+	smallclass		lavasplash
+	smallclip		10
+	//smallsound	world/lavasizzlesmall
+
+	baseclass		lavasplash
+	//chunkclass	lavasmoke2
+	chunkxvelshift	-1
+	chunkyvelshift	-1
+	chunkzvelshift	2
+	chunkbasezvel	1
+	sound			world/lavasizzle
+	NoAlert
+}
+//********** Terrain **********
+
+terrain nukage
+{
+splash nukage
+footclip 1
+liquid
+}
+
+terrain	water
+{
+splash water
+footclip 1
+liquid
+}
+
+terrain	lava
+{
+splash lava
+footclip 1
+liquid
+damagetype "Fire"
+}
+
+terrain	blood
+{
+footclip 1
+liquid
+splash blood
+}
+
+terrain Slime
+{
+footclip 1
+liquid
+splash Slime
+}
+
+terrain Air
+{
+footclip 3
+Liquid
+}
+
+splash carpet
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/carpet
+	NoAlert
+}
+
+splash dirt
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/dirt
+	NoAlert
+}
+
+splash gravel
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/gravel
+	NoAlert
+}
+
+splash metal
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/metal
+	NoAlert
+}
+
+splash metal2
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/met2
+	NoAlert
+}
+
+splash rock
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/rock
+	NoAlert
+}
+
+splash slimy
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/slimy
+	NoAlert
+}
+
+splash snow
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/snow
+	NoAlert
+}
+
+splash hard
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/hard
+	NoAlert
+}
+
+splash tile
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/tile
+	NoAlert
+}
+
+splash tile2
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/tile2
+	NoAlert
+}
+
+splash wood
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/wood
+	NoAlert
+}
+
+terrain carpet
+{
+	splash			carpet
+	footclip		0
+	//liquid//
+}
+
+terrain dirt
+{
+	splash			dirt
+	footclip		0
+	//liquid//
+}
+
+terrain gravel
+{
+	splash			gravel
+	footclip		0
+	//liquid//
+}
+
+terrain metal
+{
+	splash			metal
+	footclip		0
+	//liquid//
+}
+
+terrain metal2
+{
+	splash			metal2
+	footclip		0
+	//liquid//
+}
+
+terrain rock
+{
+	splash			rock
+	footclip		0
+	//liquid//
+}
+
+terrain snow
+{
+	splash			snow
+	footclip		0
+	//liquid//
+}
+
+terrain slimy
+{
+	splash			slimy
+	footclip		0
+	//liquid//
+}
+
+terrain hard
+{
+	splash			hard
+	footclip		0
+	//liquid//
+}
+
+terrain tile
+{
+	splash			tile
+	footclip		0
+	//liquid//
+}
+
+terrain tile2
+{
+	splash			tile2
+	footclip		0
+	//liquid//
+}
+
+terrain wood
+{
+	splash			wood
+	footclip		0
+	//liquid//
+}
+
+ifdoom
+floor BLOOD1 Blood
+floor BLOOD2 Blood
+floor BLOOD3 Blood
+floor FWATER1 Water
+floor FWATER2 Water
+floor FWATER3 Water
+floor FWATER4 Water
+floor FWATER02 Water
+floor LAVA1 Lava
+floor LAVA2 Lava
+floor LAVA3 Lava
+floor LAVA4 Lava
+floor NUKAGE1 Nukage
+floor NUKAGE2 Nukage
+floor NUKAGE3 Nukage
+floor SLIME01 Water
+floor SLIME02 Water
+floor SLIME03 Water
+floor SLIME04 Water
+floor SLIME05 Water
+floor SLIME06 Water
+floor SLIME07 Water
+floor SLIME08 Water
+floor CEIL1_1 wood
+floor CEIL1_2 metal
+floor CEIL1_3 tile
+floor CEIL3_1 hard
+floor CEIL3_2 hard
+floor CEIL3_3 tile
+floor CEIL3_4 tile
+floor CEIL3_5 hard
+floor CEIL3_6 hard
+floor CEIL4_1 carpet
+floor CEIL4_2 carpet
+floor CEIL4_3 carpet
+floor CEIL5_1 hard
+floor CEIL5_2 hard
+floor COMP01 tile
+floor CONS1_1 tile
+floor CONS1_5 tile
+floor CONS1_7 tile
+floor CRATOP1 wood
+floor CRATOP2 wood
+floor DEM1_1 tile2
+floor DEM1_2 tile2
+floor DEM1_3 tile2
+floor DEM1_4 tile2
+floor DEM1_5 tile2
+floor DEM1_6 tile2
+floor FLAT1 rock
+floor FLAT1_1 rock
+floor FLAT1_2 rock
+floor FLAT1_3 metal
+floor FLAT2 tile
+floor FLAT3 tile
+floor FLAT4 metal
+floor FLAT5 hard
+floor FLAT5_1 wood
+floor FLAT5_2 wood
+floor FLAT5_3 carpet
+floor FLAT5_4 carpet
+floor FLAT5_5 carpet
+floor FLAT5_6 rock
+floor FLAT5_7 rock
+floor FLAT5_8 rock
+floor FLAT8 tile
+floor FLAT9 tile
+floor FLAT10 dirt
+floor FLAT14 carpet
+floor FLAT17 tile
+floor FLAT18 tile
+floor FLAT19 tile
+floor FLAT20 metal
+floor FLAT22 metal
+floor FLAT23 metal
+floor FLOOR0_1 hard
+floor FLOOR0_2 hard
+floor FLOOR0_3 hard
+floor FLOOR0_5 tile
+floor FLOOR0_6 tile
+floor FLOOR0_7 tile
+floor FLOOR1_1 carpet
+floor FLOOR1_6 hard
+floor FLOOR1_7 hard
+floor FLOOR3_3 tile
+floor FLOOR4_1 tile
+floor FLOOR4_5 tile
+floor FLOOR4_6 tile2
+floor FLOOR4_8 tile2
+floor FLOOR5_1 tile2
+floor FLOOR5_2 tile2
+floor FLOOR5_3 tile2
+floor FLOOR5_4 rock
+floor FLOOR6_1 gravel
+floor FLOOR6_2 gravel
+floor FLOOR7_1 hard
+floor FLOOR7_2 tile2
+floor GATE1 metal
+floor GATE2 metal
+floor GATE3 metal
+floor GATE4 metal
+floor GRASS1 dirt
+floor GRASS2 dirt
+floor GRNLITE1 hard
+floor GRNROCK rock
+floor MFLR8_1 hard
+floor MFLR8_2 rock
+floor MFLR8_3 rock
+floor MFLR8_4 dirt
+floor RROCK03 rock
+floor RROCK04 rock
+floor RROCK09 rock
+floor RROCK10 rock
+floor RROCK11 rock
+floor RROCK12 rock
+floor RROCK13 rock
+floor RROCK14 rock
+floor RROCK15 rock
+floor RROCK16 dirt
+floor RROCK17 dirt
+floor RROCK18 dirt
+floor RROCK19 dirt
+floor RROCK20 dirt
+floor SFLR6_1 slimy
+floor SFLR6_4 slimy
+floor SFLR7_1 slimy
+floor SFLR7_4 slimy
+floor SLIME13 rock
+floor SLIME14 metal2
+floor SLIME15 metal2
+floor SLIME16 metal2
+floor STEP1 metal
+floor STEP2 metal
+floor TLITE6_1 tile
+floor TLITE6_4 tile
+floor TLITE6_5 tile
+floor TLITE6_6 tile
+floor TLITE6_6 tile
+//floor BRICK22 rock
+floor STONE2 rock
+floor REDWALL rock
+//floor CEMENTWA rock
+//floor CEMENTBL rock
+//floor CEMENTRE rock
+floor CEMENT9 rock
+floor CAUTION3 rock
+//floor A-MOULD rock
+//floor REDCARTO metal2
+//floor BLUECART metal2
+//floor GREENCART metal2
+//floor WHITE metal2
+//floor GRAYCART metal2
+floor SHAWN2 metal2
+floor SHAWN1 metal2
+//floor DNVENT1 metal2
+//floor VENT1 metal2
+//floor VENT2 metal2
+//floor VENT3 metal2
+floor METAL metal2
+floor METAL2 metal2
+floor METAL1 metal2
+//floor METAL10 metal2
+//floor METAL12 metal2
+//floor METAL13 metal2
+//floor METAL14 metal2
+//floor URDIRT01 dirt
+//floor DIRT01 dirt
+//floor DIRT02 dirt
+//floor DIRT03 dirt
+//floor DIRT04 dirt
+//floor DIRT05 dirt
+//floor DIRT06 dirt
+//floor DIRT08 dirt
+//floor DESERT02 dirt
+//floor DESERT01 dirt
+//floor DESERT03 dirt
+//floor WOOD006 wood
+floor WOODVERT wood
+floor WOOD1 wood
+//floor DNBLDG03 wood
+floor FTILE080 water
+floor SLIME05 water
+floor CUSTOMCI water
+floor CUSTOMCI water
+
+//DOOM 64
+floor TILEFAFC METAL
+floor TILEFAFB METAL
+floor TILEFA49 METAL
+floor TILEF771 rock
+floor TILEF602 rock
+floor TILEF69B METAL
+floor TILEECAD ROCK
+floor TILEEC99 ROCK
+floor TILEEBDC METAL
+floor TILEEBA1 METAL
+floor TILEE66C METAL
+floor TILED88E METAL
+floor TILED48E METAL
+floor TILEA796 METAL
+floor TILE6885 METAL
+floor TILE7682 METAL
+floor TILE8649 METAL
+floor TILEA97C METAL
+floor TILEA97D METAL
+floor TILEB56E METAL
+floor TILEC795 METAL
+floor TILED0C9 METAL
+floor TILED0C8 METAL
+floor TILED5FB DIRT
+floor TILED747 ROCK
+floor TILED627 ROCK
+floor TILED350 ROCK
+floor TILECB62 ROCK
+floor TILEC4AD ROCK
+floor TILEA40E ROCK
+floor TILE9344 ROCK
+floor TILE8620 ROCK
+floor TILE7776 ROCK
+floor TILE7775 ROCK
+floor TILE7620 ROCK
+floor TILE7351 ROCK
+floor TILE7224 ROCK
+floor TILEA19B WOOD
+floor TILEC3CC WOOD
+floor TILEC5B3 DIRT
+floor TILED71B WOOD
+floor TILED173 ROCK
+floor TILEE56B WOOD
+floor TILEEC13 DIRT			//WAS FLAT
+floor TILEE608 ROCK			//WAS FLAT
+floor TILEE87E METAL		//WAS FLAT
+floor TILEE67C ROCK			//WAS FLAT
+floor TILEE25F ROCK			//WAS FLAT
+floor TILEDBC3 ROCK			//WAS FLAT
+floor TILED1E5 ROCK			//WAS FLAT
+floor TILEC989 ROCK			//WAS FLAT
+floor TILEC1B7 DIRT
+floor TILEBFD8 METAL		//WAS FLAT
+floor TILEBAD0 DIRT			//WAS FLAT
+floor TILEB38C ROCK			//WAS FLAT
+floor TILE6860 DIRT			//WAS FLAT
+floor FTILEC79 METAL2
+floor FTILE0B5 METAL
+floor FTILE0DE ROCK
+floor FTILE0E9 ROCK
+floor FTILE0F5 METAL
+floor FTILE1B4 METAL2
+floor FTILE1BB WOOD
+floor FTILE1CB ROCK
+floor FTILE1CE DIRT
+floor FTILE1D2 ROCK
+floor FTILE1DB METAL
+floor FTILE1E1 ROCK
+floor FTILE2AB METAL
+floor FTILE2CF METAL
+floor FTILE2E0 ROCK
+floor FTILE02F ROCK
+floor FTILE2FE ROCK
+floor FTILE3B1 ROCK
+floor FTILE3BA METAL2
+floor FTILE3D2 ROCK
+floor FTILE4BB METAL
+floor FTILE4E9 DIRT
+floor FTILE4EF ROCK
+floor FTILE5CD METAL2
+floor FTILE5D3 ROCK
+floor FTILE5ED DIRT
+floor FTILE5EF METAL
+floor FTILE6A9 ROCK
+floor FTILE06A ROCK
+floor FTILE6C8 ROCK
+floor FTILE6CE METAL		//WAS FLAT
+floor FTILE6F2 METAL2
+floor FTILE6FC METAL2
+floor FTILE7A4 ROCK
+floor FTILE7B1 ROCK
+floor FTILE7B5 METAL2
+floor FTILE7BA METAL2
+floor FTILE7BE METAL2
+floor FTILE7C1 METAL2
+floor FTILE07C METAL
+floor FTILE7E3 METAL
+floor FTILE34C METAL2
+floor FTILE7F5 ROCK
+floor FTILE8B8 ROCK
+floor FTILE8ED WOOD		//WAS FLAT, COULD BE ROCK
+floor FTILE8EE DIRT		//WAS FLAT
+floor FTILE9A5 DIRT		//WAS FLAT, COULD BE ROCK
+floor FTILE9C6 ROCK
+floor FTILE9EE ROCK
+floor FTILE9F7 METAL2
+floor FTILE9FC METAL2
+floor FTILE21A DIRT		//WAS FLAT
+floor FTILE24A ROCK
+floor FTILE036 ROCK
+floor FTILE36A ROCK
+floor FTILE40D METAL2
+floor FTILE43A METAL
+floor FTILE044 ROCK
+floor FTILE45C METAL
+floor FTILE048 DIRT		//WAS FLAT
+floor FTILE48F METAL2
+floor FTILE52C METAL
+floor FTILE053 ROCK
+floor FTILE53E METAL2
+floor FTILE054 ROCK
+floor FTILE54D ROCK
+floor FTILE058 METAL2
+floor FTILE54E ROCK
+floor FTILE73C ROCK
+floor FTILE74F DIRT
+floor FTILE77A ROCK
+floor FTILE84B ROCK
+floor FTILE94F METAL
+floor FTILE111 ROCK
+floor FTILE135 METAL
+floor FTILE143 ROCK
+floor FTILE157 ROCK
+floor FTILE171 METAL
+floor FTILE196 METAL2
+floor FTILE241 ROCK
+floor FTILE391 METAL
+floor FTILE255 ROCK
+floor FTILE274 ROCK
+floor FTILE386 METAL2
+floor FTILE406 ROCK
+floor FTILE435 METAL2
+floor FTILE436 METAL2
+floor FTILE460 ROCK
+floor FTILE573 DIRT		//WAS FLAT
+floor FTILE589 ROCK
+floor FTILE688 METAL2
+floor FTILE686 DIRT		//WAS FLAT
+floor FTILE699 METAL
+floor FTILE722 ROCK
+floor FTILE762 ROCK
+floor FTILE747 ROCK
+floor FTILE778 ROCK
+floor FTILE777 ROCK
+floor FTILE860 ROCK
+floor FTILE862 ROCK
+floor FTILE864 METAL2
+floor FTILE895 METAL
+floor FTILE934 ROCK
+floor FTILE944 DIRT
+floor FTILE949 METAL2
+floor FTILEA19 WOOD
+floor FTILEA30 DIRT
+floor FTILEA40 ROCK
+floor FTILEA79 METAL2
+floor FTILEA96 METAL2
+floor FTILEA97 METAL2
+floor FTILEABC ROCK
+floor FTILEADA METAL2
+floor FTILEB2F ROCK
+floor FTILEB38 ROCK
+floor FTILEB56 METAL
+floor FTILEBEA ROCK
+floor FTILEC1B DIRT
+floor FTILEC3C WOOD
+floor FTILEC4A ROCK
+floor FTILEC8B ROCK
+floor FTILEC24 WOOD
+floor FTILEC79 METAL2
+floor FTILEC83 ROCK
+floor FTILEC98 ROCK
+floor FTILECB6 ROCK
+floor FTILECAF METAL2
+floor FTILED1E ROCK
+floor FTILED5B DIRT
+floor FTILED5E DIRT
+floor FTILED5F METAL
+floor FTILED48 METAL
+floor FTILED71 WOOD
+floor FTILED74 ROCK
+floor FTILED88 METAL2
+floor FTILEDBC ROCK
+floor FTILEE56 WOOD
+floor FTILEE57 ROCK
+floor FTILEE60 ROCK
+floor FTILEE66 METAL2
+floor FTILEE87 ROCK
+floor FTILEEBA METAL2
+floor FTILEEC1 METAL
+floor FTILEEBD METAL2
+floor FTILEECA ROCK
+floor FTILEF69 METAL
+floor FTILEFA4 METAL
+floor FTILEFAF ROCK
+floor FTILEFB0 DIRT
+floor FTILEFBD METAL2
+floor FTILEFBE METAL2
+floor SPECIAL1 METAL
+floor SPECIAL2 METAL2
+floor SPECIAL3 METAL
+floor SPECIAL4 METAL2
+floor SPECIAL5 METAL2
+floor SPECIAL6 METAL
+floor SPECIAL7 METAL
+floor SPECIAL8 METAL2
+floor SPECIAL9 METAL2
+floor SPECIALA METAL2
+floor SPECIALD METAL2
+floor SPECIALE METAL2
+floor SPECIALF METAL2
+floor SPECIALG METAL2
+floor SPECIALH METAL2
+floor SPECIALI METAL2
+floor SPECIALJ METAL2
+floor SPECIALK METAL2
+floor SPECIALL METAL2
+floor SPECIALM METAL2
+floor SPECIALN METAL
+floor SPECIALO METAL2
+floor SPECIALP METAL2
+floor SPECIALQ METAL2
+floor SPECIALR METAL2
+floor SPECIALS METAL2
+floor SPECIALT ROCK
+floor SPECIALU ROCK
+floor SPECIALV ROCK
+floor SPECIALW ROCK
+floor SPECIALX ROCK
+//floor SPECIALY ROCK
+//floor SPECIALZ ROCK
+floor NEW1 ROCK
+floor NEW2 ROCK
+floor NEW3 ROCK
+floor NEW4 ROCK
+floor NEW5 ROCK
+floor NEW6 ROCK
+floor NEW7 METAL
+floor NEW8 METAL
+floor NEW9 METAL2
+floor NEW10 ROCK
+floor NEW11 ROCK
+floor NEW12 ROCK
+floor NEW13 ROCK
+floor NEW14 ROCK
+floor NEW15 ROCK
+floor NEW16 ROCK
+floor NEW17 ROCK
+floor NEW18 ROCK
+floor NEW19 ROCK
+floor NEW20 ROCK
+floor NEW21 ROCK
+floor NEW22 ROCK
+floor NEW23 ROCK
+floor NEW24 ROCK
+floor NEW25 ROCK
+floor NEW26 ROCK
+floor NEW27 ROCK
+floor NEW28 ROCK
+floor NEW29 ROCK
+floor NEW30 METAL2
+floor NEW31 METAL2
+floor NEW32 METAL2
+floor NEW33 METAL2
+floor NEW34 METAL2
+floor NEW35 METAL2
+floor NEW36 METAL2
+floor NEW37 METAL2
+floor NEW38 METAL2
+floor NEW39 ROCK
+floor NEW40 ROCK
+floor NEW41 ROCK
+floor NEW42 ROCK
+floor NEW43 ROCK
+floor NEW44 ROCK
+floor NEW45 ROCK
+floor NEW46 ROCK
+floor NEW47 ROCK
+floor NEW48 WOOD
+floor NEW49 METAL2
+floor NEW50 METAL2
+floor NEW51 METAL2
+floor NEW52 METAL2
+floor NEW53 METAL2
+floor NEW54 METAL2
+floor NEW55 METAL2
+floor NEW56 METAL2
+floor NEW57 METAL2
+floor NEW58 METAL2
+floor NEW59 METAL2
+floor NEW60 METAL2
+floor NEW61 METAL2
+floor NEW62 METAL2
+floor NEW63 METAL2
+floor NEW64 METAL2
+floor NEW65 METAL2
+floor NEW66 METAL2
+floor NEW67 METAL2
+floor NEW68 METAL2
+floor NEW69 METAL2
+floor NEW70 ROCK
+floor NEW71 ROCK
+floor NEW72 ROCK
+floor NEW73 ROCK
+floor NEW74 ROCK
+floor NEW75 ROCK
+floor NEW76 ROCK
+floor NEW77 ROCK
+floor NEW78 ROCK
+floor NEW79 ROCK
+floor NEW80 ROCK
+floor NEW81 ROCK
+floor NEW82 ROCK
+floor NEW83 ROCK
+floor NEW84 ROCK
+floor NEW85 ROCK
+floor NEW86 METAL
+floor NEW87 METAL
+floor NEW88 ROCK
+floor NEW89 ROCK
+floor NEW90 ROCK
+floor NEW91 ROCK
+floor NEW92 ROCK
+floor NEW93 ROCK
+floor NEW94 ROCK
+floor NEW95 ROCK
+floor NEW96 ROCK
+floor NEW97 ROCK
+Floor F_SKY1 Air
+endif

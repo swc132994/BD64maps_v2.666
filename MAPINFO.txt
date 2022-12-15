@@ -1,0 +1,661 @@
+//EPISODES
+ClearEpisodes
+
+Episode map00
+{
+name = "Campaign"
+}
+
+Episode map01
+{
+Name = "Campaign (Skip Intro)"
+}
+
+Episode 64DM1
+{
+Name = "Deathmatch (Zandronum)"
+}
+
+//GAME SETTINGS
+GameInfo
+{
+	QuitMessages = "Quit Brutal Doom 64?"
+}
+
+//MAP SETTINGS
+DefaultMap
+{
+	EvenLighting
+	Gravity = 686
+}
+
+//MAPS
+map TITLEMAP lookup "Main Menu"	//was called "Title"
+{
+//	Music = "d_dm2ttl"	//script changes music
+	noinfighting
+	compat_crossdropoff = 0
+}
+
+map MAP00 Lookup "Landing Site"		//R13 was called Intro
+{
+	Sky1 = "SKY08"
+	Music = "DINTRO"
+	Next = "MAP01"
+	InterMusic = "N64INTER"
+	NOINTERMISSION
+}
+
+map MAP01 Lookup "Staging Area"
+{
+	cluster = "16"
+	Sky1 = "SKY08"
+	Music = "MAPWD01"
+	Next = "MAP02"
+	SecretNext = "MAP32"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
+
+map MAP02 Lookup "The Terraformer"
+{
+	Sky1 = "SKY08"
+	Music = "MAPWD02"
+	Next = "MAP03"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
+
+map MAP03 Lookup "Main Engineering"
+{
+	Sky1 = "SKY08"
+	Music = "MAPWD03"
+	Next = "MAP04"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
+
+map MAP04 Lookup "Holding Area"
+{
+	Sky1 = "SKY08"
+	Music = "MAPWD04"
+	Next = "MAP05"
+	SecretNext = "MAP29"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
+
+map MAP05 Lookup "Tech Center"
+{
+	Sky1 = "SKY08"
+	Music = "MAPWD05"
+	Next = "MAP06"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
+
+map MAP06 Lookup "Alpha Quadrant"
+{
+	Sky1 = "SKY08"
+	Music = "MAPWD06"
+	Next = "MAP07"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
+
+map MAP07 Lookup "Research Lab"
+{
+	Sky1 = "SKY08"
+	Music = "MAPWD07"
+	Next = "MAP08"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+	REDIRECT = "TCMapCheck","MAP07TC"	//R31 Jumps to TC NUKAGE FACILITY
+}
+
+map MAP08A Lookup "Final Outpost"	//vanilla version		//R28.2 ADDED
+{
+	Sky1 = "SKY08"
+	Music = "MAPWD08"
+	Next = "MAP09"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
+
+map MAP08 Lookup "Final Outpost"
+{
+	Sky1 = "SKY08"
+	Music = "MAPWD08"
+	Next = "MAP09"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+	REDIRECT = "VMapCheck","MAP08A"	//R31 Jumps to VAMILLA FINAL OUTPOST
+}
+
+map MAP09 Lookup "Even Simpler"
+{
+	Cluster = "1"
+	Sky1 = "SKY07"
+	Music = "MAPWD09"
+	Next = "MAP10"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP10 Lookup "The Bleeding"
+{
+	Sky1 = "SKY05"
+	Music = "MAPWD10"
+	Next = "MAP11"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP11 Lookup "Terror Core"
+{
+	Sky1 = "SKY09"
+	Music = "MAPWD11"
+	Next = "MAP12"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP12 Lookup "Altar of Pain"
+{
+	Sky1 = "SKY03"
+	Music = "MAPWD12"
+	Next = "MAP13"
+	SecretNext = "MAP30"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP13 Lookup "Dark Citadel"
+{
+	Sky1 = "SKYSTAR3"//R31 added
+	Music = "MAPWD13"
+	Next = "MAP14"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP14 Lookup "Eye of the Storm"
+{
+	Sky1 = "SKY04"
+	Music = "MAPWD14"
+	Next = "MAP15"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP15 Lookup "Dark Entries"
+{
+	Sky1 = "SKY02"
+	Music = "MAPWD15"
+	Next = "MAP16"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP16 Lookup "Blood Keep"
+{
+	Sky1 = "SKY06"
+	Music = "MAPWD16"
+	Next = "MAP17"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP17 Lookup "Watch Your Step"
+{
+	Sky1 = "SKY03"
+	fade = "3C 14 0A" //WAS "CD0000"
+	fogdensity = 200
+	NoInfighting
+	Music = "MAPWD17"
+	Next = "MAP18"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP18 Lookup "Spawned Fear"
+{
+	Sky1 = "SKY06"
+	Music = "MAPWD18"
+	Next = "MAP19"
+	SecretNext = "MAP31"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP19 Lookup "The Spiral"
+{
+	Sky1 = "SKY02"
+	Music = "MAPWD19"
+	Next = "MAP20"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP20 Lookup "Breakdown"
+{
+	Sky1 = "SKY07"
+	Music = "MAPWD20"
+	Next = "MAP21"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI3"
+}
+
+map MAP21 Lookup "Pitfalls"
+{
+	Sky1 = "SKY-0052"
+	Music = "MAPWD21"
+	Next = "MAP22"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI3"
+}
+
+map MAP22 Lookup "Burnt Offerings"
+{
+	Sky1 = "SKY-0052"
+	Music = "MAPWD22"
+	NoInfighting
+	Next = "MAP23"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI3"
+}
+
+map MAP23 Lookup "Unholy Temple"
+{
+	Sky1 = "SKY-G052"
+	Music = "MAPWD23"
+	Next = "MAP24"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI3"
+}
+
+map MAP24 Lookup "No Escape"
+{
+	Sky1 = "SKY-0052"
+	Music = "MAPWD24"
+	NoInfighting
+	Next = "MAP28"
+	SecretNext = "MAP25"		//R28.2 ADDED
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI3"
+	REDIRECT = "TCMapCheck","MAP27TC"	//R31 Jumps to TC Forbidden Deeper
+}
+
+map MAP25 Lookup "Cat And Mouse"
+{
+	Cluster = "17"		//R24 ADDED CLUSTER
+	Sky1 = "VOIDSKY1"//R31 added
+	Fade = "00 56 56"//R31 Was "40E0D0"
+	Fogdensity = 200//R31 added
+	Music = "MAPWD25"
+	NoInfighting
+	Next = "MAP26"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI3"
+}
+
+map MAP26 Lookup "HardCore"
+{
+	Sky1 = "VOIDSKY1"//R31 added
+	Fade = "00 56 56"//R31 was "00FFFF"
+	Fogdensity = 200//R31 added
+	Music = "MAPWD26"
+	Next = "MAP27"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI3"
+}
+
+map MAP27 Lookup "Playground"
+{
+	Sky1 = "SKY-0052"
+	Music = "MAPWD27"
+	NoInfighting
+	Next = "MAP28"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI3"
+}
+
+map MAP28 Lookup "The Absolution"
+{
+	Cluster = "18"		//R24 ADDED CLUSTER
+	Sky1 = "SKY-0052"
+	Music = "MAPWD28"
+	NoInfighting
+	InterMusic = "N64INTER"
+	Next = "ENDINGMA"
+	exitpic = "INTERPI3"
+}
+
+map ENDINGMA Lookup "End"
+{
+	Cluster = "15"
+	Sky1 = "SKY-0052"
+	Music = "MAPWD28"
+	NoInfighting
+	InterMusic = "N64INTER"
+	Next = "EndGameC"
+	exitpic = "INTERPI3"
+	nointermission
+}
+
+map MAP29 Lookup "Outpost Omega"
+{
+	Cluster = "2"
+	Sky1 = "SKY08"
+	Music = "MAPWD29"
+	Next = "MAP05"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+	SecretNext = "MAP34TC"		//CRISIS TC MAP - UNAVAILABLE IF TCMAPCHECK NOT ENABLED
+}
+
+map MAP30 Lookup "The Lair"
+{
+	cluster = "3"
+	Sky1 = "SKY-g052"
+	Music = "MAPWD30"
+	Next = "MAP13"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP31 Lookup "In The Void"
+{
+	Cluster = "4"
+	Fade = "00 56 56"//R31 was FadeTable = "1"
+	fogdensity = 200//R31 added
+	Sky1 = "VOIDSKY1"//R31 was "VOID"
+	Music = "MAPWD31"
+	Next = "MAP19"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map MAP32 "Hectic"
+{
+	Cluster = "5"
+	Sky1 = "SKY-G052"
+	Music = "MAPWD32"
+	Next = "MAP02"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
+
+//TC MAPS
+map MAP07TC Lookup "Nukage Facility (TC)"	//R31 TC
+{
+	Sky1 = "SKY08"
+	Music = "MAPWD31"
+	Next = "MAP07"				//RESERACH LAB
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
+
+map MAP27TC Lookup "Forbidden Deeper (TC)"		//R31 TC
+{
+	Sky1 = "VOIDSKYR"
+	Music = "MAPWD15"
+	NoInfighting
+	Next = "MAP28TC"		//SHADOWS WATCHING
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI3"
+}
+
+map MAP28TC Lookup "Shadows Watching (TC)"		//R31 TC
+{
+	Sky1 = "SKY-B052"
+	Music = "MAPWD12"
+	Next = "MAP24"		//NO ESCAPE
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI3"
+}
+
+map MAP34TC Lookup "Crisis (TC)"		//R31 TC
+{
+	Cluster = "2"
+	Sky1 = "SKY08"
+	Music = "MAPWD24"
+	Next = "MAP05"	//TECH CENTRE
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
+
+cluster 1
+{
+	pic = "INTERPIC"
+	music = "N64INTER"
+	entertext =	"you cackle as the",
+			"familiarity of the",
+			"situation occurs to you.",
+			"The gateway to the Demons",
+			"domain was too accessible.",
+			"You realize the demons mock",
+			"you with their invitation.",
+			"It does not matter...",
+			"The demons spawn like rats",
+			"and you have the grade AAA",
+			"U.A.C. poison they crave.",
+			"Your bloodthirsty scream",
+			"shatters the teleport haze.",
+			"Once again you find yourself",
+			"amidst..."
+}
+
+cluster 2
+{
+	pic = "INTERPIC"
+	music = "N64INTER"
+	entertext =	"The vast silence reminds",
+			"you of the military morgue.",
+			"",
+			"You knew the installation",
+			"had a classified level.",
+			"",
+			"The U.A.C. had some good",
+			"reason to hide this place.",
+			"",
+			"You wonder what it",
+			"could be..."
+}
+
+cluster 3
+{
+	pic = "INTERPIC"
+	music = "N64INTER"
+	entertext =	"You smile.",
+			"",
+			"What strange place have",
+			"you stumbled upon?",
+			"",
+			"The Demons did not expect",
+			"you to survive this far.",
+			"You feel their demonic",
+			"presence waiting for you...",
+			"",
+			"Let them taste their guts!"
+}
+
+cluster 4
+{
+	pic = "INTERPIC"
+	music = "N64INTER"
+	entertext =	"You wretch as a strange",
+			"acrid odor assaults you.",
+			"",
+			"Death and Demon carcass!",
+			"",
+			"No nightmare could have",
+			"prepared you for this.",
+			"",
+			"You realize that this",
+			"place was not meant for",
+			"living humans."
+}
+
+cluster 5
+{
+	pic = "INTERPIC"
+	music = "N64INTER"
+	entertext =	"Congratulations!",
+			"You found...",
+			"",
+			"HECTIC",
+			"",
+			"Only the best will reap",
+			"its rewards."
+}
+
+clusterdef 15
+{
+	pic = "BOSBACK2"
+	music = "N64INTER"
+	exittext =	"Finally...",													//R30.1 Revised text
+			"The mother of all demons is dead!",
+			"For the first time, the demons know what fear is.",
+			"Starting a legend in Hell, you become known as the 'Doom Slayer'",
+			"",
+			"Then you hear the commander on the radio.",
+			"'Whatever you did, it worked!",
+			"The demons are falling back to the Hell portal!'",
+			"However, you do not respond",
+			"",
+			"Do you want to go back or is it better ",
+			"to let them think you are dead.",
+			"",
+			"Knowing that Hell can't ever be destroyed.",
+			"You decide to remain in Hell ",
+			"and continue the endless battle to ensure that ",
+			"Doom shall not return.",
+			"",
+			"The End...."
+}
+
+cluster 16
+{
+	pic = "INTERPIC"
+	music = "N64INTER"
+	entertext =	"You made it",
+			"As the door closes behind you",
+			"you hear human and demonic moaning and screams",
+			"mixed with fire and explosions",
+			"",
+			"eventually you hear nothing but silence",
+			"Your team were utterly unprepared for what",
+			"was waiting at the landing site",
+			"",
+			"After a moment you come to realise you are alone",
+			"",
+			"The feeling inside the base feels wrong and that smell",
+			"you remember well that smell of death",
+			"",
+			"There is no turning back now",
+			"You ready your weapon and proceed into the base"
+}
+
+cluster 17	//R31 Map28 Exit to Fun maps.
+{
+	pic = "INTERPIC3"
+	music = "N64INTER"
+	entertext = "",
+			"",
+			"So you have decided to venture deeper into Hell",
+			"",
+			"before facing off against the mother of demons.",
+			"",
+			"After arriving in a strange dimension you come",
+			"",
+			"face to face against a familiar foe.",
+			"",
+			"Let the fun begin!"
+}
+
+cluster 18	//R28.2 Arriving at the final battle
+{
+	pic = "INTERPIC3"
+	music = "N64INTER"
+	entertext = "",
+			"",
+			"At last you have finally arrived at the mother demons lair",
+			"",
+			"After battling through hell the mother of demons is now before you",
+			"",
+			"Go and pay her your respects",
+			"",
+			"She is waiting for you"
+}
+
+//DEATHMATCH MAPS
+map 64DM1 Lookup "Simple Death"
+{
+	Cluster = "1"
+	Sky1 = "SKY07"
+	Music = "DMMUS1"
+	Next = "64DM2"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map 64DM2 Lookup "Dying Alone"
+{
+	Cluster = "1"
+	Sky1 = "SKY07"
+	Music = "DMMUS3"
+	Next = "64DM3"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map 64DM3 Lookup "Altar of Agony"
+{
+	Cluster = "1"
+	Sky1 = "SKY07"
+	Music = "DMMUS2"
+	Next = "64DM4"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map 64DM4 Lookup "The Downward Spiral"
+{
+	Cluster = "1"
+	Sky1 = "SKY07"
+	Music = "DMMUS4"
+	Next = "64DM5"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map 64DM5 Lookup "Slaughter Tower"
+{
+	Cluster = "1"
+	Sky1 = "SKY-0052"
+	Music = "DMMUS5"
+	Next = "64DM6"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map 64DM6 Lookup "Torture Hive"
+{
+	Cluster = "1"
+	Sky1 = "SKY-0052"
+	Music = "DMMUS2"
+	Next = "64DM7"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}
+
+map 64DM7 Lookup "Showdown"
+{
+	Cluster = "1"
+	Sky1 = "SKY-0052"
+	Music = "DMMUS1"
+	Next = "64DM6"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI2"
+}

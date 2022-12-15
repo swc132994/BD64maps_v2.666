@@ -1,0 +1,79 @@
+{
+	name = "Grunt"
+	script = HUMANBOT
+	chatlump = BOTS1
+	gender = male
+	color = "10 60 10"
+	railcolor = "red"
+	skin = "Marine"
+	class = "64DoomPlayer"
+	revealed = true
+	accuracy = 4
+	intellect = 4
+	evade = 4
+	anticipation = 2
+	reactiontime = 3
+	perception = 3
+	chatfrequency = 1
+	favoriteweapon = "64shotgun"
+}
+
+{
+	name = "Destroyer"
+	script = HUMANBOT
+	chatlump = BOTS1
+	gender = male
+	color = "10 60 10"
+	railcolor = "red"
+	//skin = "Doomcrate"
+	class = "64DoomPlayer"
+	revealed = true
+	accuracy = 4
+	intellect = 4
+	evade = 1
+	anticipation = 1
+	reactiontime = 4
+	perception = 4
+	chatfrequency = 1
+	favoriteweapon = "64shotgun"
+}
+
+{
+	name = "Executioner"
+	script = HUMANBOT
+	chatlump = BOTS1
+	gender = male
+	color = "10 60 10"
+	railcolor = "red"
+	//skin = "Doomcrate"
+	class = "64DoomPlayer"
+	revealed = true
+	accuracy = 4
+	intellect = 4
+	evade = 1
+	anticipation = 1
+	reactiontime = 4
+	perception = 4
+	chatfrequency = 1
+	favoriteweapon = "64shotgun"
+}
+
+{
+	name = "Warmonger"
+	script = HUMANBOT
+	chatlump = BOTS1
+	gender = male
+	color = "10 60 10"
+	railcolor = "red"
+	//skin = "Doomcrate"
+	class = "64DoomPlayer"
+	revealed = true
+	accuracy = 4
+	intellect = 4
+	evade = 1
+	anticipation = 1
+	reactiontime = 4
+	perception = 4
+	chatfrequency = 1
+	favoriteweapon = "64shotgun"
+}

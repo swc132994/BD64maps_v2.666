@@ -1,0 +1,80 @@
+{
+mapname = 64dm1
+gamemode = deathmatch
+fraglimit = 25
+dmflags = 20612
+dmflags2 = 512
+bot[0] = grunt
+bot[1] = destroyer
+bot[2] = executioner
+}
+
+{
+mapname = 64dm2
+gamemode = deathmatch
+fraglimit = 25
+dmflags = 20612
+dmflags2 = 512
+bot[0] = grunt
+bot[1] = destroyer
+bot[2] = executioner
+}
+
+{
+mapname = 64dm3
+gamemode = deathmatch
+fraglimit = 25
+dmflags = 20612
+dmflags2 = 512
+bot[0] = grunt
+bot[1] = destroyer
+bot[2] = executioner
+bot[3] = warmonger
+}
+
+{
+mapname = 64dm4
+gamemode = deathmatch
+fraglimit = 25
+dmflags = 20612
+dmflags2 = 512
+bot[0] = grunt
+bot[1] = destroyer
+bot[2] = executioner
+}
+
+{
+mapname = 64dm5
+gamemode = deathmatch
+fraglimit = 25
+dmflags = 20612
+dmflags2 = 512
+bot[0] = grunt
+bot[1] = destroyer
+bot[2] = executioner
+bot[3] = warmonger
+}
+
+{
+mapname = 64dm6
+gamemode = deathmatch
+fraglimit = 25
+dmflags = 20612
+dmflags2 = 512
+bot[0] = grunt
+bot[1] = destroyer
+bot[2] = executioner
+bot[3] = warmonger
+}
+
+{
+mapname = 64dm7
+gamemode = deathmatch
+fraglimit = 25
+dmflags = 20612
+dmflags2 = 512
+bot[0] = grunt
+bot[1] = destroyer
+bot[2] = grunt
+bot[3] = destroyer
+}

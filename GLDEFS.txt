@@ -1,0 +1,196 @@
+pointlight BD64LampBasic
+{
+color 1.0 0.6 0.0
+size 64
+offset 0 0 0
+}
+
+pointlight BD64LampWhite
+{
+color 0.4 0.4 0.4
+size 64
+offset 0 0 0
+}
+
+pointlight BD64BIGREDLIGHTPOINT
+{
+color 1.0 0.8 0.4
+size 96
+offset 0 0 0
+}
+
+pointlight BD64ShaftLight
+{
+color 0.4 0.4 0.4
+size 96
+offset 0 0 0
+dontlightself 1
+}
+
+pointlight BD64ShaftLightMinor
+{
+color 0.4 0.4 0.4
+size 16
+offset 0 0 0
+dontlightself 1
+}
+
+object BD64HangingTechLampb
+{
+frame HGLM { light BD64LampWhite }
+}
+
+object BD64LampFlareSpawn1
+{
+frame NULL { light BD64ShaftLightMinor }
+}
+
+object BD64LampFlareSpawn2OnFloor
+{
+frame NULL { light BD64ShaftLightMinor }
+}
+
+object BD64BasicWhiteDynamicLight
+{
+frame TNT1 { light BD64LampBasic }
+}
+
+object BD64LightShaft1
+{
+frame SHF1 { light BD64ShaftLight }
+frame SHF2 { light BD64ShaftLight }
+frame SHF3 { light BD64ShaftLight }
+frame SHF4 { light BD64ShaftLight }
+frame SHF5 { light BD64ShaftLight }
+}
+
+Glow
+{
+Texture "NEW55", 6D5541 , 160
+Texture "F_SKY1", 6D5541 , 96
+Texture "SPECIAL1", 888888 , 96
+Texture "SPECIAL2", 6D5541 , 96
+Texture "SPECIAL3", 6D5541 , 96
+Texture "SPECIAL4", 6D5541 , 96
+Texture "SPECIAL5", 6D5541 , 96
+Texture "SPECIAL6", 6D5541 , 96
+Texture "SPECIAL7", 6D5541 , 96
+Texture "SPECIAL8", 6D5541 , 96
+Texture "SPECIAL9", 6D5541 , 96
+Texture "SPECIALA", 6D5541 , 96
+Texture "SPECIALB", 888888 , 96 //white
+Texture "SPECIALC", 339900 , 96 //green
+Texture "SPECIALD", 6D5541 , 96
+Texture "SPECIALE", 6D5541 , 96
+Texture "SPECIALF", 6D5541 , 96
+Texture "SPECIALG", 6D5541 , 96
+Texture "SPECIALH", 6D5541 , 96
+Texture "SPECIALI", 6D5541 , 96
+Texture "SPECIALJ", 6D5541 , 96
+Texture "SPECIALK", 6D5541 , 96
+Texture "SPECIALL", 6D5541 , 96
+Texture "SPECIALM", 6D5541 , 96
+Texture "SPECIALN", 6D5541 , 96
+Texture "SPECIALO", 6D5541 , 96
+Texture "SPECIALP", 6D5541 , 96
+Texture "SPECIALQ", 6D5541 , 96
+Texture "SPECIALR", 6D5541 , 96
+Texture "SPECIALS", 6D5541 , 96
+Texture "SPECIALT", 6D5541 , 96
+Texture "SPECIALU", 6D5541 , 96
+Texture "SPECIALV", 6D5541 , 96
+Texture "SPECIALW", 6D5541 , 96
+Texture "SPECIALX", 6D5541 , 96
+Texture "FTILE688", 6D5541 , 96
+Texture "FTILE1B4", 6D5541 , 96
+Texture "FTILE171", 888888 , 96 //white
+Texture "CUSTOMBO", 6D5541 , 96
+Texture "NEW7", 339900 , 96 //green
+Texture "NEW8", 339900 , 96 //green
+Texture "NEW9", 339900 , 96 //green
+Texture "NEW73", 339900 , 96 //green
+Texture "SPECIALD", 339900 , 96 //green
+Texture "XLAVA1", 992500 , 64, fullbright
+}
+
+POINTlight ThunderPointer
+{
+color 1.0 1.0 1.0
+size 128
+offset 0 128 0
+}
+
+object ThunderEffects
+{
+frame THUN { light ThunderPointer }
+}
+
+flickerlight2 BIGYELLOWTORCH //R31 ADDED FROM GAME.PK3
+{
+color 1.0 0.9 0.0
+size 64
+secondarySize 72
+interval 0.1
+offset 0 60 0
+}
+
+object 64YellowTorch															//R16 ADDED FROM GAME.PK3
+{
+frame TSTI { light BIGYELLOWTORCH }
+}
+
+// Fire
+flickerlight2 GROUNDFIRE														//R16 ADDED FROM GAME.PK3
+{
+color 1.0 0.9 0.0
+size 65
+secondarySize 45
+interval 1.0
+offset 0 35 0
+}
+
+object BD64GroundFire															//R16 ADDED FROM GAME.PK3//R10.2 //R11.1 WAS GroundFire
+{
+frame F2RE { light GROUNDFIRE }
+frame F1RE { light GROUNDFIRE }
+}
+
+//R27 BRIGHTMAPS
+brightmap sprite SW2METAL	{map "brightmaps/SW2METBR.png"}
+brightmap sprite SW2EXIT	{map "brightmaps/SW2EXIBR.png"}
+brightmap sprite SW2BLUE	{map "brightmaps/SW2BLUBR.png"}
+brightmap sprite SW2TEK		{map "brightmaps/SW2TEKBR.png"}
+brightmap sprite SW2DIRT	{map "brightmaps/SW2DIRBR.png"}
+brightmap sprite SW2BRIK	{map "brightmaps/SW2BRIBR.png"}
+brightmap sprite SW2GRAY1	{map "brightmaps/SW2GY1BR.png"}
+brightmap sprite SW2STON1	{map "brightmaps/SW2ST1BR.png"}
+brightmap sprite SW2COMM	{map "brightmaps/SW2COMBR.png"}
+brightmap sprite SW2SKIN	{map "brightmaps/SW2SKNBR.png"}
+brightmap sprite SW2SLAD	{map "brightmaps/SW2SLDBR.png"}
+brightmap sprite TILE44BE	{map "brightmaps/TILE44BE_BR.png"}
+
+//GLOWING FLATS
+Glow
+{
+	Walls
+	{
+		LAVA1
+		LAVA2
+		LAVA3
+		LAVA4
+		XLAVA1
+		NUKAGE1
+		NUKAGE2
+		NUKAGE3
+		LPNUKE
+	}
+	Texture "LAVA1",#FF3200,35,fullbright
+	Texture "LAVA2",#FF3200,35,fullbright
+	Texture "LAVA3",#FF3200,35,fullbright
+	Texture "LAVA4",#FF3200,35,fullbright
+	Texture "XLAVA1",#00FF00,35,fullbright
+	Texture "NUKAGE1",#00FF00,45,fullbright
+	Texture "NUKAGE2",#00FF00,45,fullbright
+	Texture "NUKAGE3",#00FF00,45,fullbright
+	Texture "LPNUKE",#00FF00,45,fullbright
+}
