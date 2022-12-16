@@ -875,9 +875,9 @@ Mass 0
 	}
 }
 
-Actor SnowSpawner512 7544
+Actor SnowSpawner512 7544		//repurposed to ash for fire sky maps
 {
-Radius 4
+Radius 6
 Height 1
 +NoClip
 +SpawnCeiling
@@ -886,18 +886,17 @@ Height 1
 	States
 	{
 	Spawn:
-		TNT1 A 1
-		TNT1 A 0 ThrustThingZ(0,955,0,1)
+		SNOW A 0 NoDelay ThrustThingZ(0,955,0,1)
 		Goto Spawn2
 	Spawn2:
-		TNT1 A 6
-		TNT1 A 1 A_SpawnItemEx("SnowParticle",Random(-256,256),0,-2,0,0,0,Random(0,360),128,1)
+		TNT1 A 6 A_SpawnItemEx("SnowParticle",Random(-256,256),0,-2,0,0,0,Random(0,360),128,1)
 		Loop
 	}
 }
 
 Actor SnowParticle
 {
+Translation "0:255=%[0,0,0]:[0,0,0]"	//changes colour to black
 Radius 1
 Height 1
 Damage 0
@@ -909,11 +908,11 @@ Gravity 0.05
 +MISSILE
 +NOBLOCKMAP
 -NOGRAVITY
++DONTSPLASH
 	States
 	{
 	Spawn:
-		TNT1 A 0
-		SNOW AAAAAAAAA 2 A_FadeIn(0.1)
+		SNOW AAAAAAAAA 2 NoDelay A_FadeIn(0.1)
 	Spawn2:
 		SNOW A 3
 		Loop
