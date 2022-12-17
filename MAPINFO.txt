@@ -42,7 +42,7 @@ map MAP00 Lookup "Landing Site"		//R13 was called Intro
 	Sky1 = "SKY08"
 	Music = "DINTRO"
 	Next = "MAP01"
-	InterMusic = "N64INTER"
+	InterMusic = "D_ALGMAN"
 	NOINTERMISSION
 }
 
@@ -53,7 +53,7 @@ map MAP01 Lookup "Staging Area"
 	Music = "MAPWD01"
 	Next = "MAP02"
 	SecretNext = "MAP32"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERA"
 	exitpic = "INTERPI1"
 }
 
@@ -62,7 +62,7 @@ map MAP02 Lookup "The Terraformer"
 	Sky1 = "SKY08"
 	Music = "MAPWD02"
 	Next = "MAP03"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERA"
 	exitpic = "INTERPI1"
 }
 
@@ -71,7 +71,7 @@ map MAP03 Lookup "Main Engineering"
 	Sky1 = "SKY08"
 	Music = "MAPWD03"
 	Next = "MAP04"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERA"
 	exitpic = "INTERPI1"
 }
 
@@ -81,7 +81,7 @@ map MAP04 Lookup "Holding Area"
 	Music = "MAPWD04"
 	Next = "MAP05"
 	SecretNext = "MAP29"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERA"
 	exitpic = "INTERPI1"
 }
 
@@ -90,7 +90,7 @@ map MAP05 Lookup "Tech Center"
 	Sky1 = "SKY08"
 	Music = "MAPWD05"
 	Next = "MAP06"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERA"
 	exitpic = "INTERPI1"
 }
 
@@ -99,7 +99,7 @@ map MAP06 Lookup "Alpha Quadrant"
 	Sky1 = "SKY08"
 	Music = "MAPWD06"
 	Next = "MAP07"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERB"
 	exitpic = "INTERPI1"
 }
 
@@ -108,7 +108,7 @@ map MAP07 Lookup "Research Lab"
 	Sky1 = "SKY08"
 	Music = "MAPWD07"
 	Next = "MAP08"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERB"
 	exitpic = "INTERPI1"
 	REDIRECT = "TCMapCheck","MAP07TC"	//R31 Jumps to TC NUKAGE FACILITY
 }
@@ -118,7 +118,7 @@ map MAP08A Lookup "Final Outpost"	//vanilla version		//R28.2 ADDED
 	Sky1 = "SKY08"
 	Music = "MAPWD08"
 	Next = "MAP09"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERB"
 	exitpic = "INTERPI1"
 }
 
@@ -127,7 +127,7 @@ map MAP08 Lookup "Final Outpost"
 	Sky1 = "SKY08"
 	Music = "MAPWD08"
 	Next = "MAP09"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERB"
 	exitpic = "INTERPI1"
 	REDIRECT = "VMapCheck","MAP08A"	//R31 Jumps to VAMILLA FINAL OUTPOST
 }
@@ -138,7 +138,7 @@ map MAP09 Lookup "Even Simpler"
 	Sky1 = "SKY07"
 	Music = "MAPWD09"
 	Next = "MAP10"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERB"
 	exitpic = "INTERPI2"
 }
 
@@ -147,7 +147,7 @@ map MAP10 Lookup "The Bleeding"
 	Sky1 = "SKY05"
 	Music = "MAPWD10"
 	Next = "MAP11"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERC"
 	exitpic = "INTERPI2"
 }
 
@@ -156,7 +156,7 @@ map MAP11 Lookup "Terror Core"
 	Sky1 = "SKY09"
 	Music = "MAPWD11"
 	Next = "MAP12"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERC"
 	exitpic = "INTERPI2"
 }
 
@@ -166,7 +166,7 @@ map MAP12 Lookup "Altar of Pain"
 	Music = "MAPWD12"
 	Next = "MAP13"
 	SecretNext = "MAP30"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERC"
 	exitpic = "INTERPI2"
 }
 
@@ -175,7 +175,7 @@ map MAP13 Lookup "Dark Citadel"
 	Sky1 = "SKYSTAR3"//R31 added
 	Music = "MAPWD13"
 	Next = "MAP14"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERC"
 	exitpic = "INTERPI2"
 }
 
@@ -184,7 +184,7 @@ map MAP14 Lookup "Eye of the Storm"
 	Sky1 = "SKY04"
 	Music = "MAPWD14"
 	Next = "MAP15"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERD"
 	exitpic = "INTERPI2"
 }
 
@@ -193,7 +193,7 @@ map MAP15 Lookup "Dark Entries"
 	Sky1 = "SKY02"
 	Music = "MAPWD15"
 	Next = "MAP16"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERD"
 	exitpic = "INTERPI2"
 }
 
@@ -202,7 +202,7 @@ map MAP16 Lookup "Blood Keep"
 	Sky1 = "SKY06"
 	Music = "MAPWD16"
 	Next = "MAP17"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERD"
 	exitpic = "INTERPI2"
 }
 
@@ -214,7 +214,7 @@ map MAP17 Lookup "Watch Your Step"
 	NoInfighting
 	Music = "MAPWD17"
 	Next = "MAP18"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERD"
 	exitpic = "INTERPI2"
 }
 
@@ -224,7 +224,7 @@ map MAP18 Lookup "Spawned Fear"
 	Music = "MAPWD18"
 	Next = "MAP19"
 	SecretNext = "MAP31"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERD"
 	exitpic = "INTERPI2"
 }
 
@@ -233,7 +233,7 @@ map MAP19 Lookup "The Spiral"
 	Sky1 = "SKY02"
 	Music = "MAPWD19"
 	Next = "MAP20"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERD"
 	exitpic = "INTERPI2"
 }
 
@@ -242,7 +242,7 @@ map MAP20 Lookup "Breakdown"
 	Sky1 = "SKY07"
 	Music = "MAPWD20"
 	Next = "MAP21"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERE"
 	exitpic = "INTERPI3"
 }
 
@@ -251,7 +251,7 @@ map MAP21 Lookup "Pitfalls"
 	Sky1 = "SKY-0052"
 	Music = "MAPWD21"
 	Next = "MAP22"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERE"
 	exitpic = "INTERPI3"
 }
 
@@ -261,7 +261,7 @@ map MAP22 Lookup "Burnt Offerings"
 	Music = "MAPWD22"
 	NoInfighting
 	Next = "MAP23"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERE"
 	exitpic = "INTERPI3"
 }
 
@@ -270,7 +270,7 @@ map MAP23 Lookup "Unholy Temple"
 	Sky1 = "SKY-G052"
 	Music = "MAPWD23"
 	Next = "MAP24"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERE"
 	exitpic = "INTERPI3"
 }
 
@@ -281,7 +281,7 @@ map MAP24 Lookup "No Escape"
 	NoInfighting
 	Next = "MAP28"
 	SecretNext = "MAP25"		//R28.2 ADDED
-	InterMusic = "N64INTER"
+	InterMusic = "INTERF"
 	exitpic = "INTERPI3"
 	REDIRECT = "TCMapCheck","MAP27TC"	//R31 Jumps to TC Forbidden Deeper
 }
@@ -295,7 +295,7 @@ map MAP25 Lookup "Cat And Mouse"
 	Music = "MAPWD25"
 	NoInfighting
 	Next = "MAP26"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERF"
 	exitpic = "INTERPI3"
 }
 
@@ -306,7 +306,7 @@ map MAP26 Lookup "HardCore"
 	Fogdensity = 200//R31 added
 	Music = "MAPWD26"
 	Next = "MAP27"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERF"
 	exitpic = "INTERPI3"
 }
 
@@ -316,7 +316,7 @@ map MAP27 Lookup "Playground"
 	Music = "MAPWD27"
 	NoInfighting
 	Next = "MAP28"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERF"
 	exitpic = "INTERPI3"
 }
 
@@ -326,7 +326,7 @@ map MAP28 Lookup "The Absolution"
 	Sky1 = "SKY-0052"
 	Music = "MAPWD28"
 	NoInfighting
-	InterMusic = "N64INTER"
+	InterMusic = "INTERG"
 	Next = "ENDINGMA"
 	exitpic = "INTERPI3"
 }
@@ -337,7 +337,7 @@ map ENDINGMA Lookup "End"
 	Sky1 = "SKY-0052"
 	Music = "MAPWD28"
 	NoInfighting
-	InterMusic = "N64INTER"
+	InterMusic = "INTERF"
 	Next = "EndGameC"
 	exitpic = "INTERPI3"
 	nointermission
@@ -349,7 +349,7 @@ map MAP29 Lookup "Outpost Omega"
 	Sky1 = "SKY08"
 	Music = "MAPWD29"
 	Next = "MAP05"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERA"
 	exitpic = "INTERPI1"
 	SecretNext = "MAP34TC"		//CRISIS TC MAP - UNAVAILABLE IF TCMAPCHECK NOT ENABLED
 }
@@ -360,7 +360,7 @@ map MAP30 Lookup "The Lair"
 	Sky1 = "SKY-g052"
 	Music = "MAPWD30"
 	Next = "MAP13"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERC"
 	exitpic = "INTERPI2"
 }
 
@@ -372,7 +372,7 @@ map MAP31 Lookup "In The Void"
 	Sky1 = "VOIDSKY1"//R31 was "VOID"
 	Music = "MAPWD31"
 	Next = "MAP19"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERD"
 	exitpic = "INTERPI2"
 }
 
@@ -382,7 +382,7 @@ map MAP32 "Hectic"
 	Sky1 = "SKY-G052"
 	Music = "MAPWD32"
 	Next = "MAP02"
-	InterMusic = "N64INTER"
+	InterMusic = "INTERA"
 	exitpic = "INTERPI1"
 }
 
@@ -392,7 +392,7 @@ map MAP07TC Lookup "Nukage Facility (TC)"	//R31 TC
 	Sky1 = "SKY08"
 	Music = "MAPWD31"
 	Next = "MAP07"				//RESERACH LAB
-	InterMusic = "N64INTER"
+	InterMusic = "INTERB"
 	exitpic = "INTERPI1"
 }
 
@@ -402,7 +402,7 @@ map MAP27TC Lookup "Forbidden Deeper (TC)"		//R31 TC
 	Music = "MAPWD15"
 	NoInfighting
 	Next = "MAP28TC"		//SHADOWS WATCHING
-	InterMusic = "N64INTER"
+	InterMusic = "INTERF"
 	exitpic = "INTERPI3"
 }
 
@@ -411,7 +411,7 @@ map MAP28TC Lookup "Shadows Watching (TC)"		//R31 TC
 	Sky1 = "SKY-B052"
 	Music = "MAPWD12"
 	Next = "MAP24"		//NO ESCAPE
-	InterMusic = "N64INTER"
+	InterMusic = "INTERF"
 	exitpic = "INTERPI3"
 }
 
@@ -421,14 +421,14 @@ map MAP34TC Lookup "Crisis (TC)"		//R31 TC
 	Sky1 = "SKY08"
 	Music = "MAPWD24"
 	Next = "MAP05"	//TECH CENTRE
-	InterMusic = "N64INTER"
+	InterMusic = "INTERA"
 	exitpic = "INTERPI1"
 }
 
 cluster 1
 {
 	pic = "INTERPIC"
-	music = "N64INTER"
+	music = "PLOTA"
 	entertext =	"you cackle as the",
 			"familiarity of the",
 			"situation occurs to you.",
@@ -449,7 +449,7 @@ cluster 1
 cluster 2
 {
 	pic = "INTERPIC"
-	music = "N64INTER"
+	music = "PLOTA"
 	entertext =	"The vast silence reminds",
 			"you of the military morgue.",
 			"",
@@ -466,7 +466,7 @@ cluster 2
 cluster 3
 {
 	pic = "INTERPIC"
-	music = "N64INTER"
+	music = "PLOTB"
 	entertext =	"You smile.",
 			"",
 			"What strange place have",
@@ -483,7 +483,7 @@ cluster 3
 cluster 4
 {
 	pic = "INTERPIC"
-	music = "N64INTER"
+	music = "PLOTB"
 	entertext =	"You wretch as a strange",
 			"acrid odor assaults you.",
 			"",
@@ -500,7 +500,7 @@ cluster 4
 cluster 5
 {
 	pic = "INTERPIC"
-	music = "N64INTER"
+	music = "PLOTC"
 	entertext =	"Congratulations!",
 			"You found...",
 			"",
@@ -513,7 +513,7 @@ cluster 5
 clusterdef 15
 {
 	pic = "BOSBACK2"
-	music = "N64INTER"
+	music = "END"
 	exittext =	"Finally...",													//R30.1 Revised text
 			"The mother of all demons is dead!",
 			"For the first time, the demons know what fear is.",
@@ -538,7 +538,7 @@ clusterdef 15
 cluster 16
 {
 	pic = "INTERPIC"
-	music = "N64INTER"
+	music = "D_ALGMAN"
 	entertext =	"You made it",
 			"As the door closes behind you",
 			"you hear human and demonic moaning and screams",
@@ -560,7 +560,7 @@ cluster 16
 cluster 17	//R31 Map28 Exit to Fun maps.
 {
 	pic = "INTERPIC3"
-	music = "N64INTER"
+	music = "PLOTC"
 	entertext = "",
 			"",
 			"So you have decided to venture deeper into Hell",
@@ -577,7 +577,7 @@ cluster 17	//R31 Map28 Exit to Fun maps.
 cluster 18	//R28.2 Arriving at the final battle
 {
 	pic = "INTERPIC3"
-	music = "N64INTER"
+	music = "PLOTC"
 	entertext = "",
 			"",
 			"At last you have finally arrived at the mother demons lair",

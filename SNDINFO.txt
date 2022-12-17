@@ -80,3 +80,6 @@ doors/dr1_open DSDOROPN
 doors/dr1_close DSDORCLS
 doors/dr2_open DSBDOPN
 doors/dr2_close DSBDCLS
+
+STGNPUMP STGNPUMP //SHOTGUN PUMP SOUND FOR ENDING
+DSSLOP DSSLOP	//Motherdemon Gore sound
