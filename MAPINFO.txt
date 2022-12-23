@@ -331,6 +331,17 @@ map MAP28 Lookup "The Absolution"
 	exitpic = "INTERPI3"
 }
 
+map MAP28A Lookup "The Ultimate Absolution"
+{
+	Cluster = "18"
+	Sky1 = "SKY-0052"
+	Music = "MAPWD01"
+	NoInfighting
+	InterMusic = "INTERG"
+	Next = "ENDINGMA"
+	exitpic = "INTERPI3"
+}
+
 map ENDINGMA Lookup "End"
 {
 	Cluster = "15"
