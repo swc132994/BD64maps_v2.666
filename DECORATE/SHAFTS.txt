@@ -746,7 +746,7 @@ Height 14
 		CINM E 40
 		CINM G 150
 		CINM J 25
-		TNT1 A 0 A_PlaySound("weapons/shotgr",CHAN_WEAPON)
+		TNT1 A 0 A_PlaySound("STGNPUMP",CHAN_WEAPON)
 		CINM ILMNN 2
 		CINM MLIJ 2
 		CINM J -1

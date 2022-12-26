@@ -320,7 +320,7 @@ map MAP27 Lookup "Playground"
 	exitpic = "INTERPI3"
 }
 
-map MAP28 Lookup "The Absolution"
+map MAP28A Lookup "The Absolution"
 {
 	Cluster = "18"		//R24 ADDED CLUSTER
 	Sky1 = "SKY-0052"
@@ -331,7 +331,7 @@ map MAP28 Lookup "The Absolution"
 	exitpic = "INTERPI3"
 }
 
-map MAP28A Lookup "The Ultimate Absolution"
+map MAP28 Lookup "The Ultimate Absolution"
 {
 	Cluster = "18"
 	Sky1 = "SKY-0052"
@@ -340,6 +340,7 @@ map MAP28A Lookup "The Ultimate Absolution"
 	InterMusic = "INTERG"
 	Next = "ENDINGMA"
 	exitpic = "INTERPI3"
+	REDIRECT = "AbsMapCheck","MAP28A"	//R31 Jump to original BD64 Map28
 }
 
 map ENDINGMA Lookup "End"
