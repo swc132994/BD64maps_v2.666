@@ -1970,7 +1970,7 @@ Mass 15
 	{
 	Spawn:
 		TNT1 A 12
-		TNT1 A 0 A_SpawnItem("FootStep8",0,15)								//R11 WAS "FootStep5"
+		TNT1 A 0 A_SpawnItem("BD64FootStep",0,0)								//R11 WAS "FootStep5"
 		TNT1 A 1
 		Loop
 	}
