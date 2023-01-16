@@ -42,7 +42,6 @@ map MAP00 Lookup "Landing Site"		//R13 was called Intro
 	Sky1 = "SKY08"
 	Music = "DINTRO"
 	Next = "MAP01"
-	InterMusic = "D_ALGMAN"
 	NOINTERMISSION
 }
 
@@ -575,13 +574,13 @@ cluster 17	//R31 Map28 Exit to Fun maps.
 	music = "PLOTC"
 	entertext = "",
 			"",
-			"So you have decided to venture deeper into Hell",
+			"You have decided to venture off into the unknown",
 			"",
-			"before facing off against the mother of demons.",
+			"before confronting the menace that lurks at the heart of Hell.",
 			"",
-			"After arriving in a strange dimension you come",
+			"After arriving in a strange dimension, you",
 			"",
-			"face to face against a familiar foe.",
+			"see an old friend wants to have you for dinner.",
 			"",
 			"Let the fun begin!"
 }
