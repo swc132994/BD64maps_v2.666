@@ -550,22 +550,22 @@ cluster 16
 {
 	pic = "INTERPIC"
 	music = "D_ALGMAN"
-	entertext =	"You made it",
-			"As the door closes behind you",
-			"you hear human and demonic moaning and screams",
-			"mixed with fire and explosions",
+	entertext =	"You made it through!",
+			"As the door closes behind you,",
+			"you hear human and demonic moans and screams,",
+			"mixed with gun fire and explosions.",
 			"",
-			"eventually you hear nothing but silence",
+			"Eventually you hear nothing but silence.",
 			"Your team were utterly unprepared for what",
 			"was waiting at the landing site",
 			"",
-			"After a moment you come to realise you are alone",
+			"After a moment you come to realise that you are alone",
 			"",
-			"The feeling inside the base feels wrong and that smell",
-			"you remember well that smell of death",
+			"The feeling inside the base feels wrong and that smell,",
+			"you remember well that smell of death.",
 			"",
-			"There is no turning back now",
-			"You ready your weapon and proceed into the base"
+			"There is no turning back now.",
+			"You ready your weapon and proceed into the base."
 }
 
 cluster 17	//R31 Map28 Exit to Fun maps.
