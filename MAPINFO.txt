@@ -311,6 +311,8 @@ map MAP26 Lookup "HardCore"
 
 map MAP27 Lookup "Playground"
 {
+	fade = "3C 14 0A"
+	fogdensity = 200
 	Sky1 = "SKY-0052"
 	Music = "MAPWD27"
 	NoInfighting
