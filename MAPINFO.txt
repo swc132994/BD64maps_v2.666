@@ -134,7 +134,7 @@ map MAP08 Lookup "Final Outpost"
 map MAP09 Lookup "Even Simpler"
 {
 	Cluster = "1"
-	Sky1 = "SKY07"
+	Sky1 = "SKY05"
 	Music = "MAPWD09"
 	Next = "MAP10"
 	InterMusic = "INTERB"
@@ -161,7 +161,7 @@ map MAP11 Lookup "Terror Core"
 
 map MAP12 Lookup "Altar of Pain"
 {
-	Sky1 = "SKY03"
+	Sky1 = "SKY02"
 	Music = "MAPWD12"
 	Next = "MAP13"
 	SecretNext = "MAP30"
@@ -207,7 +207,7 @@ map MAP16 Lookup "Blood Keep"
 
 map MAP17 Lookup "Watch Your Step"
 {
-	Sky1 = "SKY03"
+	Sky1 = "SKY02"
 	fade = "3C 14 0A" //WAS "CD0000"
 	fogdensity = 200
 	NoInfighting
@@ -238,7 +238,7 @@ map MAP19 Lookup "The Spiral"
 
 map MAP20 Lookup "Breakdown"
 {
-	Sky1 = "SKY07"
+	Sky1 = "SKY05"
 	Music = "MAPWD20"
 	Next = "MAP21"
 	InterMusic = "INTERE"
@@ -606,7 +606,7 @@ cluster 18	//R28.2 Arriving at the final battle
 map 64DM1 Lookup "Simple Death"
 {
 	Cluster = "1"
-	Sky1 = "SKY07"
+	Sky1 = "SKY05"
 	Music = "DMMUS1"
 	Next = "64DM2"
 	InterMusic = "N64INTER"
@@ -616,7 +616,7 @@ map 64DM1 Lookup "Simple Death"
 map 64DM2 Lookup "Dying Alone"
 {
 	Cluster = "1"
-	Sky1 = "SKY07"
+	Sky1 = "SKY05"
 	Music = "DMMUS3"
 	Next = "64DM3"
 	InterMusic = "N64INTER"
@@ -626,7 +626,7 @@ map 64DM2 Lookup "Dying Alone"
 map 64DM3 Lookup "Altar of Agony"
 {
 	Cluster = "1"
-	Sky1 = "SKY07"
+	Sky1 = "SKY05"
 	Music = "DMMUS2"
 	Next = "64DM4"
 	InterMusic = "N64INTER"
@@ -636,7 +636,7 @@ map 64DM3 Lookup "Altar of Agony"
 map 64DM4 Lookup "The Downward Spiral"
 {
 	Cluster = "1"
-	Sky1 = "SKY07"
+	Sky1 = "SKY05"
 	Music = "DMMUS4"
 	Next = "64DM5"
 	InterMusic = "N64INTER"
