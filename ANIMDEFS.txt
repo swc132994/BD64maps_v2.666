@@ -44,7 +44,38 @@ warp FLAT XLAVA1
 //warp FLAT SFLR6_1	//(UNKNOWN - NOT FOUND)
 //warp FLAT SFLR6_4	//(UNKNOWN - NOT FOUND)
 
-//HELLISH TELEPORTER
+//TELEPORTER 1
+FLAT XPORTAL1
+	pic XPORTAL1 rand 4 4
+	pic XPORTAL2 rand 4 4
+	pic XPORTAL3 rand 4 4
+	pic XPORTAL4 rand 4 4
+	pic XPORTAL5 rand 4 4
+	pic XPORTAL6 rand 4 4
+
+//TELEPORTER 2
+FLAT YPORTAL1
+	pic YPORTAL1 rand 4 4
+	pic YPORTAL2 rand 4 4
+	pic YPORTAL3 rand 4 4
+	pic YPORTAL4 rand 4 4
+	pic YPORTAL5 rand 4 4
+	pic YPORTAL6 rand 4 4
+	pic YPORTAL7 rand 4 4
+	pic YPORTAL8 rand 4 4
+
+//TELEPORTER 3
+FLAT ZPORTAL1
+	pic ZPORTAL1 rand 4 4
+	pic ZPORTAL2 rand 4 4
+	pic ZPORTAL3 rand 4 4
+	pic ZPORTAL4 rand 4 4
+	pic ZPORTAL5 rand 4 4
+	pic ZPORTAL6 rand 4 4
+	pic ZPORTAL7 rand 4 4
+	pic ZPORTAL8 rand 4 4
+
+//TELEPORTER 4
 FLAT SLIME12
 	pic SLIME09 rand 4 4
 	pic SLIME10 rand 4 4
@@ -76,6 +107,13 @@ FLAT SLIME09
 	pic SLIME12 rand 4 4
 	pic SLIME11 rand 4 4
 	pic SLIME10 rand 4 4
+
+//TECH PANEL
+TEXTURE SMONLC1
+	pic SMONLC1 rand 4 4
+	pic SMONLC2 rand 4 4
+	pic SMONLC3 rand 4 4
+	pic SMONLC4 rand 4 4
 
 //TECH KEY COLOUR COLUMN
 TEXTURE BLODRIP1
