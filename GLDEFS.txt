@@ -169,6 +169,30 @@ brightmap sprite SW2SKIN	{map "brightmaps/SW2SKNBR.png"}
 brightmap sprite SW2SLAD	{map "brightmaps/SW2SLDBR.png"}
 brightmap sprite TILE44BE	{map "brightmaps/TILE44BE_BR.png"}
 
+brightmap sprite XPORTAL2	{map "brightmaps/XPORTAL2_BR.png"}
+brightmap sprite XPORTAL3	{map "brightmaps/XPORTAL3_BR.png"}
+brightmap sprite XPORTAL4	{map "brightmaps/XPORTAL4_BR.png"}
+brightmap sprite XPORTAL5	{map "brightmaps/XPORTAL5_BR.png"}
+brightmap sprite XPORTAL6	{map "brightmaps/XPORTAL6_BR.png"}
+
+brightmap sprite YPORTAL1	{map "brightmaps/YPORTAL1_BR.png"}
+brightmap sprite YPORTAL2	{map "brightmaps/YPORTAL2_BR.png"}
+brightmap sprite YPORTAL3	{map "brightmaps/YPORTAL3_BR.png"}
+brightmap sprite YPORTAL4	{map "brightmaps/YPORTAL4_BR.png"}
+brightmap sprite YPORTAL5	{map "brightmaps/YPORTAL5_BR.png"}
+brightmap sprite YPORTAL6	{map "brightmaps/YPORTAL6_BR.png"}
+brightmap sprite YPORTAL7	{map "brightmaps/YPORTAL7_BR.png"}
+brightmap sprite YPORTAL8	{map "brightmaps/YPORTAL8_BR.png"}
+
+brightmap sprite ZPORTAL1	{map "brightmaps/ZPORTAL1_BR.png"}
+brightmap sprite ZPORTAL2	{map "brightmaps/ZPORTAL2_BR.png"}
+brightmap sprite ZPORTAL3	{map "brightmaps/ZPORTAL3_BR.png"}
+brightmap sprite ZPORTAL4	{map "brightmaps/ZPORTAL4_BR.png"}
+brightmap sprite ZPORTAL5	{map "brightmaps/ZPORTAL5_BR.png"}
+brightmap sprite ZPORTAL6	{map "brightmaps/ZPORTAL6_BR.png"}
+brightmap sprite ZPORTAL7	{map "brightmaps/ZPORTAL7_BR.png"}
+brightmap sprite ZPORTAL8	{map "brightmaps/ZPORTAL8_BR.png"}
+
 //GLOWING FLATS
 Glow
 {
