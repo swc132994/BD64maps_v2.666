@@ -25,7 +25,7 @@
 	gender = male
 	color = "10 60 10"
 	railcolor = "red"
-	//skin = "Doomcrate"
+	skin = "Marine"
 	class = "64DoomPlayer"
 	revealed = true
 	accuracy = 4
@@ -45,7 +45,7 @@
 	gender = male
 	color = "10 60 10"
 	railcolor = "red"
-	//skin = "Doomcrate"
+	skin = "Marine"
 	class = "64DoomPlayer"
 	revealed = true
 	accuracy = 4
@@ -65,7 +65,7 @@
 	gender = male
 	color = "10 60 10"
 	railcolor = "red"
-	//skin = "Doomcrate"
+	skin = "Marine"
 	class = "64DoomPlayer"
 	revealed = true
 	accuracy = 4

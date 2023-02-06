@@ -211,7 +211,7 @@ TEXTURE FIRELAV3
 */
 
 //New TEXTURE Liquid Water
-FLAT FWATER02
+/*FLAT FWATER02
 	pic SW0000 tics 1
 	pic SW0001 tics 1
 	pic SW0002 tics 1
@@ -244,6 +244,7 @@ FLAT FWATER02
 	pic SW0029 tics 1
 	pic SW0030 tics 1
 	pic SW0031 tics 1
+*/
 
 FLAT FTILE080
 	pic SW0000 tics 1
