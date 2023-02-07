@@ -156,6 +156,7 @@ frame F1RE { light GROUNDFIRE }
 }
 
 //R27 BRIGHTMAPS
+//SWITCHES
 brightmap sprite SW2METAL	{map "brightmaps/SW2METBR.png"}
 brightmap sprite SW2EXIT	{map "brightmaps/SW2EXIBR.png"}
 brightmap sprite SW2BLUE	{map "brightmaps/SW2BLUBR.png"}
@@ -167,8 +168,16 @@ brightmap sprite SW2STON1	{map "brightmaps/SW2ST1BR.png"}
 brightmap sprite SW2COMM	{map "brightmaps/SW2COMBR.png"}
 brightmap sprite SW2SKIN	{map "brightmaps/SW2SKNBR.png"}
 brightmap sprite SW2SLAD	{map "brightmaps/SW2SLDBR.png"}
-brightmap sprite TILE44BE	{map "brightmaps/TILE44BE_BR.png"}
 
+//WALL TEXTURES
+brightmap sprite TILE44BE	{map "brightmaps/TILE44BE_BR.png"}
+brightmap sprite DBRAIN1	{map "brightmaps/DBRAIN1_BR.png"}
+brightmap sprite DBRAIN2	{map "brightmaps/DBRAIN2_BR.png"}
+brightmap sprite DBRAIN3	{map "brightmaps/DBRAIN3_BR.png"}
+brightmap sprite DBRAIN4	{map "brightmaps/DBRAIN4_BR.png"}
+brightmap sprite TILEDCE1	{map "brightmaps/TILEDCE1_BR.png"}
+
+//TELEPORTERS
 brightmap sprite XPORTAL2	{map "brightmaps/XPORTAL2_BR.png"}
 brightmap sprite XPORTAL3	{map "brightmaps/XPORTAL3_BR.png"}
 brightmap sprite XPORTAL4	{map "brightmaps/XPORTAL4_BR.png"}
