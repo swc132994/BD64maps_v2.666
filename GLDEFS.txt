@@ -176,6 +176,8 @@ brightmap sprite DBRAIN2	{map "brightmaps/DBRAIN2_BR.png"}
 brightmap sprite DBRAIN3	{map "brightmaps/DBRAIN3_BR.png"}
 brightmap sprite DBRAIN4	{map "brightmaps/DBRAIN4_BR.png"}
 brightmap sprite TILEDCE1	{map "brightmaps/TILEDCE1_BR.png"}
+brightmap sprite CUSTOM37	{map "brightmaps/CUSTOM37_BR.png"}
+brightmap sprite TILE0C7C	{map "brightmaps/TILE0C7C_BR.png"}
 
 //TELEPORTERS
 brightmap sprite XPORTAL2	{map "brightmaps/XPORTAL2_BR.png"}

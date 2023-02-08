@@ -922,5 +922,6 @@ floor NEW94 ROCK
 floor NEW95 ROCK
 floor NEW96 ROCK
 floor NEW97 ROCK
+floor GOREFLOO SLIMY
 Floor F_SKY1 Air
 endif
