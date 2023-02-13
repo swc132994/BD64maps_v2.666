@@ -579,10 +579,9 @@ floor METAL1 metal2
 floor WOODVERT wood
 floor WOOD1 wood
 //floor DNBLDG03 wood
-floor FTILE080 water
+//floor FTILE080 water
 floor SLIME05 water
-floor CUSTOMCI water
-floor CUSTOMCI water
+//floor CUSTOMCI water
 
 //DOOM 64
 floor TILEFAFC METAL

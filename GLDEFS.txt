@@ -204,6 +204,8 @@ brightmap sprite ZPORTAL6	{map "brightmaps/ZPORTAL6_BR.png"}
 brightmap sprite ZPORTAL7	{map "brightmaps/ZPORTAL7_BR.png"}
 brightmap sprite ZPORTAL8	{map "brightmaps/ZPORTAL8_BR.png"}
 
+brightmap sprite ZAPORTAL	{map "brightmaps/ZAPORTAL_BR.png"}
+
 //GLOWING FLATS
 Glow
 {
@@ -213,19 +215,15 @@ Glow
 		LAVA2
 		LAVA3
 		LAVA4
-		XLAVA1
 		NUKAGE1
 		NUKAGE2
 		NUKAGE3
-		LPNUKE
 	}
 	Texture "LAVA1",#FF3200,35,fullbright
 	Texture "LAVA2",#FF3200,35,fullbright
 	Texture "LAVA3",#FF3200,35,fullbright
 	Texture "LAVA4",#FF3200,35,fullbright
-	Texture "XLAVA1",#00FF00,35,fullbright
 	Texture "NUKAGE1",#00FF00,45,fullbright
 	Texture "NUKAGE2",#00FF00,45,fullbright
 	Texture "NUKAGE3",#00FF00,45,fullbright
-	Texture "LPNUKE",#00FF00,45,fullbright
 }

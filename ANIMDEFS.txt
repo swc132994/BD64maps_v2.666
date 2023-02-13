@@ -39,7 +39,6 @@ warp FLAT LAVA1
 warp FLAT LAVA2
 warp FLAT LAVA3
 warp FLAT LAVA4
-warp FLAT XLAVA1
 
 //warp FLAT SFLR6_1	//(UNKNOWN - NOT FOUND)
 //warp FLAT SFLR6_4	//(UNKNOWN - NOT FOUND)
@@ -74,7 +73,7 @@ FLAT ZPORTAL1
 	pic ZPORTAL6 rand 4 4
 	pic ZPORTAL7 rand 4 4
 	pic ZPORTAL8 rand 4 4
-
+	
 //TELEPORTER 4
 FLAT SLIME12
 	pic SLIME09 rand 4 4
@@ -211,7 +210,7 @@ TEXTURE FIRELAV3
 */
 
 //New TEXTURE Liquid Water
-/*FLAT FWATER02
+FLAT FWATER1
 	pic SW0000 tics 1
 	pic SW0001 tics 1
 	pic SW0002 tics 1
@@ -244,9 +243,8 @@ TEXTURE FIRELAV3
 	pic SW0029 tics 1
 	pic SW0030 tics 1
 	pic SW0031 tics 1
-*/
-
-FLAT FTILE080
+	
+FLAT FWATER2
 	pic SW0000 tics 1
 	pic SW0001 tics 1
 	pic SW0002 tics 1
@@ -279,42 +277,8 @@ FLAT FTILE080
 	pic SW0029 tics 1
 	pic SW0030 tics 1
 	pic SW0031 tics 1
-
-FLAT FTILE081
-	pic SW0000 tics 1
-	pic SW0001 tics 1
-	pic SW0002 tics 1
-	pic SW0003 tics 1
-	pic SW0004 tics 1
-	pic SW0005 tics 1
-	pic SW0006 tics 1
-	pic SW0007 tics 1
-	pic SW0008 tics 1
-	pic SW0009 tics 1
-	pic SW0010 tics 1
-	pic SW0011 tics 1
-	pic SW0012 tics 1
-	pic SW0013 tics 1
-	pic SW0014 tics 1
-	pic SW0015 tics 1
-	pic SW0016 tics 1
-	pic SW0017 tics 1
-	pic SW0018 tics 1
-	pic SW0019 tics 1
-	pic SW0020 tics 1
-	pic SW0021 tics 1
-	pic SW0022 tics 1
-	pic SW0023 tics 1
-	pic SW0024 tics 1
-	pic SW0025 tics 1
-	pic SW0026 tics 1
-	pic SW0027 tics 1
-	pic SW0028 tics 1
-	pic SW0029 tics 1
-	pic SW0030 tics 1
-	pic SW0031 tics 1
-
-FLAT FTILE082
+	
+FLAT FWATER3
 	pic SW0000 tics 1
 	pic SW0001 tics 1
 	pic SW0002 tics 1
@@ -349,74 +313,6 @@ FLAT FTILE082
 	pic SW0031 tics 1
 
 //New TEXTURE Liquid Water Fall
-TEXTURE WFLAR1
-	pic WF0000 tics 1
-	pic WF0001 tics 1
-	pic WF0002 tics 1
-	pic WF0003 tics 1
-	pic WF0004 tics 1
-	pic WF0005 tics 1
-	pic WF0006 tics 1
-	pic WF0007 tics 1
-	pic WF0008 tics 1
-	pic WF0009 tics 1
-	pic WF0010 tics 1
-	pic WF0011 tics 1
-	pic WF0012 tics 1
-	pic WF0013 tics 1
-	pic WF0014 tics 1
-	pic WF0015 tics 1
-	pic WF0016 tics 1
-	pic WF0017 tics 1
-	pic WF0018 tics 1
-	pic WF0019 tics 1
-	pic WF0020 tics 1
-	pic WF0021 tics 1
-	pic WF0022 tics 1
-	pic WF0023 tics 1
-	pic WF0024 tics 1
-	pic WF0025 tics 1
-	pic WF0026 tics 1
-	pic WF0027 tics 1
-	pic WF0028 tics 1
-	pic WF0029 tics 1
-	pic WF0030 tics 1
-	pic WF0031 tics 1
-
-TEXTURE WFALLA1
-	pic WF0000 tics 1
-	pic WF0001 tics 1
-	pic WF0002 tics 1
-	pic WF0003 tics 1
-	pic WF0004 tics 1
-	pic WF0005 tics 1
-	pic WF0006 tics 1
-	pic WF0007 tics 1
-	pic WF0008 tics 1
-	pic WF0009 tics 1
-	pic WF0010 tics 1
-	pic WF0011 tics 1
-	pic WF0012 tics 1
-	pic WF0013 tics 1
-	pic WF0014 tics 1
-	pic WF0015 tics 1
-	pic WF0016 tics 1
-	pic WF0017 tics 1
-	pic WF0018 tics 1
-	pic WF0019 tics 1
-	pic WF0020 tics 1
-	pic WF0021 tics 1
-	pic WF0022 tics 1
-	pic WF0023 tics 1
-	pic WF0024 tics 1
-	pic WF0025 tics 1
-	pic WF0026 tics 1
-	pic WF0027 tics 1
-	pic WF0028 tics 1
-	pic WF0029 tics 1
-	pic WF0030 tics 1
-	pic WF0031 tics 1
-
 TEXTURE WFALL1
 	pic WF0000 tics 1
 	pic WF0001 tics 1
@@ -553,13 +449,6 @@ TEXTURE WFALL4
 	pic WF0030 tics 1
 	pic WF0031 tics 1
 
-//warp TEXTURE WFLAR1
-//warp TEXTURE WFALLA1
-//warp TEXTURE WFALL1
-//warp TEXTURE WFALL2
-//warp TEXTURE WFALL3
-//warp TEXTURE WFALL4
-
 //New TEXTURE Liquid Nukage
 FLAT NUKAGE1
 	pic SN0000 tics 1
@@ -630,40 +519,6 @@ FLAT NUKAGE2
 	pic SN0031 tics 1
 
 FLAT NUKAGE3
-	pic SN0000 tics 1
-	pic SN0001 tics 1
-	pic SN0002 tics 1
-	pic SN0003 tics 1
-	pic SN0004 tics 1
-	pic SN0005 tics 1
-	pic SN0006 tics 1
-	pic SN0007 tics 1
-	pic SN0008 tics 1
-	pic SN0009 tics 1
-	pic SN0010 tics 1
-	pic SN0011 tics 1
-	pic SN0012 tics 1
-	pic SN0013 tics 1
-	pic SN0014 tics 1
-	pic SN0015 tics 1
-	pic SN0016 tics 1
-	pic SN0017 tics 1
-	pic SN0018 tics 1
-	pic SN0019 tics 1
-	pic SN0020 tics 1
-	pic SN0021 tics 1
-	pic SN0022 tics 1
-	pic SN0023 tics 1
-	pic SN0024 tics 1
-	pic SN0025 tics 1
-	pic SN0026 tics 1
-	pic SN0027 tics 1
-	pic SN0028 tics 1
-	pic SN0029 tics 1
-	pic SN0030 tics 1
-	pic SN0031 tics 1
-
-FLAT LPNUKE
 	pic SN0000 tics 1
 	pic SN0001 tics 1
 	pic SN0002 tics 1
@@ -834,40 +689,6 @@ TEXTURE SFALL4
 	pic NF0030 tics 1
 	pic NF0031 tics 1
 
-FLAT LPFNUKE
-	pic NF0000 tics 1
-	pic NF0001 tics 1
-	pic NF0002 tics 1
-	pic NF0003 tics 1
-	pic NF0004 tics 1
-	pic NF0005 tics 1
-	pic NF0006 tics 1
-	pic NF0007 tics 1
-	pic NF0008 tics 1
-	pic NF0009 tics 1
-	pic NF0010 tics 1
-	pic NF0011 tics 1
-	pic NF0012 tics 1
-	pic NF0013 tics 1
-	pic NF0014 tics 1
-	pic NF0015 tics 1
-	pic NF0016 tics 1
-	pic NF0017 tics 1
-	pic NF0018 tics 1
-	pic NF0019 tics 1
-	pic NF0020 tics 1
-	pic NF0021 tics 1
-	pic NF0022 tics 1
-	pic NF0023 tics 1
-	pic NF0024 tics 1
-	pic NF0025 tics 1
-	pic NF0026 tics 1
-	pic NF0027 tics 1
-	pic NF0028 tics 1
-	pic NF0029 tics 1
-	pic NF0030 tics 1
-	pic NF0031 tics 1
-
 //New TEXTURE Liquid Blood
 FLAT BLOOD1
 	pic SB0000 tics 1
@@ -902,213 +723,8 @@ FLAT BLOOD1
 	pic SB0029 tics 1
 	pic SB0030 tics 1
 	pic SB0031 tics 1
-
-FLAT RROCK05
-	pic SB0000 tics 1
-	pic SB0001 tics 1
-	pic SB0002 tics 1
-	pic SB0003 tics 1
-	pic SB0004 tics 1
-	pic SB0005 tics 1
-	pic SB0006 tics 1
-	pic SB0007 tics 1
-	pic SB0008 tics 1
-	pic SB0009 tics 1
-	pic SB0010 tics 1
-	pic SB0011 tics 1
-	pic SB0012 tics 1
-	pic SB0013 tics 1
-	pic SB0014 tics 1
-	pic SB0015 tics 1
-	pic SB0016 tics 1
-	pic SB0017 tics 1
-	pic SB0018 tics 1
-	pic SB0019 tics 1
-	pic SB0020 tics 1
-	pic SB0021 tics 1
-	pic SB0022 tics 1
-	pic SB0023 tics 1
-	pic SB0024 tics 1
-	pic SB0025 tics 1
-	pic SB0026 tics 1
-	pic SB0027 tics 1
-	pic SB0028 tics 1
-	pic SB0029 tics 1
-	pic SB0030 tics 1
-	pic SB0031 tics 1
-
-FLAT RROCK06
-	pic SB0000 tics 1
-	pic SB0001 tics 1
-	pic SB0002 tics 1
-	pic SB0003 tics 1
-	pic SB0004 tics 1
-	pic SB0005 tics 1
-	pic SB0006 tics 1
-	pic SB0007 tics 1
-	pic SB0008 tics 1
-	pic SB0009 tics 1
-	pic SB0010 tics 1
-	pic SB0011 tics 1
-	pic SB0012 tics 1
-	pic SB0013 tics 1
-	pic SB0014 tics 1
-	pic SB0015 tics 1
-	pic SB0016 tics 1
-	pic SB0017 tics 1
-	pic SB0018 tics 1
-	pic SB0019 tics 1
-	pic SB0020 tics 1
-	pic SB0021 tics 1
-	pic SB0022 tics 1
-	pic SB0023 tics 1
-	pic SB0024 tics 1
-	pic SB0025 tics 1
-	pic SB0026 tics 1
-	pic SB0027 tics 1
-	pic SB0028 tics 1
-	pic SB0029 tics 1
-	pic SB0030 tics 1
-	pic SB0031 tics 1
-
-FLAT RROCK07
-	pic SB0000 tics 1
-	pic SB0001 tics 1
-	pic SB0002 tics 1
-	pic SB0003 tics 1
-	pic SB0004 tics 1
-	pic SB0005 tics 1
-	pic SB0006 tics 1
-	pic SB0007 tics 1
-	pic SB0008 tics 1
-	pic SB0009 tics 1
-	pic SB0010 tics 1
-	pic SB0011 tics 1
-	pic SB0012 tics 1
-	pic SB0013 tics 1
-	pic SB0014 tics 1
-	pic SB0015 tics 1
-	pic SB0016 tics 1
-	pic SB0017 tics 1
-	pic SB0018 tics 1
-	pic SB0019 tics 1
-	pic SB0020 tics 1
-	pic SB0021 tics 1
-	pic SB0022 tics 1
-	pic SB0023 tics 1
-	pic SB0024 tics 1
-	pic SB0025 tics 1
-	pic SB0026 tics 1
-	pic SB0027 tics 1
-	pic SB0028 tics 1
-	pic SB0029 tics 1
-	pic SB0030 tics 1
-	pic SB0031 tics 1
-
-FLAT RROCK08
-	pic SB0000 tics 1
-	pic SB0001 tics 1
-	pic SB0002 tics 1
-	pic SB0003 tics 1
-	pic SB0004 tics 1
-	pic SB0005 tics 1
-	pic SB0006 tics 1
-	pic SB0007 tics 1
-	pic SB0008 tics 1
-	pic SB0009 tics 1
-	pic SB0010 tics 1
-	pic SB0011 tics 1
-	pic SB0012 tics 1
-	pic SB0013 tics 1
-	pic SB0014 tics 1
-	pic SB0015 tics 1
-	pic SB0016 tics 1
-	pic SB0017 tics 1
-	pic SB0018 tics 1
-	pic SB0019 tics 1
-	pic SB0020 tics 1
-	pic SB0021 tics 1
-	pic SB0022 tics 1
-	pic SB0023 tics 1
-	pic SB0024 tics 1
-	pic SB0025 tics 1
-	pic SB0026 tics 1
-	pic SB0027 tics 1
-	pic SB0028 tics 1
-	pic SB0029 tics 1
-	pic SB0030 tics 1
-	pic SB0031 tics 1
-
-FLAT LPBLOOD
-	pic SB0000 tics 1
-	pic SB0001 tics 1
-	pic SB0002 tics 1
-	pic SB0003 tics 1
-	pic SB0004 tics 1
-	pic SB0005 tics 1
-	pic SB0006 tics 1
-	pic SB0007 tics 1
-	pic SB0008 tics 1
-	pic SB0009 tics 1
-	pic SB0010 tics 1
-	pic SB0011 tics 1
-	pic SB0012 tics 1
-	pic SB0013 tics 1
-	pic SB0014 tics 1
-	pic SB0015 tics 1
-	pic SB0016 tics 1
-	pic SB0017 tics 1
-	pic SB0018 tics 1
-	pic SB0019 tics 1
-	pic SB0020 tics 1
-	pic SB0021 tics 1
-	pic SB0022 tics 1
-	pic SB0023 tics 1
-	pic SB0024 tics 1
-	pic SB0025 tics 1
-	pic SB0026 tics 1
-	pic SB0027 tics 1
-	pic SB0028 tics 1
-	pic SB0029 tics 1
-	pic SB0030 tics 1
-	pic SB0031 tics 1
-
-//New TEXTURE liquid Blood Fall
-FLAT LPFBLOOD
-	pic BF0000 tics 1
-	pic BF0001 tics 1
-	pic BF0002 tics 1
-	pic BF0003 tics 1
-	pic BF0004 tics 1
-	pic BF0005 tics 1
-	pic BF0006 tics 1
-	pic BF0007 tics 1
-	pic BF0008 tics 1
-	pic BF0009 tics 1
-	pic BF0010 tics 1
-	pic BF0011 tics 1
-	pic BF0012 tics 1
-	pic BF0013 tics 1
-	pic BF0014 tics 1
-	pic BF0015 tics 1
-	pic BF0016 tics 1
-	pic BF0017 tics 1
-	pic BF0018 tics 1
-	pic BF0019 tics 1
-	pic BF0020 tics 1
-	pic BF0021 tics 1
-	pic BF0022 tics 1
-	pic BF0023 tics 1
-	pic BF0024 tics 1
-	pic BF0025 tics 1
-	pic BF0026 tics 1
-	pic BF0027 tics 1
-	pic BF0028 tics 1
-	pic BF0029 tics 1
-	pic BF0030 tics 1
-	pic BF0031 tics 1
-
-FLAT TILE33A7
+	
+FLAT BFALL1
 	pic BF0000 tics 1
 	pic BF0001 tics 1
 	pic BF0002 tics 1
@@ -1176,77 +792,6 @@ FLAT SLIME05
 	pic SS0029 tics 1
 	pic SS0030 tics 1
 	pic SS0031 tics 1
-
-FLAT CUSTOMCI
-	pic SS0000 tics 1
-	pic SS0001 tics 1
-	pic SS0002 tics 1
-	pic SS0003 tics 1
-	pic SS0004 tics 1
-	pic SS0005 tics 1
-	pic SS0006 tics 1
-	pic SS0007 tics 1
-	pic SS0008 tics 1
-	pic SS0009 tics 1
-	pic SS0010 tics 1
-	pic SS0011 tics 1
-	pic SS0012 tics 1
-	pic SS0013 tics 1
-	pic SS0014 tics 1
-	pic SS0015 tics 1
-	pic SS0016 tics 1
-	pic SS0017 tics 1
-	pic SS0018 tics 1
-	pic SS0019 tics 1
-	pic SS0020 tics 1
-	pic SS0021 tics 1
-	pic SS0022 tics 1
-	pic SS0023 tics 1
-	pic SS0024 tics 1
-	pic SS0025 tics 1
-	pic SS0026 tics 1
-	pic SS0027 tics 1
-	pic SS0028 tics 1
-	pic SS0029 tics 1
-	pic SS0030 tics 1
-	pic SS0031 tics 1
-
-//New TEXTURE Liquid Slime Fall
-TEXTURE WFALLB1
-	pic SF0000 tics 1
-	pic SF0001 tics 1
-	pic SF0002 tics 1
-	pic SF0003 tics 1
-	pic SF0004 tics 1
-	pic SF0005 tics 1
-	pic SF0006 tics 1
-	pic SF0007 tics 1
-	pic SF0008 tics 1
-	pic SF0009 tics 1
-	pic SF0010 tics 1
-	pic SF0011 tics 1
-	pic SF0012 tics 1
-	pic SF0013 tics 1
-	pic SF0014 tics 1
-	pic SF0015 tics 1
-	pic SF0016 tics 1
-	pic SF0017 tics 1
-	pic SF0018 tics 1
-	pic SF0019 tics 1
-	pic SF0020 tics 1
-	pic SF0021 tics 1
-	pic SF0022 tics 1
-	pic SF0023 tics 1
-	pic SF0024 tics 1
-	pic SF0025 tics 1
-	pic SF0026 tics 1
-	pic SF0027 tics 1
-	pic SF0028 tics 1
-	pic SF0029 tics 1
-	pic SF0030 tics 1
-	pic SF0031 tics 1
-
-//warp TEXTURE WFALLB1
 
 //RED FIRESKY
 TEXTURE SKY-0052

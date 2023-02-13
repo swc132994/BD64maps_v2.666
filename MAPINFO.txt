@@ -198,7 +198,7 @@ map MAP15 Lookup "Dark Entries"
 
 map MAP16 Lookup "Blood Keep"
 {
-	Sky1 = "SKY06"
+	Sky1 = "SKY05"
 	Music = "MAPWD16"
 	Next = "MAP17"
 	InterMusic = "INTERD"
@@ -219,7 +219,7 @@ map MAP17 Lookup "Watch Your Step"
 
 map MAP18 Lookup "Spawned Fear"
 {
-	Sky1 = "SKY06"
+	Sky1 = "SKY05"
 	Music = "MAPWD18"
 	Next = "MAP19"
 	SecretNext = "MAP31"
