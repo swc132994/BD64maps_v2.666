@@ -496,11 +496,6 @@ Texture "CUSTOM29", 64, 64
 	Patch "CUSTOM29", 0, 0
 }
 
-Texture "CUSTOM3", 64, 64
-{
-	Patch "CUSTOM3", 0, 0
-}
-
 Texture "CUSTOM30", 64, 64
 {
 	Patch "CUSTOM30", 0, 0
@@ -3002,11 +2997,6 @@ Texture "FTILEFBE", 64, 64
 Texture "F_SKY1", 64, 64
 {
 	Patch "F_SKY1", 0, 0
-}
-
-Texture "F_SUCK", 64, 64
-{
-	Patch "F_SUCK", 0, 0
 }
 
 Texture "GSTFONT1", 64, 128
@@ -9122,11 +9112,6 @@ Texture "TILE55F4", 96, 128
 Texture "TILE55F5", 88, 128
 {
 	Patch "TILE55F5", 0, 0
-}
-
-Texture "TILE570A", 64, 64
-{
-	Patch "TILE570A", 0, 0
 }
 
 Texture "TILE5722", 64, 64

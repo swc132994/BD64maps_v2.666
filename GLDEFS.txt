@@ -64,55 +64,6 @@ frame SHF4 { light BD64ShaftLight }
 frame SHF5 { light BD64ShaftLight }
 }
 
-Glow
-{
-Texture "NEW55", 6D5541 , 160
-Texture "F_SKY1", 6D5541 , 96
-Texture "SPECIAL1", 888888 , 96
-Texture "SPECIAL2", 6D5541 , 96
-Texture "SPECIAL3", 6D5541 , 96
-Texture "SPECIAL4", 6D5541 , 96
-Texture "SPECIAL5", 6D5541 , 96
-Texture "SPECIAL6", 6D5541 , 96
-Texture "SPECIAL7", 6D5541 , 96
-Texture "SPECIAL8", 6D5541 , 96
-Texture "SPECIAL9", 6D5541 , 96
-Texture "SPECIALA", 6D5541 , 96
-Texture "SPECIALB", 888888 , 96 //white
-Texture "SPECIALC", 339900 , 96 //green
-Texture "SPECIALD", 6D5541 , 96
-Texture "SPECIALE", 6D5541 , 96
-Texture "SPECIALF", 6D5541 , 96
-Texture "SPECIALG", 6D5541 , 96
-Texture "SPECIALH", 6D5541 , 96
-Texture "SPECIALI", 6D5541 , 96
-Texture "SPECIALJ", 6D5541 , 96
-Texture "SPECIALK", 6D5541 , 96
-Texture "SPECIALL", 6D5541 , 96
-Texture "SPECIALM", 6D5541 , 96
-Texture "SPECIALN", 6D5541 , 96
-Texture "SPECIALO", 6D5541 , 96
-Texture "SPECIALP", 6D5541 , 96
-Texture "SPECIALQ", 6D5541 , 96
-Texture "SPECIALR", 6D5541 , 96
-Texture "SPECIALS", 6D5541 , 96
-Texture "SPECIALT", 6D5541 , 96
-Texture "SPECIALU", 6D5541 , 96
-Texture "SPECIALV", 6D5541 , 96
-Texture "SPECIALW", 6D5541 , 96
-Texture "SPECIALX", 6D5541 , 96
-Texture "FTILE688", 6D5541 , 96
-Texture "FTILE1B4", 6D5541 , 96
-Texture "FTILE171", 888888 , 96 //white
-Texture "CUSTOMBO", 6D5541 , 96
-Texture "NEW7", 339900 , 96 //green
-Texture "NEW8", 339900 , 96 //green
-Texture "NEW9", 339900 , 96 //green
-Texture "NEW73", 339900 , 96 //green
-Texture "SPECIALD", 339900 , 96 //green
-Texture "XLAVA1", 992500 , 64, fullbright
-}
-
 POINTlight ThunderPointer
 {
 color 1.0 1.0 1.0
@@ -169,7 +120,7 @@ brightmap sprite SW2COMM	{map "brightmaps/SW2COMBR.png"}
 brightmap sprite SW2SKIN	{map "brightmaps/SW2SKNBR.png"}
 brightmap sprite SW2SLAD	{map "brightmaps/SW2SLDBR.png"}
 
-//WALL TEXTURES
+//TEXTURES
 brightmap sprite TILE44BE	{map "brightmaps/TILE44BE_BR.png"}
 brightmap sprite DBRAIN1	{map "brightmaps/DBRAIN1_BR.png"}
 brightmap sprite DBRAIN2	{map "brightmaps/DBRAIN2_BR.png"}
@@ -178,6 +129,16 @@ brightmap sprite DBRAIN4	{map "brightmaps/DBRAIN4_BR.png"}
 brightmap sprite TILEDCE1	{map "brightmaps/TILEDCE1_BR.png"}
 brightmap sprite CUSTOM37	{map "brightmaps/CUSTOM37_BR.png"}
 brightmap sprite TILE0C7C	{map "brightmaps/TILE0C7C_BR.png"}
+
+brightmap sprite SMONLC2	{map "brightmaps/SMONLC2_BR.png"}
+brightmap sprite SMONLC3	{map "brightmaps/SMONLC3_BR.png"}
+brightmap sprite SMONLC4	{map "brightmaps/SMONLC2_BR.png"}
+
+brightmap sprite FIREMAG1	{map "brightmaps/FIREMAG1_BR.png"}
+brightmap sprite FIREMAG2	{map "brightmaps/FIREMAG2_BR.png"}
+brightmap sprite FIREMAG3	{map "brightmaps/FIREMAG3_BR.png"}
+
+brightmap sprite TILECF11	{map "brightmaps/TILECF11_BR.png"}
 
 //TELEPORTERS
 brightmap sprite XPORTAL2	{map "brightmaps/XPORTAL2_BR.png"}
@@ -219,11 +180,54 @@ Glow
 		NUKAGE2
 		NUKAGE3
 	}
-	Texture "LAVA1",#FF3200,35,fullbright
-	Texture "LAVA2",#FF3200,35,fullbright
-	Texture "LAVA3",#FF3200,35,fullbright
-	Texture "LAVA4",#FF3200,35,fullbright
-	Texture "NUKAGE1",#00FF00,45,fullbright
-	Texture "NUKAGE2",#00FF00,45,fullbright
-	Texture "NUKAGE3",#00FF00,45,fullbright
+Texture "LAVA1",#FF3200,35,fullbright
+Texture "LAVA2",#FF3200,35,fullbright
+Texture "LAVA3",#FF3200,35,fullbright
+Texture "LAVA4",#FF3200,35,fullbright
+Texture "NUKAGE1",#00FF00,45,fullbright
+Texture "NUKAGE2",#00FF00,45,fullbright
+Texture "NUKAGE3",#00FF00,45,fullbright
+Texture "NEW55",6D5541 ,160
+Texture "F_SKY1",6D5541 ,96
+Texture "SPECIAL1",888888 ,96
+Texture "SPECIAL2",6D5541 ,96
+Texture "SPECIAL3",6D5541 ,96
+Texture "SPECIAL4",6D5541 ,96
+Texture "SPECIAL5",6D5541 ,96
+Texture "SPECIAL6",6D5541 ,96
+Texture "SPECIAL7",6D5541 ,96
+Texture "SPECIAL8",6D5541 ,96
+Texture "SPECIAL9",6D5541 ,96
+Texture "SPECIALA",6D5541 ,96
+Texture "SPECIALB",888888 ,96 //white
+Texture "SPECIALC",339900 ,96 //green
+Texture "SPECIALD",339900 ,96 //green
+Texture "SPECIALE",6D5541 ,96
+Texture "SPECIALF",6D5541 ,96
+Texture "SPECIALG",6D5541 ,96
+Texture "SPECIALH",6D5541 ,96
+Texture "SPECIALI",6D5541 ,96
+Texture "SPECIALJ",6D5541 ,96
+Texture "SPECIALK",6D5541 ,96
+Texture "SPECIALL",6D5541 ,96
+Texture "SPECIALM",6D5541 ,96
+Texture "SPECIALN",6D5541 ,96
+Texture "SPECIALO",6D5541 ,96
+Texture "SPECIALP",6D5541 ,96
+Texture "SPECIALQ",6D5541 ,96
+Texture "SPECIALR",6D5541 ,96
+Texture "SPECIALS",6D5541 ,96
+Texture "SPECIALT",6D5541 ,96
+Texture "SPECIALU",6D5541 ,96
+Texture "SPECIALV",6D5541 ,96
+Texture "SPECIALW",6D5541 ,96
+Texture "SPECIALX",6D5541 ,96
+Texture "FTILE688",6D5541 ,96
+Texture "FTILE1B4",6D5541 ,96
+Texture "FTILE171",888888 ,96 //white
+Texture "CUSTOMBO",6D5541 ,96
+Texture "NEW7",339900 ,96 //green
+Texture "NEW8",339900 ,96 //green
+Texture "NEW9",339900 ,96 //green
+Texture "NEW73",339900 ,96 //green
 }

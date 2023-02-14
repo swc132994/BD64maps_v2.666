@@ -523,11 +523,11 @@ cluster 5
 			"its rewards."
 }
 
-clusterdef 15
+clusterdef 15	//R30.1 Revised text
 {
 	pic = "BOSBACK2"
 	music = "END"
-	exittext =	"Finally...",													//R30.1 Revised text
+	exittext =	"Finally...",
 			"The mother of all demons is dead!",
 			"For the first time, the demons know what fear is.",
 			"Starting a legend in Hell, you become known as the 'Doom Slayer'",
@@ -548,7 +548,7 @@ clusterdef 15
 			"The End...."
 }
 
-cluster 16
+cluster 16	//Map00 exit intermission.
 {
 	pic = "INTERPIC"
 	music = "D_ALGMAN"
@@ -570,7 +570,7 @@ cluster 16
 			"You ready your weapon and proceed into the base."
 }
 
-cluster 17	//R31 Map28 Exit to Fun maps.
+cluster 17	//Map24 secret exit to Fun maps.
 {
 	pic = "INTERPIC3"
 	music = "PLOTC"
@@ -595,7 +595,7 @@ cluster 18	//R28.2 Arriving at the final battle
 			"",
 			"At last you have finally arrived at the mother demons lair",
 			"",
-			"After battling through hell the mother of demons is now before you",
+			"After battling through hell, the mother of demons is now before you",
 			"",
 			"Go and pay her your respects",
 			"",
