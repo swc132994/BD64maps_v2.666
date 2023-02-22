@@ -42,12 +42,12 @@ frame HGLM { light BD64LampWhite }
 
 object BD64LampFlareSpawn1
 {
-frame NULL { light BD64ShaftLightMinor }
+frame TNT1 { light BD64ShaftLightMinor }
 }
 
 object BD64LampFlareSpawn2OnFloor
 {
-frame NULL { light BD64ShaftLightMinor }
+frame TNT1 { light BD64ShaftLightMinor }
 }
 
 object BD64BasicWhiteDynamicLight

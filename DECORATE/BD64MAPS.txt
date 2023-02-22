@@ -15,8 +15,7 @@ Speed 0
 	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 AAAAAAA 1 A_Chase
+		TNT1 AAAAAAA 1 NoDelay A_Chase
 		Goto Missile
 	Missile:
 		TNT1 A 1
@@ -537,8 +536,8 @@ ACTOR StaticLightWhiteGround 8193
 	States
 	{
 	Spawn:
-		NULL A 100
-		NULL A -1
+		TNT1 A 100
+		TNT1 A -1
 		Stop
 	}
 }
@@ -550,12 +549,12 @@ ACTOR StaticLightWhiteGroundAlternate 8393
 	States
 	{
 	Spawn:
-		NULL A 100
+		TNT1 A 100
 		TNT1 A 0 A_JUmp(160,"Spawn")
 		TNT1 A 4
-		NULL A 4
 		TNT1 A 4
-		NULL A 100
+		TNT1 A 4
+		TNT1 A 100
 		TNT1 A 5
 		Loop
 	}
@@ -568,8 +567,8 @@ ACTOR StaticLightRedGround 8198
 	States
 	{
 	Spawn:
-		NULL A 100
-		NULL A -1
+		TNT1 A 100
+		TNT1 A -1
 		Stop
 	}
 }
@@ -584,8 +583,8 @@ ACTOR StaticLightWhiteCeiling 8194
 	States
 	{
 	Spawn:
-		NULL A 100
-		NULL A -1
+		TNT1 A 100
+		TNT1 A -1
 		Stop
 	}
 }
@@ -710,7 +709,7 @@ radius 4
 		Goto Spawn
 		TNT1 A 140
 		Goto Spawn
-	TNT1 A 160
+		TNT1 A 160
 		Goto Spawn
 	Inactive:
 		TNT1 A -1
@@ -799,8 +798,7 @@ Scale 1.5
 	states
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Playsound("props/redfire")
+		TNT1 A 0 NoDelay A_Playsound("props/redfire")
 		F1RE ABCDEFGH 1 bright
 		F2RE ABCDEFGH 1 bright
 		Loop
@@ -1078,14 +1076,14 @@ Actor D4Map02TerraformingParticles: ExplosiveArea
 	{
 	Death:
 	Spawn:
-		TNT1 A 0 A_CustomMissile("StoneParticle2",0,0,random(0,360),2,random(10,40))
+		TNT1 A 0 NoDelay A_CustomMissile("StoneParticle2",0,0,random(0,360),2,random(10,40))
 		TNT1 A 0 A_CustomMissile("StoneParticle1",0,0,random(0,360),2,random(10,40))
 		TNT1 A 0 A_CustomMissile("StoneParticle3",0,0,random(0,360),2,random(10,40))
 		TNT1 A 0 A_CustomMissile("StoneParticle4",0,0,random(0,360),2,random(10,40))
 		TNT1 AAAA 0 A_CustomMissile("DestroyedBuildingSmoke",0,0,random(0,360),2,random(10,40))
 		TNT1 AAA 0 A_CustomMissile("DestroyedBuildingSmokeSpawner",0,0,random(0,360),2,random(10,40))
 		TNT1 A 0 A_PlaySound("ROCKFAL")
-		TNT1 A 0 A_Explode(99999,200)
+		TNT1 A 0 A_Explode(1000,125)	//was 200R
 		TNT1 A 120
 		Stop
 	}
@@ -1099,9 +1097,7 @@ Height 0
 	states
 	{
 	Spawn:
-		TNT1 A 0
-		NULL AAAAAAA 0 A_SpawnItemEx("GlassOntheFloor",random(45,-45),random(45,-45))
-		TNT1 A 0
+		TNT1 AAAAAAA 0 NoDelay A_SpawnItemEx("GlassOntheFloor",random(45,-45),random(45,-45))
 		Stop
 	}
 }
@@ -1117,12 +1113,10 @@ renderstyle add
 alpha 0.8
 xscale 0.9
 yscale 0.4
-states
+	states
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0
-		TNT1 A 0 A_jump(255,"death1","death2","death3","death4","death5","death6")
+		TNT1 A 0 NoDelay A_jump(255,"death1","death2","death3","death4","death5","death6")
 	Death1:
 		GLP1 A 500
 		TNT1 A 0 A_ChangeFlag("NOINTERACTION",1)
@@ -1221,7 +1215,7 @@ Gravity 0.2
 	States
 	{
 	Spawn:
-		SMO3 AAAA 10 A_SpawnItem("DestroyedBuildingSmoke")
+		SMO3 AAAA 10 NoDelay A_SpawnItem("DestroyedBuildingSmoke")
 		SMO3 AAAAAAAAAAAAAAAA 1 A_FadeOut(0.03)
 		Goto Death
 	Death:
@@ -1452,7 +1446,7 @@ Speed 1
 	States
 	{
 	Spawn:
-		SMK7 HHHHHHH 2 A_FadeIn(0.1)
+		SMK7 HHHHHHH 2 NoDelay A_FadeIn(0.1)
 		SMK7 H 50
 		SMK7 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH 1 A_FadeOut(0.002)
 		Goto Death
@@ -1468,7 +1462,7 @@ Scale 0.7
 	States
 	{
 	Spawn:
-		SMK7 HHHHHH 2 A_FadeIn(0.1)
+		SMK7 HHHHHH 2 NoDelay A_FadeIn(0.1)
 		SMK7 H 50
 		SMK7 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH 2 A_FadeOut(0.001)
 		Goto Death
@@ -1484,7 +1478,7 @@ Scale 0.3
 	States
 	{
 	Spawn:
-		SMK7 HHHHH 2 A_FadeIn(0.1)
+		SMK7 HHHHH 2 NoDelay A_FadeIn(0.1)
 		SMK7 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH 1 A_FadeOut(0.004)
 		Goto Death
 	Death:
@@ -1499,7 +1493,7 @@ Scale 2.0
 	States
 	{
 	Spawn:
-		SMK7 KKKK 2 A_FadeIn(0.1)
+		SMK7 KKKK 2 NoDelay A_FadeIn(0.1)
 		SMK7 K 50
 		SMK7 KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 1 A_FadeOut(0.001)
 		Goto Death
@@ -1552,7 +1546,7 @@ Gravity 0
 	States
 	{
 	Spawn:
-		TNT1 AAAAAA 5 A_CustomMissile("SFXBigExplosionFlames",0,0,random(0,360),2,random(10,40))
+		TNT1 AAAAAA 5 NoDelay A_CustomMissile("SFXBigExplosionFlames",0,0,random(0,360),2,random(10,40))
 		Goto Death
 	Death:
 		TNT1 A 0
@@ -1567,8 +1561,7 @@ Gravity 0
 	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 5 A_CustomMissile("SFXBigExplosionFlames",0,0,random(0,360),2,random(10,40))
+		TNT1 A 5 NoDelay A_CustomMissile("SFXBigExplosionFlames",0,0,random(0,360),2,random(10,40))
 		Goto Death
 	Death:
 		TNT1 A 0
@@ -1652,8 +1645,7 @@ Mass 0
 	States
 	{
 	Spawn:
-		ASHX A 0
-		ASHX A 0 A_Jump(128,"Spawn2")
+		ASHX A 0 NoDelay A_Jump(128,"Spawn2")
 	Spawn1:
 		ASHX ABCDEFGH 2 A_CountDown
 		Loop
@@ -1743,7 +1735,6 @@ Health 9
 		LTRU G -1 BRIGHT
 		Stop
 	Death:
-		TNT1 A 0
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 1
 		Stop
@@ -1827,7 +1818,7 @@ ACTOR AmbientSoundWaterFall1 21006
 	States
 	{
 	Spawn:
-		TNT1 A 1 A_PlaySound("WAFALL1",1,1)
+		TNT1 A 1 NoDelay A_PlaySound("WAFALL1",1,1)
 		TNT1 A 100
 		Loop
 	}
@@ -1842,7 +1833,7 @@ ACTOR AmbientSoundWaterFall2 21007
 	States
 	{
 	Spawn:
-		TNT1 A 1 A_PlaySound("WAFALL2",1,1)
+		TNT1 A 1 NoDelay A_PlaySound("WAFALL2",1,1)
 		TNT1 A 100
 		Loop
 	}
@@ -1889,8 +1880,7 @@ ACTOR AmbientSoundWaterFlowing 21008
 	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_PlaySound("WFLOW",1,1,1)
+		TNT1 A 0 NoDelay A_PlaySound("WFLOW",1,1,1)
 		TNT1 A 120
 		Loop
 	}
@@ -1905,8 +1895,7 @@ ACTOR AmbientSoundHeavyWind 21009
 	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_PlaySound("WIND1",1,1,1)
+		TNT1 A 0 NoDelay A_PlaySound("WIND1",1,1,1)
 		TNT1 A 110
 		Loop
 	}
@@ -1921,8 +1910,7 @@ ACTOR AmbientSoundMilitaryRadioChat 21010
 	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_PlaySound("RDIOCHAT",1,1,1)
+		TNT1 A 0 NoDelay A_PlaySound("RDIOCHAT",1,1,1)
 		TNT1 A 140
 		Loop
 	}
@@ -1937,8 +1925,7 @@ ACTOR AmbientSoundMilitaryRadioChat23 21011
 	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_PlaySound("RDIOCHAT",1,1,1)
+		TNT1 A 0 NoDelay A_PlaySound("RDIOCHAT",1,1,1)
 		TNT1 A 110
 		Loop
 	}
@@ -1953,8 +1940,7 @@ ACTOR AmbientSoundCarAlarm 21012
 	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_PlaySound("CARALARM",1,1,1)
+		TNT1 A 0 NoDelay A_PlaySound("CARALARM",1,1,1)
 		TNT1 A 120
 		Loop
 	}
@@ -2076,11 +2062,10 @@ Health 99999999999
 	States
 	{
 	Spawn:
-		NULL A 1
-		NULL A -1
+		TNT1 A 1
+		TNT1 A -1
 		Stop
 	Death:
-		TNT1 A 0
 		TNT1 A 0 A_PlaySound("FLYBYFAR")
 		TNT1 A 30
 		TNT1 A 0 A_CustomMissile("F35Bombing",5,0,0,2)
@@ -2135,7 +2120,6 @@ DamageType "ExplosiveImpact"
 		Loop
 	XDeath:
 	Death:
-		TNT1 A 0
 //		TNT1 AAAAAAAAAAAAAA 0 A_CustomMissile("SFXSpawnedExplosion1",0,0,random(0,360),2,random(0,30))		R11 UNUSED
 //		TNT1 A 0 A_CustomMissile("SFXExplosionSpawner2",0,0,random(0,360),2,random(80,90))					R11 UNUSED
 		TNT1 A 0 A_Explode(6000,700,0)
@@ -2171,11 +2155,10 @@ Health 99999999999
 	States
 	{
 	Spawn:
-		NULL A 1
-		NULL A -1
+		TNT1 A 1
+		TNT1 A -1
 		Stop
 	Death:
-		TNT1 A 0
 		TNT1 A 5
 		TNT1 A 0 A_CustomMissile("F35Bombing2",5,0,0,2)
 		TNT1 A 10
@@ -2215,11 +2198,10 @@ ACTOR SummonFighterType2Random: SummonFighterType1 2174
 	States
 	{
 	Spawn:
-		NULL A 500
+		TNT1 A 500
 		TNT1 A 0 A_Jump(24,"Missile")
 		Loop
 	Missile:
-		TNT1 A 0
 		TNT1 A 0 A_CustomMissile("DecorativeFighter",5,0,0,2)
 		TNT1 A 50
 		TNT1 A 0 A_PlaySound("FLYBYFAR")
@@ -2268,10 +2250,8 @@ SeeSound "nailfire"
 		TNT1 A 1 A_PlaySound("NAILFLE")
 		Stop
 	Death:
-		PUFF A 0 bright
-		TNT1 A 1 A_PlaySound("NAILHIT")
+		PUFF A 1 bright A_PlaySound("NAILHIT")
 		TNT1 A 0 A_SpawnItem("HitPuff")
-		PUFF A 0 bright
 		PUFF A 4 bright
 		PUFF B 4
 		PUFF CDEF 4
