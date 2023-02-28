@@ -723,7 +723,41 @@ FLAT BLOOD1
 	pic SB0029 tics 1
 	pic SB0030 tics 1
 	pic SB0031 tics 1
-	
+
+FLAT BLOOD2
+	pic SB0000 tics 1
+	pic SB0001 tics 1
+	pic SB0002 tics 1
+	pic SB0003 tics 1
+	pic SB0004 tics 1
+	pic SB0005 tics 1
+	pic SB0006 tics 1
+	pic SB0007 tics 1
+	pic SB0008 tics 1
+	pic SB0009 tics 1
+	pic SB0010 tics 1
+	pic SB0011 tics 1
+	pic SB0012 tics 1
+	pic SB0013 tics 1
+	pic SB0014 tics 1
+	pic SB0015 tics 1
+	pic SB0016 tics 1
+	pic SB0017 tics 1
+	pic SB0018 tics 1
+	pic SB0019 tics 1
+	pic SB0020 tics 1
+	pic SB0021 tics 1
+	pic SB0022 tics 1
+	pic SB0023 tics 1
+	pic SB0024 tics 1
+	pic SB0025 tics 1
+	pic SB0026 tics 1
+	pic SB0027 tics 1
+	pic SB0028 tics 1
+	pic SB0029 tics 1
+	pic SB0030 tics 1
+	pic SB0031 tics 1
+
 FLAT BFALL1
 	pic BF0000 tics 1
 	pic BF0001 tics 1
