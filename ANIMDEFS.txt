@@ -73,7 +73,7 @@ FLAT ZPORTAL1
 	pic ZPORTAL6 rand 4 4
 	pic ZPORTAL7 rand 4 4
 	pic ZPORTAL8 rand 4 4
-	
+
 //TELEPORTER 4
 FLAT SLIME12
 	pic SLIME09 rand 4 4
@@ -243,7 +243,7 @@ FLAT FWATER1
 	pic SW0029 tics 1
 	pic SW0030 tics 1
 	pic SW0031 tics 1
-	
+
 FLAT FWATER2
 	pic SW0000 tics 1
 	pic SW0001 tics 1
@@ -277,7 +277,7 @@ FLAT FWATER2
 	pic SW0029 tics 1
 	pic SW0030 tics 1
 	pic SW0031 tics 1
-	
+
 FLAT FWATER3
 	pic SW0000 tics 1
 	pic SW0001 tics 1
@@ -1289,3 +1289,5 @@ TEXTURE SKY-B052
 //R31 ADDED
 switch SW1FINAL on sound Switch1 pic SW2FINAL tics 0
 switch SW2FINAL off sound Switch2 pic SW1FINAL tics 0
+
+warp TEXTURE GOREFLOO

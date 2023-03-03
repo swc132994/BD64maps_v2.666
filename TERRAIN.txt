@@ -366,8 +366,8 @@ terrain snow
 terrain slimy
 {
 	splash			slimy
-	footclip		0
-	//liquid//
+	footclip		3	//was 0
+	liquid				//liquid added
 }
 
 terrain hard
