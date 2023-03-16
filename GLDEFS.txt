@@ -37,7 +37,12 @@ dontlightself 1
 
 object BD64HangingTechLampb
 {
-frame HGLM { light BD64LampWhite }
+frame HGLM {light BD64LampWhite}
+}
+
+object BD64CeilingLightb
+{
+frame CEIL {light BD64LampWhite}
 }
 
 object BD64LampFlareSpawn1
@@ -48,11 +53,6 @@ frame TNT1 { light BD64ShaftLightMinor }
 object BD64LampFlareSpawn2OnFloor
 {
 frame TNT1 { light BD64ShaftLightMinor }
-}
-
-object BD64BasicWhiteDynamicLight
-{
-frame TNT1 { light BD64LampBasic }
 }
 
 object BD64LightShaft1

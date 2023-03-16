@@ -535,7 +535,6 @@ floor TLITE6_1 tile
 floor TLITE6_4 tile
 floor TLITE6_5 tile
 floor TLITE6_6 tile
-floor TLITE6_6 tile
 //floor BRICK22 rock
 floor STONE2 rock
 floor REDWALL rock
