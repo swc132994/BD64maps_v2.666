@@ -106,7 +106,6 @@ Alpha 0.4
 	States
 	{
 	Spawn:
-		LEYS R 1 BRIGHT
 		LEYS R -1 BRIGHT
 		Stop
 	}
@@ -129,7 +128,6 @@ ACTOR WorldGreenFlare: WorldRedFlare
 	States
 	{
 	Spawn:
-		LEYS G 1 BRIGHT
 		LEYS G -1 BRIGHT
 		Stop
 	}
@@ -153,7 +151,6 @@ ACTOR WorldWhiteFlare: WorldRedFlare
 	States
 	{
 	Spawn:
-		LENZ A 1 BRIGHT
 		LENZ A -1 BRIGHT
 		stop
 	}
@@ -167,7 +164,6 @@ Alpha 0.6
 	States
 	{
 	Spawn:
-		LENZ A 1 BRIGHT
 		LENZ A -1 BRIGHT
 		stop
 	}
@@ -183,7 +179,6 @@ Alpha 1.0
 	States
 	{
 	Spawn:
-		LENZ A 1 BRIGHT
 		LENZ A -1 BRIGHT
 		stop
 	}
@@ -220,7 +215,6 @@ ACTOR WorldYellowFlare: WorldRedFlare
 	States
 	{
 	Spawn:
-		LEYS Y 1 BRIGHT
 		LEYS Y -1 BRIGHT
 		stop
 	}
@@ -243,7 +237,6 @@ ACTOR WorldBlueFlare: WorldRedFlare
 	States
 	{
 	Spawn:
-		LEYS B 1 BRIGHT
 		LEYS B -1 BRIGHT
 		stop
 	}
@@ -278,7 +271,6 @@ ACTOR WorldOrangeFlare: WorldRedFlare
 	States
 	{
 	Spawn:
-		LEYS O 1 BRIGHT
 		LEYS O -1 BRIGHT
 		stop
 	}
@@ -316,7 +308,6 @@ Height 4
 		LITS A 1 BRIGHT
 		TNT1 A 1 A_SpawnItemEx("LightsUnderWater",0,0,32)
 		//TNT1 A 1 A_SpawnItemEx("WorldWhiteFlareVeryLarge",0,0,32)
-		TNT1 A 0
 		Stop
 	}
 }
@@ -335,7 +326,7 @@ Renderstyle Add
 	States
 	{
 	Spawn:
-		TNT1 A 0
+		TNT1 A 1
 		//TNT1 AA 0 A_SpawnItemEx("TopLight1WhiteLargeUnderwater",0,0,-140)
 		//TNT1 A 0 A_SpawnItem("LiteGround")
 		Goto Live
@@ -350,7 +341,7 @@ ACTOR LightsUnderWaterBlue: LightsUnderWater 4830
 	States
 	{
 	Spawn:
-		TNT1 A 0
+		TNT1 A 1
 		Goto Live
 	Live:
 		LBTM ABCDEFGH 1 BRIGHT
@@ -363,7 +354,7 @@ ACTOR LightsUnderWaterOrange: LightsUnderWater 4831
 	States
 	{
 	Spawn:
-		TNT1 A 0
+		TNT1 A 1
 		Goto Live
 	Live:
 		LOTM ABCDEFGH 1 BRIGHT
@@ -376,7 +367,7 @@ ACTOR LightsUnderWaterRed: LightsUnderWater 4832
 	States
 	{
 	Spawn:
-		TNT1 A 0
+		TNT1 A 1
 		Goto Live
 	Live:
 		LRTM ABCDEFGH 1 BRIGHT
@@ -389,7 +380,7 @@ ACTOR LightsUnderWaterGreen: LightsUnderWater 4833
 	States
 	{
 	Spawn:
-		TNT1 A 0
+		TNT1 A 1
 		Goto Live
 	Live:
 		LGTM ABCDEFGH 1 BRIGHT
@@ -456,7 +447,6 @@ Renderstyle Add
 	States
 	{
 	Spawn:
-		LITS B 1 BRIGHT
 		LITS B -1 BRIGHT
 		stop
 	}
@@ -475,7 +465,6 @@ Alpha 0.2
 	States
 	{
 	Spawn:
-		LITS C 1 BRIGHT
 		LITS C -1 BRIGHT
 		stop
 	}
@@ -486,7 +475,6 @@ ACTOR VolumetricLightOrange : VolumetricLight 3438
 	States
 	{
 	Spawn:
-		LITS D 1 BRIGHT
 		LITS D -1 BRIGHT
 		stop
 	}
@@ -499,7 +487,6 @@ YScale 2.2
 	States
 	{
 	Spawn:
-		LITS E 1 BRIGHT
 		LITS E -1 BRIGHT
 		stop
 	}
@@ -732,8 +719,8 @@ renderstyle Add
 		SPRK A 1 bright
 		loop
 	Death:
-		SPRK AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 bright A_FadeOut(0.1)
-		Stop
+		SPRK A 1 bright A_FadeOut(0.1)
+		Wait
 	}
 }
 
@@ -933,7 +920,7 @@ ActiveSound "world/waterdrips"
 	Death:
 		DRIP A 1 //A_PlaySound("DSWDRIP")
 		DRIP BCDEFGH 1
-		TNT1 A 0
+		TNT1 A 1
 		Stop
 	}
 }
@@ -946,13 +933,6 @@ height 1
 radius 1
 Mass 9999999
 damagefactor "Blood",0.0
-damagefactor "BlueBlood",0.0
-damagefactor "GreenBlood",0.0
-damagefactor "Shrapnel",0.0
-damagefactor "KillMe",0.0
-damagefactor "Taunt",0.0
-damagefactor "Avoid",0.0
-damagefactor "Trample",0.0
 -SOLID
 +SHOOTABLE
 +NOBLOOD
@@ -961,16 +941,13 @@ damagefactor "Trample",0.0
 	states
 	{
 	Spawn:
-		TNT1 A 1
 		TNT1 A -1
 		Stop
 	Death:
 		TNT1 A 1
-		THRF A 0 A_SpawnItemEx("Rocket",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
-		//TNT1 A 1
-		THRF A 0 A_SpawnItemEx("Detonator",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
-		TNT1 A 0
-		THRF A 0 A_SpawnItemEx("Detonator",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
+		THRF A 0 A_SpawnItemEx("Rocket")
+		THRF A 0 A_SpawnItemEx("Detonator")
+		THRF A 0 A_SpawnItemEx("Detonator")
 		Stop
 	}
 }
@@ -1053,7 +1030,7 @@ Actor D4Map02TerraformingParticles: ExplosiveArea
 		TNT1 AAAA 0 A_CustomMissile("DestroyedBuildingSmoke",0,0,random(0,360),2,random(10,40))
 		TNT1 AAA 0 A_CustomMissile("DestroyedBuildingSmokeSpawner",0,0,random(0,360),2,random(10,40))
 		TNT1 A 0 A_PlaySound("ROCKFAL")
-		TNT1 A 0 A_Explode(1000,125)	//was 200R
+		TNT1 A 0 A_Explode(1000,125)
 		TNT1 A 120
 		Stop
 	}
@@ -1146,7 +1123,7 @@ RenderStyle Translucent
 	States
 	{
 	Spawn:
-		SMOK A 0
+		TNT1 A 1
 		Goto Death
 	Death:
 		FIR3 ABCDEFGHIJKLMNOP 1 BRIGHT A_SpawnItem("RedFlare")
@@ -1189,7 +1166,7 @@ Gravity 0.2
 		SMO3 AAAAAAAAAAAAAAAA 1 A_FadeOut(0.03)
 		Goto Death
 	Death:
-		TNT1 A 0
+		TNT1 A 1
 		Stop
 	}
 }
@@ -1210,7 +1187,6 @@ BounceFactor 0.4
 		FLRB KLMN 3
 		Loop
 	Death:
-		FLRB K 1
 		FLRB K -1
 		Stop
 	}
@@ -1235,7 +1211,6 @@ BounceFactor 0.4
 		FLRB NMLK 3
 		Loop
 	Death:
-		FLRB N 1
 		FLRB N -1
 		Stop
 	}
@@ -1250,7 +1225,6 @@ Scale 0.8
 		FLRB ABCD 3
 		Loop
 	Death:
-		FLRB E 1
 		FLRB E -1
 		Stop
 	}
@@ -1266,7 +1240,6 @@ Scale 0.6
 		FLRB FGHI 3
 		Loop
 	Death:
-		FLRB J 1
 		FLRB J -1
 		Stop
 	}
@@ -1283,7 +1256,6 @@ BounceFactor 0.2
 		SHRP ABCD 3
 		Loop
 	Death:
-		SHRP B 1
 		SHRP B -1
 		Stop
 	}
@@ -1319,7 +1291,6 @@ BounceFactor 0.2
 		WOOD ABCD 3
 		Loop
 	Death:
-		WOOD B 1
 		WOOD B -1
 		Stop
 	}
@@ -1358,7 +1329,6 @@ Renderstyle Add
 		GLSP ABCDEFGH 3
 		Loop
 	Death:
-		GLSP C 1
 		GLSP C -1
 		Stop
 	}
@@ -1485,7 +1455,7 @@ RenderStyle Normal
 	States
 	{
 	Spawn:
-		TNT1 A 0
+		TNT1 A 1
 		Goto Death
 	Death:
 		FIR3 ABCDEFGHIJKLM 2 BRIGHT
@@ -1501,7 +1471,7 @@ Speed 4
 	States
 	{
 	Spawn:
-		TNT1 A 0
+		TNT1 A 1
 		Goto Death
 	Death:
 		FIR3 ABCDEFGHIJKLMNOP 2 BRIGHT
@@ -1519,7 +1489,7 @@ Gravity 0
 		TNT1 AAAAAA 5 NoDelay A_CustomMissile("SFXBigExplosionFlames",0,0,random(0,360),2,random(10,40))
 		Goto Death
 	Death:
-		TNT1 A 0
+		TNT1 A 1
 		Stop
 	}
 }
@@ -1534,7 +1504,7 @@ Gravity 0
 		TNT1 A 5 NoDelay A_CustomMissile("SFXBigExplosionFlames",0,0,random(0,360),2,random(10,40))
 		Goto Death
 	Death:
-		TNT1 A 0
+		TNT1 A 1
 		Stop
 	}
 }
@@ -1670,19 +1640,6 @@ Actor FloatingAshDark3: FloatingAshDark1
 Scale 0.08
 }
 
-/*ACTOR NuclearChimmey 3262		//R31 REMOVED DUE MISSING CHIM SPRITE
-{
-Radius 4
-Height 1
-Scale 0.3
-	States
-	{
-	Spawn:
-		CHIM A 5
-		Loop
-	}
-}*/
-
 ACTOR ReflectionStaticGreen: TopLight1Red 8291
 {
 XScale 2.0
@@ -1690,11 +1647,10 @@ YScale 3.5
 Health 9
 Alpha 0.4
 +FORCEYBILLBOARD
-+ISMONSTER	//was MONSTER & -COUNTKILL
++ISMONSTER
 	States
 	{
 	Spawn:
-		LTRU G 1 BRIGHT
 		LTRU G -1 BRIGHT
 		Stop
 	Death:
@@ -1710,7 +1666,6 @@ ACTOR ReflectionStaticBlue: ReflectionStaticGreen 8292
 States
 {
 	Spawn:
-		LTRU B 1 BRIGHT
 		LTRU B -1 BRIGHT
 		Stop
 	}
@@ -1721,7 +1676,6 @@ ACTOR ReflectionStaticRed: ReflectionStaticGreen 8293
 	States
 	{
 	Spawn:
-		LTRU R 1 BRIGHT
 		LTRU R -1 BRIGHT
 		Stop
 	}
@@ -1732,7 +1686,6 @@ ACTOR ReflectionStaticYellow: ReflectionStaticGreen 8294
 	States
 	{
 	Spawn:
-		LTRU Y 1 BRIGHT
 		LTRU Y -1 BRIGHT
 		Stop
 	}
@@ -1743,7 +1696,6 @@ ACTOR ReflectionStaticWhite: ReflectionStaticGreen 8295
 	States
 	{
 	Spawn:
-		LTRU W 1 BRIGHT
 		LTRU W -1 BRIGHT
 		Stop
 	}
@@ -1754,7 +1706,6 @@ ACTOR ReflectionStaticOrange: ReflectionStaticGreen 8296
 	States
 	{
 	Spawn:
-		LTRU O 1 BRIGHT
 		LTRU O -1 BRIGHT
 		Stop
 	}
@@ -1766,7 +1717,6 @@ XScale 5.0
 	States
 	{
 	Spawn:
-		LTRU W 1 BRIGHT
 		LTRU W -1 BRIGHT
 		Stop
 	}
@@ -1911,7 +1861,7 @@ Mass 15
 	{
 	Spawn:
 		TNT1 A 12
-		TNT1 A 0 A_SpawnItem("BD64FootStep",0,0)								//R11 WAS "FootStep5"
+		TNT1 A 0 A_SpawnItem("BD64FootStep",0,0)
 		TNT1 A 1
 		Loop
 	}
@@ -1960,7 +1910,6 @@ ProjectilePassHeight -16
 	States
 	{
 	Spawn:
-		TREE F 1
 		TREE F -1
 		Stop
 	}
@@ -1977,7 +1926,6 @@ ProjectilePassHeight -16
 	States
 	{
 	Spawn:
-		TREE G 1
 		TREE G -1
 		Stop
 	}
@@ -1994,7 +1942,6 @@ ProjectilePassHeight -16
 	States
 	{
 	Spawn:
-		TREE H 1
 		TREE H -1
 		Stop
 	}
@@ -2045,7 +1992,7 @@ FastSpeed 30
 		FIGT A 99999
 		Stop
 	Death:
-		TNT1 A 0
+		TNT1 A 1
 		Stop
 	}
 }
@@ -2073,19 +2020,18 @@ PROJECTILE
 //		TNT1 AAAAAAAAAAAAAA 0 A_CustomMissile("SFXSpawnedExplosion1",0,0,random(0,360),2,random(0,30))		R11 UNUSED
 //		TNT1 A 0 A_CustomMissile("SFXExplosionSpawner2",0,0,random(0,360),2,random(80,90))					R11 UNUSED
 		TNT1 A 0 A_Explode(6000,700,0)
-		TNT1 A 0 A_SpawnItemEx("DetectFloorCrater",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
-		TNT1 A 0 A_SpawnItemEx("DetectCeilCrater",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
-		TNT1 A 0 A_SpawnItemEx("ExplosionFlareSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
-		TNT1 A 0 A_SpawnItemEx("64BarrelExplosion",0,0,30,0,0,0,0,SXF_NOCHECKPOSITION,0)		//R11 WAS BarrelExplosion
-//		TNT1 A 0 A_SpawnItemEx("BarrelKaboom",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)				//R11 UNUSED
+		TNT1 A 0 A_SpawnItemEx("DetectFloorCrater")
+		TNT1 A 0 A_SpawnItemEx("DetectCeilCrater")
+		TNT1 A 0 A_SpawnItemEx("ExplosionFlareSpawner")
+		TNT1 A 0 A_SpawnItemEx("64BarrelExplosion")
+//		TNT1 A 0 A_SpawnItemEx("BarrelKaboom")				//R11 UNUSED
 		TNT1 AAAAAAA 0 A_CustomMissile("ExplosionFlames",0,0,random(0,360),2,random(0,360))
 		TNT1 AAA 0 A_CustomMissile("SFXBigExplosionFlamesSpawner",10,0,random(0,360),2,random(10,40))
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_AlertMonsters
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_CustomMissile("ShrapnelParticle2",0,0,random(0,360),2,random(5,90))
 		TNT1 A 0 A_PlaySound("HUGEEXPL",1)
 		EXP1 ABCDEFGHIJKLMN 3 BRIGHT
-		TNT1 A 100
+		TNT1 A 1
 		Stop
 	}
 }
@@ -2096,7 +2042,7 @@ ACTOR SummonFighterType2 2669
 Game Doom
 Height 32
 Radius 12
-Health 9999	//WAS 99999999999
+Health 99999999999
 +SOLID
 +SHOOTABLE
 +NOGRAVITY
@@ -2104,7 +2050,6 @@ Health 9999	//WAS 99999999999
 	States
 	{
 	Spawn:
-		TNT1 A 1
 		TNT1 A -1
 		Stop
 	Death:
@@ -2136,7 +2081,7 @@ FastSpeed 30
 		FIGT A 99999
 		Stop
 	Death:
-		TNT1 A 0
+		TNT1 A 1
 		Stop
 	}
 }
@@ -2169,7 +2114,7 @@ FastSpeed 20
 		FIGT A 40
 		Loop
 	Death:
-		TNT1 A 0
+		TNT1 A 1
 		Stop
 	}
 }
