@@ -37,7 +37,7 @@ map TITLEMAP lookup "Main Menu"	//was called "Title"
 	compat_crossdropoff = 0
 }
 
-map MAP00 Lookup "Landing Site"		//R13 was called Intro
+map MAP00 Lookup "Landing Site"
 {
 	Sky1 = "SKY08"
 	Music = "DINTRO"
@@ -109,10 +109,10 @@ map MAP07 Lookup "Research Lab"
 	Next = "MAP08"
 	InterMusic = "INTERB"
 	exitpic = "INTERPI1"
-	REDIRECT = "TCMapCheck","MAP07TC"	//R31 Jumps to TC NUKAGE FACILITY
+	REDIRECT = "TCMapCheck","MAP07TC"	//Jumps to TC NUKAGE FACILITY
 }
 
-map MAP08A Lookup "Final Outpost"	//vanilla version		//R28.2 ADDED
+map MAP08A Lookup "Final Outpost"	//vanilla version
 {
 	Sky1 = "SKY08"
 	Music = "MAPWD08"
@@ -128,7 +128,7 @@ map MAP08 Lookup "Final Outpost"
 	Next = "MAP09"
 	InterMusic = "INTERB"
 	exitpic = "INTERPI1"
-	REDIRECT = "VMapCheck","MAP08A"	//R31 Jumps to VAMILLA FINAL OUTPOST
+	REDIRECT = "VMapCheck","MAP08A"	//Jumps to VAMILLA FINAL OUTPOST
 }
 
 map MAP09 Lookup "Even Simpler"
@@ -171,7 +171,7 @@ map MAP12 Lookup "Altar of Pain"
 
 map MAP13 Lookup "Dark Citadel"
 {
-	Sky1 = "SKYSTAR3"//R31 added
+	Sky1 = "SKYSTAR3"
 	Music = "MAPWD13"
 	Next = "MAP14"
 	InterMusic = "INTERC"
@@ -208,7 +208,7 @@ map MAP16 Lookup "Blood Keep"
 map MAP17 Lookup "Watch Your Step"
 {
 	Sky1 = "SKY02"
-	fade = "3C 14 0A" //WAS "CD0000"
+	fade = "3C 14 0A"
 	fogdensity = 200
 	NoInfighting
 	Music = "MAPWD17"
@@ -279,18 +279,18 @@ map MAP24 Lookup "No Escape"
 	Music = "MAPWD24"
 	NoInfighting
 	Next = "MAP28"
-	SecretNext = "MAP25"		//R28.2 ADDED
+	SecretNext = "MAP25"
 	InterMusic = "INTERF"
 	exitpic = "INTERPI3"
-	REDIRECT = "TCMapCheck","MAP27TC"	//R31 Jumps to TC Forbidden Deeper
+	REDIRECT = "TCMapCheck","MAP27TC"	//Jumps to TC Forbidden Deeper
 }
 
 map MAP25 Lookup "Cat And Mouse"
 {
-	Cluster = "17"		//R24 ADDED CLUSTER
-	Sky1 = "VOIDSKY1"//R31 added
-	Fade = "00 56 56"//R31 Was "40E0D0"
-	Fogdensity = 200//R31 added
+	Cluster = "17"
+	Sky1 = "VOIDSKY1"
+	Fade = "00 56 56"
+	Fogdensity = 200
 	Music = "MAPWD25"
 	NoInfighting
 	Next = "MAP26"
@@ -300,9 +300,9 @@ map MAP25 Lookup "Cat And Mouse"
 
 map MAP26 Lookup "HardCore"
 {
-	Sky1 = "VOIDSKY1"//R31 added
-	Fade = "00 56 56"//R31 was "00FFFF"
-	Fogdensity = 200//R31 added
+	Sky1 = "VOIDSKY1"
+	Fade = "00 56 56"
+	Fogdensity = 200
 	Music = "MAPWD26"
 	Next = "MAP27"
 	InterMusic = "INTERF"
@@ -323,7 +323,7 @@ map MAP27 Lookup "Playground"
 
 map MAP28A Lookup "The Absolution"
 {
-	Cluster = "18"		//R24 ADDED CLUSTER
+	Cluster = "18"
 	Sky1 = "SKY-0052"
 	Music = "MAPWD28"
 	NoInfighting
@@ -341,7 +341,7 @@ map MAP28 Lookup "The Ultimate Absolution"
 	InterMusic = "INTERG"
 	Next = "ENDINGMA"
 	exitpic = "INTERPI3"
-	REDIRECT = "AbsMapCheck","MAP28A"	//R31 Jump to original BD64 Map28
+	REDIRECT = "AbsMapCheck","MAP28A"	//Jump to original BD64 Map28
 }
 
 map ENDINGMA Lookup "End"
@@ -380,9 +380,9 @@ map MAP30 Lookup "The Lair"
 map MAP31 Lookup "In The Void"
 {
 	Cluster = "4"
-	Fade = "00 56 56"//R31 was FadeTable = "1"
-	fogdensity = 200//R31 added
-	Sky1 = "VOIDSKY1"//R31 was "VOID"
+	Fade = "00 56 56"
+	fogdensity = 200
+	Sky1 = "VOIDSKY1"
 	Music = "MAPWD31"
 	Next = "MAP19"
 	InterMusic = "INTERD"
@@ -400,7 +400,7 @@ map MAP32 "Hectic"
 }
 
 //TC MAPS
-map MAP07TC Lookup "Nukage Facility (TC)"	//R31 TC
+map MAP07TC Lookup "Nukage Facility (TC)"
 {
 	Sky1 = "SKY08"
 	Music = "MAPWD31"
@@ -409,7 +409,7 @@ map MAP07TC Lookup "Nukage Facility (TC)"	//R31 TC
 	exitpic = "INTERPI1"
 }
 
-map MAP27TC Lookup "Forbidden Deeper (TC)"		//R31 TC
+map MAP27TC Lookup "Forbidden Deeper (TC)"
 {
 	Sky1 = "VOIDSKYR"
 	Music = "MAPWD15"
@@ -419,7 +419,7 @@ map MAP27TC Lookup "Forbidden Deeper (TC)"		//R31 TC
 	exitpic = "INTERPI3"
 }
 
-map MAP28TC Lookup "Shadows Watching (TC)"		//R31 TC
+map MAP28TC Lookup "Shadows Watching (TC)"
 {
 	Sky1 = "SKY-B052"
 	Music = "MAPWD12"
@@ -428,7 +428,7 @@ map MAP28TC Lookup "Shadows Watching (TC)"		//R31 TC
 	exitpic = "INTERPI3"
 }
 
-map MAP34TC Lookup "Crisis (TC)"		//R31 TC
+map MAP34TC Lookup "Crisis (TC)"
 {
 	Cluster = "2"
 	Sky1 = "SKY08"
@@ -523,7 +523,7 @@ cluster 5
 			"its rewards."
 }
 
-clusterdef 15	//R30.1 Revised text
+clusterdef 15
 {
 	pic = "BOSBACK2"
 	music = "END"

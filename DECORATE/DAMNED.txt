@@ -41,7 +41,7 @@ Radius 16
 	}
 }
 
-Actor BD64DamnedHanging2: BD64DamnedHanging1 9452
+Actor BD64DamnedHanging2 : BD64DamnedHanging1 9452
 {
 	States
 	{

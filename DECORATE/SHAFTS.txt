@@ -73,22 +73,22 @@ Renderstyle Add
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_JumpIf(CallACS("Light_Fog_Remover")==0,"SpawnNo")	//r31 added
-		TNT1 A 0 A_JumpIf(CallACS("Light_Fog_Remover")==3,"SpawnNo")			//r31 added
+		TNT1 A 0 NoDelay A_JumpIf(CallACS("Light_Fog_Remover")==0,"SpawnNo")
+		TNT1 A 0 A_JumpIf(CallACS("Light_Fog_Remover")==3,"SpawnNo")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
 		SHF1 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		SHF2 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		SHF3 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		SHF4 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
-		SHF5 ABCDEFGHIJKLMNOPQRSTUVW 2		//r31 added uvw
-		Goto Spawn	//R30.9 WAS LOOP
+		SHF5 ABCDEFGHIJKLMNOPQRSTUVW 2
+		Goto Spawn
 	WaitSight:
 		TNT1 A 3
 		Goto Live
-	SpawnNo:			//R30 added
-		TNT1 A 525		//R30 added	//r31 was 0
-		Goto Spawn	//R30 added	//R30.9 WAS Stop
+	SpawnNo:
+		TNT1 A 525
+		Goto Spawn
 	}
 }
 
@@ -109,21 +109,21 @@ Alpha 0.15
 		TNT1 A 0 A_Recoil(3)
 		TNT1 A 2
 		TNT1 A 0 A_Stop
-	SpawnCP:	//R30.9 added
-		TNT1 A 0 A_JumpIf(CallACS("Light_Fog_Remover")==0,"SpawnNo")	//r31 added
-		TNT1 A 0 A_JumpIf(CallACS("Light_Fog_Remover")==3,"SpawnNo")	//r31 added
+	SpawnCP:
+		TNT1 A 0 A_JumpIf(CallACS("Light_Fog_Remover")==0,"SpawnNo")
+		TNT1 A 0 A_JumpIf(CallACS("Light_Fog_Remover")==3,"SpawnNo")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
 		FBB3 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		FBB4 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		FBB5 ABCDEFGHIJKL 2
-		Goto SpawnCP	//R30.9 WAS LOOP
+		Goto SpawnCP
 	WaitSight:
 		TNT1 A 3
 		Goto Live
-	SpawnNo:			//R30 added
-		TNT1 A 525		//R30 added	//r31 was 0
-		Goto SpawnCP	//R30 added	//R30.9 WAS Stop
+	SpawnNo:
+		TNT1 A 525
+		Goto SpawnCP
 	}
 }
 
@@ -134,7 +134,7 @@ Scale 2.5
 	States
 	{
 	Spawn:
-		TNT1 A 0
+		TNT1 A 1
 		Goto Live
 	}
 }
@@ -146,7 +146,7 @@ Scale 2.5
 	States
 	{
 	Spawn:
-		TNT1 A 0
+		TNT1 A 1
 		Goto Live
 	}
 }
@@ -246,7 +246,6 @@ Renderstyle Add
 	Spawn:
 		S9FA A 1
 	Live:
-		S9FA A 1
 		S9FA A -1
 		Stop
 	}
@@ -269,7 +268,6 @@ Renderstyle Add
 	Spawn:
 		S9FA B 1
 	Live:
-		S9FA B 1
 		S9FA B -1
 		Stop
 	}
@@ -283,7 +281,7 @@ Radius 4
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_SpawnItem("BD64LightShaft2")
+		TNT1 A 1 NoDelay A_SpawnItem("BD64LightShaft2")
 		Stop
 	}
 }
@@ -307,7 +305,7 @@ RenderStyle Add
 	Stay:
 		TNT1 A 0 A_CheckSight("WaitSight")
 		//TNT1 A 0 A_Playsound("BDfireplace")
-		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))		//R11 WAS BD64LongFlameParticle2
+		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_Playsound("props/redfire")
 		F1RE A 1 Bright
 		F1RE B 1 Bright A_SpawnItemEx("BD64RedFlare",0,0,32)
@@ -349,7 +347,7 @@ renderstyle Add
 +NOCLIP
 }
 
-Actor BD64RedFlare : BD64Flare_General	//Imported and renamed
+Actor BD64RedFlare : BD64Flare_General
 {
 	States
 	{
@@ -362,7 +360,7 @@ Actor BD64RedFlare : BD64Flare_General	//Imported and renamed
 	}
 }
 
-Actor BD64WhiteFlareCeilingTexture : BD64Flare_General	//Imported and renamed
+Actor BD64WhiteFlareCeilingTexture : BD64Flare_General
 {
 XScale 0.5
 YScale 0.2
@@ -377,13 +375,12 @@ alpha 0.99
 	states
 	{
 	Spawn:
-		LENS A 1
 		LENS A -1
 		Stop
 	}
 }
 
-Actor BD64WhiteFlareFloorTexture : BD64Flare_General	//Imported and renamed
+Actor BD64WhiteFlareFloorTexture : BD64Flare_General
 {
 XScale 0.5
 YScale 0.2
@@ -436,15 +433,15 @@ Actor BD64ShortWhiteFlareSmallInfGrav : BD64ShortWhiteFlareSmall
 	states
 	{
 	Spawn:
-		LENS A 0 NoDelay A_JumpIf(CallACS("Light_Fog_Remover")==0,"SpawnNo")	//r31 added
-		TNT1 A 0 A_JumpIf(CallACS("Light_Fog_Remover")==2,"SpawnNo")			//r31 added
+		LENS A 0 NoDelay A_JumpIf(CallACS("Light_Fog_Remover")==0,"SpawnNo")
+		TNT1 A 0 A_JumpIf(CallACS("Light_Fog_Remover")==2,"SpawnNo")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
-		LENS A 525		//R30.9 WAS -1 TICS	//r31 was 5
-		Goto Spawn		//R30.9 WAS Stop
-	SpawnNo:			//R30.9 added
-		TNT1 A 525		//R30.9 added	//r31 was 0
-		Goto Spawn		//R30.9 added
+		LENS A 525
+		Goto Spawn
+	SpawnNo:
+		TNT1 A 525
+		Goto Spawn
 	WaitSight:
 		TNT1 A 3
 		Goto Live
@@ -462,15 +459,15 @@ alpha 0.8
 	states
 	{
 	Spawn:
-		LENS A 0 NoDelay A_JumpIf(CallACS("Light_Fog_Remover")==0,"SpawnNo")	//r31 added
-		TNT1 A 0 A_JumpIf(CallACS("Light_Fog_Remover")==2,"SpawnNo")			//r31 added
+		LENS A 0 NoDelay A_JumpIf(CallACS("Light_Fog_Remover")==0,"SpawnNo")
+		TNT1 A 0 A_JumpIf(CallACS("Light_Fog_Remover")==2,"SpawnNo")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
-		LENS A 525		//R30.9 WAS -1 TICS	//r31 was 4
-		Goto Spawn		//R30.9 WAS Stop
-	SpawnNo:			//R30.9 added
-		TNT1 A 525		//R30.9 added	//r31 was 0
-		Goto Spawn		//R30.9 added
+		LENS A 525
+		Goto Spawn
+	SpawnNo:
+		TNT1 A 525
+		Goto Spawn
 	WaitSight:
 		TNT1 A 3
 		Goto Live
@@ -488,15 +485,15 @@ alpha 0.4
 	states
 	{
 	Spawn:
-		LENS A 0 NoDelay A_JumpIf(CallACS("Light_Fog_Remover")==0,"SpawnNo")	//r31 added
-		TNT1 A 0 A_JumpIf(CallACS("Light_Fog_Remover")==2,"SpawnNo")			//r31 added
+		LENS A 0 NoDelay A_JumpIf(CallACS("Light_Fog_Remover")==0,"SpawnNo")
+		TNT1 A 0 A_JumpIf(CallACS("Light_Fog_Remover")==2,"SpawnNo")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
-		LENS A 525		//R30.9 WAS -1 TICS	//r31 was 4
-		Goto Spawn		//R30.9 WAS Stop
-	SpawnNo:			//R30.9 added
-		TNT1 A 525		//R30.9 added	//r31 was 0
-		Goto Spawn		//R30.9 added
+		LENS A 525
+		Goto Spawn
+	SpawnNo:
+		TNT1 A 525
+		Goto Spawn
 	WaitSight:
 		TNT1 A 3
 		Goto Live
