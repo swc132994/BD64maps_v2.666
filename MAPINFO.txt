@@ -672,3 +672,31 @@ map 64DM7 Lookup "Showdown"
 	InterMusic = "N64INTER"
 	exitpic = "INTERPI2"
 }
+
+// The Reckoning
+map REC01 Lookup "Tunnels"
+{
+	Sky1 = "SKY08"
+	Music = "MAPWD01"
+	Next = "REC02"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
+
+map REC02 Lookup "The Hazard Pits"
+{
+	Sky1 = "SKY08"
+	Music = "MAPWD02"
+	Next = "REC03"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
+
+map REC03 Lookup "Delta Quadrant"
+{
+	Sky1 = "SKY08"
+	Music = "MAPWD03"
+	Next = "REC04"
+	InterMusic = "N64INTER"
+	exitpic = "INTERPI1"
+}
