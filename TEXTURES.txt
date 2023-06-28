@@ -153,16 +153,6 @@ Texture "SMONLC4", 128, 128
 	Patch "TILEFE85", 64, 64
 }
 
-Texture "SUPPORT2", 64, 128
-{
-	Patch "SUPPORT2", 19, 72
-	Patch "SUPPORT2", 19, 0
-	Patch "SUPPORT2", 0, 0
-	Patch "SUPPORT2", 0, 72
-	Patch "SUPPORT2", 40, 0
-	Patch "SUPPORT2", 40, 72
-}
-
 Texture "SW1BLUE", 128, 192
 {
 	Patch "TILEBFD8", 0, 0
@@ -545,6 +535,12 @@ Texture "TILESCT1", 64, 256
 {
 	Patch "TILE5D09", 0, 0
 	Patch "TILE5D09", 0, 128
+}
+
+Texture "CLEAR", 0, 0
+{
+	NoDecals
+	NullTexture
 }
 
 // End of texture definitions

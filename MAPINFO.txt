@@ -381,7 +381,7 @@ map MAP31 Lookup "In The Void"
 {
 	Cluster = "4"
 	Fade = "00 56 56"
-	fogdensity = 200
+	fogdensity = 400
 	Sky1 = "VOIDSKY1"
 	Music = "MAPWD31"
 	Next = "MAP19"

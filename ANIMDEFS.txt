@@ -1,7 +1,7 @@
-cameraTEXTURE CAMTX1 128 128 fit 64 64
+cameraTEXTURE SKY01 128 128 fit 64 64
 
 //MAIN MENU ANIMATED SKULL
-TEXTURE M_SKULL1		//R27 ADDED
+TEXTURE M_SKULL1
 	pic 1 tics 3
 	pic 2 tics 3
 	pic 3 tics 3
@@ -25,23 +25,10 @@ TEXTURE ELETA0
 	pic ELETC0 tics 2
 	pic ELETD0 tics 2
 
-//warp2 TEXTURE SKYW01	//Vanilla Doom sky
-//warp2 TEXTURE SKYW02	//Vanilla Doom sky
-//warp2 TEXTURE SKYW03	//Vanilla Doom sky
-//warp2 TEXTURE SKYW04	//Vanilla Doom sky
-//warp2 TEXTURE SKYW05	//Vanilla Doom sky
-
-//warp TEXTURE SP_FACE1	//(UNKNOWN - NOT FOUND)
-//warp TEXTURE SKSNAKE1	//(UNKNOWN - NOT FOUND)
-//warp TEXTURE SKSNAKE2	//(UNKNOWN - NOT FOUND)
-
 warp FLAT LAVA1
 warp FLAT LAVA2
 warp FLAT LAVA3
 warp FLAT LAVA4
-
-//warp FLAT SFLR6_1	//(UNKNOWN - NOT FOUND)
-//warp FLAT SFLR6_4	//(UNKNOWN - NOT FOUND)
 
 //TELEPORTER 1
 FLAT XPORTAL1
@@ -49,8 +36,8 @@ FLAT XPORTAL1
 	pic XPORTAL2 rand 4 4
 	pic XPORTAL3 rand 4 4
 	pic XPORTAL4 rand 4 4
-	pic XPORTAL5 rand 4 4
-	pic XPORTAL6 rand 4 4
+	pic XPORTAL3 rand 4 4
+	pic XPORTAL2 rand 4 4
 
 //TELEPORTER 2
 FLAT YPORTAL1
@@ -70,11 +57,11 @@ FLAT ZPORTAL1
 	pic ZPORTAL3 rand 4 4
 	pic ZPORTAL4 rand 4 4
 	pic ZPORTAL5 rand 4 4
-	pic ZPORTAL6 rand 4 4
-	pic ZPORTAL7 rand 4 4
-	pic ZPORTAL8 rand 4 4
+	pic ZPORTAL4 rand 4 4
+	pic ZPORTAL3 rand 4 4
+	pic ZPORTAL2 rand 4 4
 
-//TELEPORTER 4
+//HOT ROCK FLAT
 FLAT SLIME12
 	pic SLIME09 rand 4 4
 	pic SLIME10 rand 4 4
@@ -157,24 +144,6 @@ TEXTURE GSTFONT3
 	pic GSTFONT3 rand 3 3
 */
 
-/*
-//(UNKNOWN - NOT FOUND)
-TEXTURE FIREWALL
-	pic FIREWALL rand 3 3
-	pic FIREWALA rand 3 3
-	pic FIREWALB rand 3 3
-
-TEXTURE FIREWALA
-	pic FIREWALL rand 3 3
-	pic FIREWALA rand 3 3
-	pic FIREWALB rand 3 3
-
-TEXTURE FIREWALB
-	pic FIREWALL rand 3 3
-	pic FIREWALA rand 3 3
-	pic FIREWALB rand 3 3
-*/
-
 //TECH COMPUTER MONITORS
 TEXTURE FIREMAG1
 	pic FIREMAG1 rand 3 3
@@ -190,24 +159,6 @@ TEXTURE FIREMAG3
 	pic FIREMAG1 rand 3 3
 	pic FIREMAG2 rand 3 3
 	pic FIREMAG3 rand 3 3
-
-/*
-//(UNKNOWN - NOT FOUND)
-TEXTURE FIRELAVA
-	pic FIRELAVA rand 3 3
-	pic FIRELAV2 rand 3 3
-	pic FIRELAV3 rand 3 3
-
-TEXTURE FIRELAV2
-	pic FIRELAVA rand 3 3
-	pic FIRELAV2 rand 3 3
-	pic FIRELAV3 rand 3 3
-
-TEXTURE FIRELAV3
-	pic FIRELAVA rand 3 3
-	pic FIRELAV2 rand 3 3
-	pic FIRELAV3 rand 3 3
-*/
 
 //New TEXTURE Liquid Water
 FLAT FWATER1
@@ -1286,7 +1237,6 @@ TEXTURE SKY-B052
 	pic SKY-B200 rand 2 2
 	pic SKY-B201 rand 2 2
 
-//R31 ADDED
 switch SW1FINAL on sound Switch1 pic SW2FINAL tics 0
 switch SW2FINAL off sound Switch2 pic SW1FINAL tics 0
 
