@@ -2121,18 +2121,18 @@ PROJECTILE
 	States
 	{
 	Spawn:
-		DART A 1
-		loop
+		DART A -1
+		Stop
 	Xdeath:
 		TNT1 A 1
 		TNT1 A 1 A_PlaySound("NAILFLE")
 		Stop
 	Death:
-		PUFF A 1 bright A_PlaySound("NAILHIT")
+		DART B 1 bright A_PlaySound("NAILHIT")
 		TNT1 A 0 A_SpawnItem("HitPuff")
-		PUFF A 4 bright
-		PUFF B 4
-		PUFF CDEF 4
+		DART C 4 bright
+		DART D 4
+		DART EFG 4
 		stop
 	}
 }

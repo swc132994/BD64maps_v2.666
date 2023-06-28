@@ -1,4 +1,4 @@
-cameraTEXTURE CAMTX1 128 128 fit 64 64
+cameraTEXTURE SKY01 128 128 fit 64 64
 
 //MAIN MENU ANIMATED SKULL
 TEXTURE M_SKULL1		//R27 ADDED
@@ -49,8 +49,8 @@ FLAT XPORTAL1
 	pic XPORTAL2 rand 4 4
 	pic XPORTAL3 rand 4 4
 	pic XPORTAL4 rand 4 4
-	pic XPORTAL5 rand 4 4
-	pic XPORTAL6 rand 4 4
+	pic XPORTAL3 rand 4 4
+	pic XPORTAL2 rand 4 4
 
 //TELEPORTER 2
 FLAT YPORTAL1
@@ -70,9 +70,9 @@ FLAT ZPORTAL1
 	pic ZPORTAL3 rand 4 4
 	pic ZPORTAL4 rand 4 4
 	pic ZPORTAL5 rand 4 4
-	pic ZPORTAL6 rand 4 4
-	pic ZPORTAL7 rand 4 4
-	pic ZPORTAL8 rand 4 4
+	pic ZPORTAL4 rand 4 4
+	pic ZPORTAL3 rand 4 4
+	pic ZPORTAL2 rand 4 4
 
 //TELEPORTER 4
 FLAT SLIME12
@@ -1286,7 +1286,6 @@ TEXTURE SKY-B052
 	pic SKY-B200 rand 2 2
 	pic SKY-B201 rand 2 2
 
-//R31 ADDED
 switch SW1FINAL on sound Switch1 pic SW2FINAL tics 0
 switch SW2FINAL off sound Switch2 pic SW1FINAL tics 0
 

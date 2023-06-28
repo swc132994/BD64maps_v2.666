@@ -127,7 +127,7 @@ brightmap sprite DBRAIN2	{map "brightmaps/DBRAIN2_BR.png"}
 brightmap sprite DBRAIN3	{map "brightmaps/DBRAIN3_BR.png"}
 brightmap sprite DBRAIN4	{map "brightmaps/DBRAIN4_BR.png"}
 brightmap sprite TILEDCE1	{map "brightmaps/TILEDCE1_BR.png"}
-brightmap sprite CUSTOM37	{map "brightmaps/CUSTOM37_BR.png"}
+brightmap sprite TILE241E	{map "brightmaps/TILE241E_BR.png"}
 brightmap sprite TILE0C7C	{map "brightmaps/TILE0C7C_BR.png"}
 
 brightmap sprite SMONLC2	{map "brightmaps/SMONLC2_BR.png"}
@@ -149,8 +149,6 @@ brightmap sprite TILECF11	{map "brightmaps/TILECF11_BR.png"}
 brightmap sprite XPORTAL2	{map "brightmaps/XPORTAL2_BR.png"}
 brightmap sprite XPORTAL3	{map "brightmaps/XPORTAL3_BR.png"}
 brightmap sprite XPORTAL4	{map "brightmaps/XPORTAL4_BR.png"}
-brightmap sprite XPORTAL5	{map "brightmaps/XPORTAL5_BR.png"}
-brightmap sprite XPORTAL6	{map "brightmaps/XPORTAL6_BR.png"}
 
 brightmap sprite YPORTAL1	{map "brightmaps/YPORTAL1_BR.png"}
 brightmap sprite YPORTAL2	{map "brightmaps/YPORTAL2_BR.png"}
@@ -166,9 +164,6 @@ brightmap sprite ZPORTAL2	{map "brightmaps/ZPORTAL2_BR.png"}
 brightmap sprite ZPORTAL3	{map "brightmaps/ZPORTAL3_BR.png"}
 brightmap sprite ZPORTAL4	{map "brightmaps/ZPORTAL4_BR.png"}
 brightmap sprite ZPORTAL5	{map "brightmaps/ZPORTAL5_BR.png"}
-brightmap sprite ZPORTAL6	{map "brightmaps/ZPORTAL6_BR.png"}
-brightmap sprite ZPORTAL7	{map "brightmaps/ZPORTAL7_BR.png"}
-brightmap sprite ZPORTAL8	{map "brightmaps/ZPORTAL8_BR.png"}
 
 brightmap sprite ZAPORTAL	{map "brightmaps/ZAPORTAL_BR.png"}
 
