@@ -1,5 +1,6 @@
 Actor BD64HangingTechLampb 9923
 {
+//$category "Maps/BD64_Lights
 Game Doom
 Height 56
 Radius 16
@@ -24,6 +25,7 @@ Radius 16
 
 actor BD64CeilingLightb 9924
 {
+//$category "Maps/BD64_Lights
 Game Doom
 Height 16
 Radius 16
@@ -181,6 +183,7 @@ Scale 5.0
 
 actor BD64LampFlareSpawn1 9321
 {
+//$category "Maps/BD64_Lights
 Game Doom
 Height 1
 Radius 4
@@ -203,6 +206,7 @@ Radius 4
 
 actor BD64LampFlareSpawn2OnFloor 9322
 {
+//$category "Maps/BD64_Lights
 Game Doom
 Height 4
 Radius 4
@@ -275,6 +279,7 @@ Renderstyle Add
 
 Actor BD64VolumetricLightningSpawn 6699
 {
+//$category "Maps/BD64_Lights
 Height 4
 Radius 4
 +NOBLOCKMAP
@@ -288,6 +293,7 @@ Radius 4
 
 actor BD64GroundFire 9929
 {
+//$category "Maps/BD64_Lights
 Game Doom
 scale 0.6
 Height 8
@@ -531,6 +537,7 @@ DamageType Flames
 
 actor 64YellowTorch : RedTorch 9917
 {
+//$category "Maps/BD64_Lights
 Scale 0.75
 	States
 	{
@@ -558,6 +565,7 @@ Scale 0.75
 
 ACTOR EndingDoomguy 19431
 {
+//$category "Maps/BD64_Ending
 Height 14
 Radius 14
 +THRUACTORS
@@ -584,6 +592,7 @@ Radius 14
 
 ACTOR EndingMotherdemon 19432
 {
+//$category "Maps/BD64_Ending
 Scale 1.1
 Height 14
 Radius 14
@@ -620,6 +629,7 @@ Radius 14
 
 ACTOR EndinngScaredDemon1 19433
 {
+//$category "Maps/BD64_Ending
 Height 14
 Radius 14
 MONSTER
@@ -640,6 +650,7 @@ MONSTER
 
 ACTOR EndinngScaredDemon2 19434
 {
+//$category "Maps/BD64_Ending
 Height 14
 Radius 14
 MONSTER
@@ -660,6 +671,7 @@ MONSTER
 
 ACTOR EndinngScaredDemon3 19435
 {
+//$category "Maps/BD64_Ending
 Height 14
 Radius 14
 MONSTER
@@ -680,6 +692,7 @@ MONSTER
 
 ACTOR EndinngScaredDemon4 19436
 {
+//$category "Maps/BD64_Ending
 Height 14
 Radius 14
 MONSTER
@@ -689,7 +702,7 @@ MONSTER
 	{
 	Spawn:
 		FATT A 1
-		fATT A 300
+		FATT A 300
 		FATT ABCDABCDABCDABCD 4 A_REcoil(-1)
 		FATT A 180
 		FATT A 1 A_setAngle(0)

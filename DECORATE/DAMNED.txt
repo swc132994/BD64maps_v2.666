@@ -1,5 +1,6 @@
 ACTOR TeleportHelishSound 8741
 {
+//$category "Maps/BD64_Effects
 Height 16
 Radius 16
 +NOINTERACTION
@@ -15,6 +16,7 @@ Radius 16
 
 Actor BD64DamnedHanging1 9451
 {
+//$category "Maps/BD64_Props
 Game Doom
 Scale 0.8
 Height 64
@@ -43,6 +45,7 @@ Radius 16
 
 Actor BD64DamnedHanging2 : BD64DamnedHanging1 9452
 {
+//$category "Maps/BD64_Props
 	States
 	{
 	Spawn:
@@ -62,6 +65,7 @@ Actor BD64DamnedHanging2 : BD64DamnedHanging1 9452
 
 Actor TorturedMarine21 1952
 {
+//$category "Maps/BD64_Props
 Scale 0.8
 Health 1
 Height 72
@@ -111,6 +115,7 @@ Mass 999999
 
 Actor TorturedMarine32 1953
 {
+//$category "Maps/BD64_Props
 Scale 0.8
 Health 1
 Height 72
@@ -154,6 +159,7 @@ Mass 999999
 
 Actor TorturedMarine23 1954
 {
+//$category "Maps/BD64_Props
 Scale 0.8
 Health 1
 Height 72
@@ -203,6 +209,7 @@ Mass 999999
 
 Actor TorturedMarine66 1955
 {
+//$category "Maps/BD64_Props
 Scale 0.8
 Health 1
 Height 72
