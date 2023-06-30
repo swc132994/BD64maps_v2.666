@@ -144,6 +144,7 @@ brightmap sprite BLODRIP3	{map "brightmaps/LOCKS_BR.png"}
 brightmap sprite BLODRIP4	{map "brightmaps/LOCKS_BR.png"}
 
 brightmap sprite TILECF11	{map "brightmaps/TILECF11_BR.png"}
+brightmap sprite TILEBDFC	{map "brightmaps/TILEBDFC_BR.png"}
 
 //TELEPORTERS
 brightmap sprite XPORTAL2	{map "brightmaps/XPORTAL2_BR.png"}
