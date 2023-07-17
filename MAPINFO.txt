@@ -161,7 +161,7 @@ map MAP11 Lookup "Terror Core"
 
 map MAP12 Lookup "Altar of Pain"
 {
-	Sky1 = "SKY02"
+	Sky1 = "SKY04"
 	Music = "MAPWD12"
 	Next = "MAP13"
 	SecretNext = "MAP30"
@@ -189,7 +189,7 @@ map MAP14 Lookup "Eye of the Storm"
 
 map MAP15 Lookup "Dark Entries"
 {
-	Sky1 = "SKY02"
+	Sky1 = "SKY05"
 	Music = "MAPWD15"
 	Next = "MAP16"
 	InterMusic = "INTERD"
@@ -207,7 +207,7 @@ map MAP16 Lookup "Blood Keep"
 
 map MAP17 Lookup "Watch Your Step"
 {
-	Sky1 = "SKY02"
+	Sky1 = "SKY05"
 	fade = "3C 14 0A"
 	fogdensity = 200
 	NoInfighting
@@ -229,7 +229,7 @@ map MAP18 Lookup "Spawned Fear"
 
 map MAP19 Lookup "The Spiral"
 {
-	Sky1 = "SKY02"
+	Sky1 = "SKY05"
 	Music = "MAPWD19"
 	Next = "MAP20"
 	InterMusic = "INTERD"

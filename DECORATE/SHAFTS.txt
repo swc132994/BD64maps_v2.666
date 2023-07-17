@@ -14,10 +14,10 @@ Radius 16
 		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",64,-74)
 		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-64,-74)
 	Live:
-		HGLM A 4 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",3,3,6)
-		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",3,-3,6)
-		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",-3,3,6)
-		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",-3,-3,6)
+		HGLM A 4 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",3,3,6,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",3,-3,6,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",-3,3,6,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",-3,-3,6,0,0,0,0,SXF_ABSOLUTEPOSITION)
 		HGLM A -1
 		Stop
 	}
@@ -48,10 +48,10 @@ Radius 16
 		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",120,0,-96)
 		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-120,0,-96)
 	Live:
-		CEIL A 4 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",3,3,0)
-		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",3,-3,0)
-		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",-3,3,0)
-		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",-3,-3,0)
+		CEIL A 4 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",3,3,0,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",3,-3,0,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",-3,3,0,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",-3,-3,0,0,0,0,0,SXF_ABSOLUTEPOSITION)
 		CEIL A -1
 		Stop
 	}

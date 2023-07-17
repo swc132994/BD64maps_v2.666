@@ -1,8 +1,8 @@
 #library "LEVELCON"
 #include "zcommon.acs"
 
-Script "SetJumpHeight" Enter			//R24.1	added	//r31 was script 999
+Script "SetJumpHeight" Enter
 {
 Delay(5);
-SetActorProperty(0,APROP_JUMPZ,6.0);	//R26 WAS 6.5
+SetActorProperty(0,APROP_JUMPZ,6.0);
 }

@@ -3,7 +3,7 @@
 	script = HUMANBOT
 	chatlump = BOTS1
 	gender = male
-	color = "10 60 10"
+	color = "00CC00"
 	railcolor = "red"
 	skin = "Marine"
 	class = "64DoomPlayer"
@@ -23,7 +23,7 @@
 	script = HUMANBOT
 	chatlump = BOTS1
 	gender = male
-	color = "10 60 10"
+	color = "00CC00"
 	railcolor = "red"
 	skin = "Marine"
 	class = "64DoomPlayer"
@@ -35,7 +35,7 @@
 	reactiontime = 4
 	perception = 4
 	chatfrequency = 1
-	favoriteweapon = "64shotgun"
+	favoriteweapon = "64Chaingun"
 }
 
 {
@@ -43,7 +43,7 @@
 	script = HUMANBOT
 	chatlump = BOTS1
 	gender = male
-	color = "10 60 10"
+	color = "00CC00"
 	railcolor = "red"
 	skin = "Marine"
 	class = "64DoomPlayer"
@@ -55,7 +55,7 @@
 	reactiontime = 4
 	perception = 4
 	chatfrequency = 1
-	favoriteweapon = "64shotgun"
+	favoriteweapon = "64SuperShotgun"
 }
 
 {
@@ -63,7 +63,7 @@
 	script = HUMANBOT
 	chatlump = BOTS1
 	gender = male
-	color = "10 60 10"
+	color = "00CC00"
 	railcolor = "red"
 	skin = "Marine"
 	class = "64DoomPlayer"
@@ -75,5 +75,5 @@
 	reactiontime = 4
 	perception = 4
 	chatfrequency = 1
-	favoriteweapon = "64shotgun"
+	favoriteweapon = "64PlasmaRifle"
 }
