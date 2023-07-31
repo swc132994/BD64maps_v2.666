@@ -83,3 +83,5 @@ doors/dr2_close DSBDCLS
 
 STGNPUMP STGNPUMP //SHOTGUN PUMP SOUND FOR ENDING
 DSSLOP DSSLOP	//Motherdemon Gore sound
+
+DSeqInit	DSeqInit	//Desruct sequence sound

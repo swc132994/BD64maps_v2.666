@@ -27,3 +27,9 @@ door 0
 2 SplitDoorOpenBlazing
 3 SplitDoorCloseBlazing
 ]
+
+:DestructSequence
+	play DseqInit
+	attenuation surround
+	nostopcutoff
+end

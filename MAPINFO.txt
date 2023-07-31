@@ -442,20 +442,24 @@ cluster 1
 {
 	pic = "INTERPIC"
 	music = "PLOTA"
-	entertext =	"you cackle as the",
-			"familiarity of the",
-			"situation occurs to you.",
-			"The gateway to the Demons",
-			"domain was too accessible.",
-			"You realize the demons mock",
-			"you with their invitation.",
-			"It does not matter...",
-			"The demons spawn like rats",
-			"and you have the grade AAA",
-			"U.A.C. poison they crave.",
-			"Your bloodthirsty scream",
-			"shatters the teleport haze.",
-			"Once again you find yourself",
+	entertext =	"The UAC's orders were to eliminate the demonic threat.",
+			"",
+			"You have cleared the base and made it to the portal.",
+			"However, It seems the UAC hasn't learnt anything",
+			"since the first demonic invasion!",
+			"",
+			"You consider deactivating the destuct sequence, ",
+			"but you know that the UAC will never learn.",
+			"",
+			"You are going to make sure that the",
+			"UAC won't be able to screw it up again!",
+			"Let the gate and the UAC experiments be destroyed",
+			"along with the base.",
+			"",
+			"As you step through the portal and the haze clears,",
+			"the familiarity of the situation dawns on you.",
+			"Your cackle and bloodthirsty scream echo as",
+			"once again you find yourself",
 			"amidst..."
 }
 
@@ -469,7 +473,7 @@ cluster 2
 			"You knew the installation",
 			"had a classified level.",
 			"",
-			"The U.A.C. had some good",
+			"The UAC. had some good",
 			"reason to hide this place.",
 			"",
 			"You wonder what it",
@@ -497,17 +501,17 @@ cluster 4
 {
 	pic = "INTERPIC"
 	music = "PLOTB"
-	entertext =	"You wretch as a strange",
-			"acrid odor assaults you.",
+	entertext =	"As you step through",
+			"the acrid odour makes you feel wretched.",
 			"",
-			"Death and Demon carcass!",
+			"Death and demon carcasses everywhere!",
 			"",
 			"No nightmare could have",
-			"prepared you for this.",
+			"prepared you for this reality.",
 			"",
-			"You realize that this",
+			"You realise that this",
 			"place was not meant for",
-			"living humans."
+			"the living."
 }
 
 cluster 5
@@ -528,32 +532,31 @@ clusterdef 15
 	pic = "BOSBACK2"
 	music = "END"
 	exittext =	"Finally...",
-			"The mother of all demons is dead!",
+			"The mother beast has been slain!",
 			"For the first time, the demons know what fear is.",
-			"Starting a legend in Hell, you become known as the 'Doom Slayer'",
+			"while blood and sweat pour from your helmet,",
+			"you witness the pure terror of the demons as they escape.",
 			"",
-			"Then you hear the commander on the radio.",
-			"'Whatever you did, it worked!",
-			"The demons are falling back to the Hell portal!'",
-			"However, you do not respond",
+			"You wanted to have your vacation and therapy,",
+			"but unfortunately, your sense of victory is short lived.",
 			"",
-			"Do you want to go back or is it better ",
-			"to let them think you are dead.",
+			"The base and portal are destoyed. There is no way back!",
 			"",
-			"Knowing that Hell can't ever be destroyed.",
-			"You decide to remain in Hell ",
-			"and continue the endless battle to ensure that ",
-			"Doom shall not return.",
+			"As the madness and bloodlust slowly consume your mind,",
+			"you think it's better to let the UAC think you died.",
 			"",
-			"The End...."
+			"Knowing that Hell cannot be destroyed,",
+			"you decide to remain in Hell.",
+			"You continue your endless slaying to ensure that",
+			"Doom shall not return, while hell fears your name."
 }
 
 cluster 16	//Map00 exit intermission.
 {
 	pic = "INTERPIC"
 	music = "D_ALGMAN"
-	entertext =	"You made it through!",
-			"As the door closes behind you,",
+	entertext =	"You succesfully made it through!",
+			"As the elevator's door closes behind you,",
 			"you hear human and demonic moans and screams,",
 			"mixed with gun fire and explosions.",
 			"",
@@ -584,7 +587,7 @@ cluster 17	//Map24 secret exit to Fun maps.
 			"",
 			"see an old friend wants to have you for dinner.",
 			"",
-			"Let the fun begin!"
+			"Let the entertainment shall begin!"
 }
 
 cluster 18	//R28.2 Arriving at the final battle
