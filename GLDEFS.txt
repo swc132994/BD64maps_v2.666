@@ -85,13 +85,13 @@ interval 0.1
 offset 0 60 0
 }
 
-object 64YellowTorch															//R16 ADDED FROM GAME.PK3
+object 64YellowTorch
 {
 frame TSTI { light BIGYELLOWTORCH }
 }
 
 // Fire
-flickerlight2 GROUNDFIRE														//R16 ADDED FROM GAME.PK3
+flickerlight2 GROUNDFIRE
 {
 color 1.0 0.9 0.0
 size 65
@@ -100,32 +100,32 @@ interval 1.0
 offset 0 35 0
 }
 
-object BD64GroundFire															//R16 ADDED FROM GAME.PK3//R10.2 //R11.1 WAS GroundFire
+object BD64GroundFire
 {
-frame F2RE { light GROUNDFIRE }
-frame F1RE { light GROUNDFIRE }
+frame F2RE {light GROUNDFIRE}
+frame F1RE {light GROUNDFIRE}
 }
 
 //R27 BRIGHTMAPS
 //SWITCHES
-brightmap sprite SW2METAL	{map "brightmaps/SW2METBR.png"}
-brightmap sprite SW2EXIT	{map "brightmaps/SW2EXIBR.png"}
-brightmap sprite SW2BLUE	{map "brightmaps/SW2BLUBR.png"}
-brightmap sprite SW2TEK		{map "brightmaps/SW2TEKBR.png"}
-brightmap sprite SW2DIRT	{map "brightmaps/SW2DIRBR.png"}
-brightmap sprite SW2BRIK	{map "brightmaps/SW2BRIBR.png"}
-brightmap sprite SW2GRAY1	{map "brightmaps/SW2GY1BR.png"}
-brightmap sprite SW2STON1	{map "brightmaps/SW2ST1BR.png"}
-brightmap sprite SW2COMM	{map "brightmaps/SW2COMBR.png"}
-brightmap sprite SW2SKIN	{map "brightmaps/SW2SKNBR.png"}
-brightmap sprite SW2SLAD	{map "brightmaps/SW2SLDBR.png"}
+brightmap sprite SW2TEN		{map "brightmaps/SW2METBR.png"}
+brightmap sprite SW2EIGH	{map "brightmaps/SW2EXIBR.png"}
+brightmap sprite SW2LIFT	{map "brightmaps/SW2BLUBR.png"}
+brightmap sprite SW2TECH	{map "brightmaps/SW2TEKBR.png"}
+brightmap sprite SW2PANL	{map "brightmaps/SW2DIRBR.png"}
+brightmap sprite SW2FOUR	{map "brightmaps/SW2BRIBR.png"}
+brightmap sprite SW2THRE	{map "brightmaps/SW2GY1BR.png"}
+brightmap sprite SW2TWO		{map "brightmaps/SW2ST1BR.png"}
+brightmap sprite SW2EVIL	{map "brightmaps/SW2COMBR.png"}
+brightmap sprite SW2FOUR	{map "brightmaps/SW2SKNBR.png"}
+brightmap sprite SW2EPAN	{map "brightmaps/SW2SLDBR.png"}
 
 //TEXTURES
 brightmap sprite TILE44BE	{map "brightmaps/TILE44BE_BR.png"}
-brightmap sprite DBRAIN1	{map "brightmaps/DBRAIN1_BR.png"}
-brightmap sprite DBRAIN2	{map "brightmaps/DBRAIN2_BR.png"}
-brightmap sprite DBRAIN3	{map "brightmaps/DBRAIN3_BR.png"}
-brightmap sprite DBRAIN4	{map "brightmaps/DBRAIN4_BR.png"}
+brightmap sprite GARGOY1	{map "brightmaps/DBRAIN1_BR.png"}
+brightmap sprite GARGOY2	{map "brightmaps/DBRAIN2_BR.png"}
+brightmap sprite GARGOY3	{map "brightmaps/DBRAIN3_BR.png"}
+brightmap sprite GARGOY4	{map "brightmaps/DBRAIN4_BR.png"}
 brightmap sprite TILEDCE1	{map "brightmaps/TILEDCE1_BR.png"}
 brightmap sprite TILE241E	{map "brightmaps/TILE241E_BR.png"}
 brightmap sprite TILE0C7C	{map "brightmaps/TILE0C7C_BR.png"}
@@ -134,14 +134,14 @@ brightmap sprite SMONLC2	{map "brightmaps/SMONLC2_BR.png"}
 brightmap sprite SMONLC3	{map "brightmaps/SMONLC3_BR.png"}
 brightmap sprite SMONLC4	{map "brightmaps/SMONLC2_BR.png"}
 
-brightmap sprite FIREMAG1	{map "brightmaps/FIREMAG1_BR.png"}
-brightmap sprite FIREMAG2	{map "brightmaps/FIREMAG2_BR.png"}
-brightmap sprite FIREMAG3	{map "brightmaps/FIREMAG3_BR.png"}
+brightmap sprite GMONITR1	{map "brightmaps/FIREMAG1_BR.png"}
+brightmap sprite GMONITR2	{map "brightmaps/FIREMAG2_BR.png"}
+brightmap sprite GMONITR3	{map "brightmaps/FIREMAG3_BR.png"}
 
-brightmap sprite BLODRIP1	{map "brightmaps/LOCKS_BR.png"}
-brightmap sprite BLODRIP2	{map "brightmaps/LOCKS_BR.png"}
-brightmap sprite BLODRIP3	{map "brightmaps/LOCKS_BR.png"}
-brightmap sprite BLODRIP4	{map "brightmaps/LOCKS_BR.png"}
+brightmap sprite KEYPANL1	{map "brightmaps/LOCKS_BR.png"}
+brightmap sprite KEYPANL2	{map "brightmaps/LOCKS_BR.png"}
+brightmap sprite KEYPANL3	{map "brightmaps/LOCKS_BR.png"}
+brightmap sprite KEYPANL4	{map "brightmaps/LOCKS_BR.png"}
 
 brightmap sprite TILECF11	{map "brightmaps/TILECF11_BR.png"}
 brightmap sprite TILEBDFC	{map "brightmaps/TILEBDFC_BR.png"}

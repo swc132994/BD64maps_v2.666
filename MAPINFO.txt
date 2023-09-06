@@ -1,12 +1,12 @@
 //EPISODES
 Episode D6400
 {
-name = "Campaign"
+name = "Doom 64"
 }
 
 Episode D6401
 {
-Name = "Campaign (Skip Intro)"
+Name = "Doom 64 (Skip Intro)"
 }
 
 Episode 64DM1
