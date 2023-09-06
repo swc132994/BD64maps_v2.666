@@ -11,7 +11,34 @@ TEXTURE M_SKULL1
 	pic 7 tics 3
 	pic 8 tics 3
 
-//SECURITY MONITOR
+//TECH PANEL
+TEXTURE SMONLC1			//WAS BFALL
+	pic SMONLC1 rand 4 4
+	pic SMONLC2 rand 4 4
+	pic SMONLC3 rand 4 4
+	pic SMONLC4 rand 4 4
+
+//TECH KEY COLOUR COLUMN
+TEXTURE KEYPANL1		//WAS BLODRIP
+	pic KEYPANL1 rand 3 3
+	pic KEYPANL2 rand 3 3
+	pic KEYPANL3 rand 3 3
+	pic KEYPANL4 rand 3 3
+
+//TECH COMPUTER MONITORS
+TEXTURE GMONITR1		//WAS FIREMAG
+	pic GMONITR1 rand 3 3
+	pic GMONITR2 rand 3 3
+	pic GMONITR3 rand 3 3
+
+//GOYGOYLE FACE			//WAS DBRAIN
+TEXTURE GARGOY1
+	pic GARGOY1 tics 8
+	pic GARGOY2 tics 8
+	pic GARGOY3 tics 8
+	pic GARGOY4 tics 8
+
+//SECURITY CAMERA MONITOR
 TEXTURE PC102A
 	pic PC102A tics 2
 	pic PC102B tics 2
@@ -25,10 +52,14 @@ TEXTURE ELETA0
 	pic ELETC0 tics 2
 	pic ELETD0 tics 2
 
+//LAVA
 warp FLAT LAVA1
 warp FLAT LAVA2
 warp FLAT LAVA3
 warp FLAT LAVA4
+
+//GORE FLOOR
+warp TEXTURE GOREFLOO
 
 //TELEPORTER 1
 FLAT XPORTAL1
@@ -93,54 +124,6 @@ FLAT SLIME09
 	pic SLIME12 rand 4 4
 	pic SLIME11 rand 4 4
 	pic SLIME10 rand 4 4
-
-//TECH PANEL
-TEXTURE SMONLC1
-	pic SMONLC1 rand 4 4
-	pic SMONLC2 rand 4 4
-	pic SMONLC3 rand 4 4
-	pic SMONLC4 rand 4 4
-
-//TECH KEY COLOUR COLUMN
-TEXTURE BLODRIP1
-	pic BLODRIP1 rand 3 3
-	pic BLODRIP2 rand 3 3
-	pic BLODRIP3 rand 3 3
-	pic BLODRIP4 rand 3 3
-
-TEXTURE BLODRIP2
-	pic BLODRIP1 rand 3 3
-	pic BLODRIP2 rand 3 3
-	pic BLODRIP3 rand 3 3
-	pic BLODRIP4 rand 3 3
-
-TEXTURE BLODRIP3
-	pic BLODRIP1 rand 3 3
-	pic BLODRIP2 rand 3 3
-	pic BLODRIP3 rand 3 3
-	pic BLODRIP4 rand 3 3
-
-TEXTURE BLODRIP4
-	pic BLODRIP1 rand 3 3
-	pic BLODRIP2 rand 3 3
-	pic BLODRIP3 rand 3 3
-	pic BLODRIP4 rand 3 3
-
-//TECH COMPUTER MONITORS
-TEXTURE FIREMAG1
-	pic FIREMAG1 rand 3 3
-	pic FIREMAG2 rand 3 3
-	pic FIREMAG3 rand 3 3
-
-TEXTURE FIREMAG2
-	pic FIREMAG1 rand 3 3
-	pic FIREMAG2 rand 3 3
-	pic FIREMAG3 rand 3 3
-
-TEXTURE FIREMAG3
-	pic FIREMAG1 rand 3 3
-	pic FIREMAG2 rand 3 3
-	pic FIREMAG3 rand 3 3
 
 //New TEXTURE Liquid Water
 FLAT FWATER1
@@ -1219,10 +1202,42 @@ TEXTURE SKY-B052
 	pic SKY-B200 rand 2 2
 	pic SKY-B201 rand 2 2
 
+//SWITCHES
 switch SW1FINAL on sound Switch1 pic SW2FINAL tics 0
 switch SW2FINAL off sound Switch2 pic SW1FINAL tics 0
 
-warp TEXTURE GOREFLOO
+switch SW1LIFT on sound Switch1 pic SW2LIFT tics 0	//WAS SW1BLUE
+switch SW2LIFT off sound Switch2 pic SW1LIFT tics 0
+
+switch SW1ELEV on sound Switch1 pic SW2ELEV tics 0	//WAS SW1BRIK
+switch SW2ELEV off sound Switch2 pic SW1ELEV tics 0
+
+switch SW1EVIL on sound Switch1 pic SW2EVIL tics 0	//WAS SW1COMM
+switch SW2EVIL off sound Switch2 pic SW1EVIL tics 0
+
+switch SW1PANL on sound Switch1 pic SW2PANL tics 0	//WAS SW1DIRT
+switch SW2PANL off sound Switch2 pic SW1PANL tics 0
+
+switch SW1EIGH on sound Switch1 pic SW2EIGH tics 0	//WAS SW1EXIT
+switch SW2EIGH off sound Switch2 pic SW1EIGH tics 0
+
+switch SW1THRE on sound Switch1 pic SW2THRE tics 0	//WAS SW1GRAY1
+switch SW2THRE off sound Switch2 pic SW1THRE tics 0
+
+switch SW1TEN on sound Switch1 pic SW2TEN tics 0	//WAS SW1METAL
+switch SW2TEN off sound Switch2 pic SW1TEN tics 0
+
+switch SW1FOUR on sound Switch1 pic SW2FOUR tics 0	//WAS SW1SKIN
+switch SW2FOUR off sound Switch2 pic SW1FOUR tics 0
+
+switch SW1EPAN on sound Switch1 pic SW2EPAN tics 0	//WAS SW1SLAD
+switch SW2EPAN off sound Switch2 pic SW1EPAN tics 0
+
+switch SW1TWO on sound Switch1 pic SW2TWO tics 0	//WAS SW1STON1
+switch SW2TWO off sound Switch2 pic SW1TWO tics 0
+
+switch SW1TECH on sound Switch1 pic SW2TECH tics 0	//WAS SW1TEK
+switch SW2TECH off sound Switch2 pic SW1TECH tics 0
 
 //Outcast switches
 switch OUTSW01A ON sound switches/normbutn pic OUTSW01B tics 0
@@ -1230,3 +1245,23 @@ switch OUTSW01B OFF sound switches/normbutn pic OUTSW01A tics 0
 
 switch OUTSW02A ON sound switches/normbutn pic OUTSW02B tics 0
 switch OUTSW02B OFF sound switches/normbutn pic OUTSW02A tics 0
+
+/*	NOTES:
+BFALL1		SMONLC1
+DBRAIN1		GARGOY1
+FIREMAG1	GMONITR1
+BLODRIP1	KEYPANL1
+GSTFONT1	LPANEL1
+
+SW1BLUE		SW1LIFT
+SW1BRIK		SW1ELEV
+SW1COMM		SW1EVIL
+SW1DIRT		SW1PANL
+SW1EXIT		SW1EIGH
+SW1GRAY1	SW1THRE
+SW1METAL	SW1TEN
+SW1SKIN		SW1FOUR
+SW1SLAD		SW1EPAN
+SW1STON1	SW1TWO
+SW1TEK		SW1TECH
+*/
