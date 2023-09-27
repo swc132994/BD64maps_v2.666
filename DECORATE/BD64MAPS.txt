@@ -8,7 +8,6 @@ MONSTER
 +FLOAT
 +LOOKALLAROUND
 +THRUACTORS
-+FASTER
 +MISSILEMORE
 +MISSILEEVENMORE
 	States
@@ -41,7 +40,6 @@ MONSTER
 +FLOAT
 +LOOKALLAROUND
 +THRUACTORS
-+FASTER
 +MISSILEMORE
 +MISSILEEVENMORE
 	States
@@ -586,17 +584,17 @@ radius 4
 	Spawn:
 		TNT1 A 0 NoDelay A_PlaySound("Sparks/Spawn")
 		TNT1 A 0 A_Jump(256,1,2,3,4,5,6)
-		TNT1 A 1 A_SpawnItem("SparkFlare_W1")
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 		goto SpawnSparks
-		TNT1 A 1 A_SpawnItem("SparkFlare_W1")
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 		goto SpawnSparks
-		TNT1 A 1 A_SpawnItem("SparkFlare_W1")
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 		goto SpawnSparks
-		TNT1 A 1 A_SpawnItem("SparkFlare_W1")
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 		goto SpawnSparks
-		TNT1 A 1 A_SpawnItem("SparkFlare_W1")
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 		goto SpawnSparks
-		TNT1 A 1 A_SpawnItem("SparkFlare_W1")
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 	SpawnSparks:
 		TNT1 AA 0 A_CustomMissile("Spark_W1",0.0,0,random(0,360),2,random(270,315))
 		TNT1 AA 0 A_CustomMissile("Spark_W2",0.0,0,random(0,360),2,random(270,315))
@@ -648,17 +646,17 @@ radius 4
 	Spawn:
 		TNT1 A 0 NoDelay A_PlaySound("Sparks/Spawn")
 		TNT1 A 0 A_Jump(256,1,2,3,4,5,6)
-		TNT1 A 1 A_SpawnItem("SparkFlare_W1")
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 		goto SpawnSparks
-		TNT1 A 1 A_SpawnItem("SparkFlare_W1")
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 		goto SpawnSparks
-		TNT1 A 1 A_SpawnItem("SparkFlare_W1")
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 		goto SpawnSparks
-		TNT1 A 1 A_SpawnItem("SparkFlare_W1")
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 		goto SpawnSparks
-		TNT1 A 1 A_SpawnItem("SparkFlare_W1")
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 		goto SpawnSparks
-		TNT1 A 1 A_SpawnItem("SparkFlare_W1")
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 	SpawnSparks:
 		TNT1 AA 0 A_CustomMissile("Spark_W1",0.0,0,random(0,360),2,random(67,113))
 		TNT1 AA 0 A_CustomMissile("Spark_W2",0.0,0,random(0,360),2,random(67,113))
@@ -722,13 +720,13 @@ height 1
 radius 2
 speed 0.25
 mass 0
+Gravity 0.125
+BounceType "Doom"
 bouncefactor 0.2
 renderstyle Add
 +MISSILE
 +CLIENTSIDEONLY
 +NOBLOCKMAP
-+LOWGRAVITY
-+DOOMBOUNCE
 	states
 	{
 	Spawn:
@@ -821,11 +819,11 @@ Radius 6
 		Goto Spawn2
 	Spawn2:
 		TNT1 A 0 A_CheckSight("SpawnLess")
-		TNT1 A 0 A_PlaySoundEx("AMBRAIN","SoundSlot7",1)
+		TNT1 A 0 A_PlaySound("AMBRAIN",CHAN_7,1,1)
 		TNT1 A 2 A_SpawnItemEx("RainDrop",Random(-256,256),0,-2,0,0,0,Random(0,360),128,1)	//WAS 1 TIC
 		Loop
 	SpawnLess:
-		TNT1 A 0 A_StopSoundEx("SoundSlot7")
+		TNT1 A 0 A_StopSound(CHAN_7)
 		TNT1 A 8 A_SpawnItemEx("RainDrop",Random(-256,256),0,-2,0,0,0,Random(0,360),128,1)
 		Goto Spawn2
 	}
@@ -915,7 +913,7 @@ Height 1
 	Spawn:
 		CDRP A 20
 		CDRP BC 4
-		TNT1 A 0 A_SpawnItem("BrutalWaterDropOnFloor")
+		TNT1 A 0 A_SpawnItemEx("BrutalWaterDropOnFloor")
 		TNT1 D 4
 		Loop
 	}
@@ -1147,15 +1145,15 @@ Radius 1
 Speed 3
 Alpha 1.0
 RenderStyle Translucent
+BounceType "Doom"
 +NOGRAVITY
-+DOOMBOUNCE
 	States
 	{
 	Spawn:
 		TNT1 A 1
 		Goto Death
 	Death:
-		FIR3 ABCDEFGHIJKLMNOP 1 BRIGHT A_SpawnItem("RedFlare")
+		FIR3 ABCDEFGHIJKLMNOP 1 BRIGHT A_SpawnItemEx("RedFlare")
 		Stop
 	}
 }
@@ -1167,11 +1165,11 @@ Height 1
 Radius 1
 Speed 2
 Gravity 0.1
+BounceType "Doom"
 BounceFactor 0.1
 Alpha 0.4
 RenderStyle Translucent
 -NOGRAVITY
-+DOOMBOUNCE
 	States
 	{
 	Spawn:
@@ -1191,7 +1189,7 @@ Gravity 0.2
 	States
 	{
 	Spawn:
-		SMO3 AAAA 10 NoDelay A_SpawnItem("DestroyedBuildingSmoke")
+		SMO3 AAAA 10 NoDelay A_SpawnItemEx("DestroyedBuildingSmoke")
 		SMO3 AAAAAAAAAAAAAAAA 1 A_FadeOut(0.03)
 		Goto Death
 	Death:
@@ -1208,8 +1206,8 @@ Radius 2
 Damage 0
 Speed 16
 Gravity 0.8
+BounceType "Doom"
 BounceFactor 0.4
-+DOOMBOUNCE
 	States
 	{
 	Spawn:
@@ -1229,9 +1227,9 @@ Radius 2
 Damage 0
 Speed 14
 Gravity 0.7
+BounceType "Doom"
 BounceFactor 0.4
 -NOGRAVITY
-+DOOMBOUNCE
 +BOUNCEONACTORS
 +THRUACTORS
 	States
@@ -1262,7 +1260,7 @@ Scale 0.8
 ACTOR StoneParticle4 : StoneParticle1
 {
 Scale 0.6
--DOOMBOUNCE
+BounceType "None"
 	States
 	{
 	Spawn:
@@ -1406,11 +1404,11 @@ Scale 3.0
 Height 1
 Radius 1
 Speed 1
+BounceType "Doom"
 BounceFactor 0.1
 Alpha 0.1
 RenderStyle Translucent
 +NOGRAVITY
-+DOOMBOUNCE
 +SKYEXPLODE
 	States
 	{
@@ -1908,7 +1906,7 @@ Mass 15
 	{
 	Spawn:
 		TNT1 A 12
-		TNT1 A 0 A_SpawnItem("BD64FootStep",0,0)
+		TNT1 A 0 A_SpawnItemEx("BD64FootStep")
 		TNT1 A 1
 		Loop
 	}
@@ -2193,7 +2191,7 @@ PROJECTILE
 		Stop
 	Death:
 		DART B 1 bright A_PlaySound("NAILHIT")
-		TNT1 A 0 A_SpawnItem("HitPuff")
+		TNT1 A 0 A_SpawnItemEx("HitPuff")
 		DART C 4 bright
 		DART D 4
 		DART EFG 4
