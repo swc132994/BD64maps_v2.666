@@ -18,6 +18,7 @@ Name = "Deathmatch (Zandronum)"
 GameInfo
 {
 	QuitMessages = "Quit Brutal Doom 64?"
+	maparrow = "ARROW","DDTARROW"
 }
 
 //MAP SETTINGS

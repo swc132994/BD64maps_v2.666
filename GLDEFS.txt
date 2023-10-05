@@ -144,6 +144,9 @@ brightmap sprite KEYPANL3	{map "brightmaps/LOCKS_BR.png"}
 brightmap sprite KEYPANL4	{map "brightmaps/LOCKS_BR.png"}
 
 brightmap sprite TILECF11	{map "brightmaps/TILECF11_BR.png"}
+brightmap sprite TILECF12	{map "brightmaps/TILECF11_BR.png"}
+brightmap sprite TILECF13	{map "brightmaps/TILECF11_BR.png"}
+brightmap sprite TILECF14	{map "brightmaps/TILECF11_BR.png"}
 brightmap sprite TILEBDFC	{map "brightmaps/TILEBDFC_BR.png"}
 
 //TELEPORTERS
