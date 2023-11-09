@@ -76,20 +76,6 @@ object ThunderEffects
 frame THUN { light ThunderPointer }
 }
 
-flickerlight2 BIGYELLOWTORCH //R31 ADDED FROM GAME.PK3
-{
-color 1.0 0.9 0.0
-size 64
-secondarySize 72
-interval 0.1
-offset 0 60 0
-}
-
-object 64YellowTorch
-{
-frame TSTI { light BIGYELLOWTORCH }
-}
-
 // Fire
 flickerlight2 GROUNDFIRE
 {
@@ -100,13 +86,7 @@ interval 1.0
 offset 0 35 0
 }
 
-object BD64GroundFire
-{
-frame F2RE {light GROUNDFIRE}
-frame F1RE {light GROUNDFIRE}
-}
-
-//R27 BRIGHTMAPS
+//BRIGHTMAPS
 //SWITCHES
 brightmap sprite SW2TEN		{map "brightmaps/SW2METBR.png"}
 brightmap sprite SW2EIGH	{map "brightmaps/SW2EXIBR.png"}

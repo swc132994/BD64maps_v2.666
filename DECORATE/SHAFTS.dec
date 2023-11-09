@@ -313,22 +313,22 @@ RenderStyle Add
 		//TNT1 A 0 A_Playsound("BDfireplace")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_Playsound("props/redfire")
-		F1RE A 1 Bright
-		F1RE B 1 Bright A_SpawnItemEx("BD64RedFlare",0,0,32)
-		F1RE C 1 Bright
-		F1RE D 1 Bright A_SpawnItemEx("BD64RedFlare",0,0,32)
-		F1RE E 1 Bright
-		F1RE F 1 Bright A_SpawnItemEx("BD64RedFlare",0,0,32)
-		F1RE G 1 Bright
-		F1RE H 1 Bright A_SpawnItemEx("BD64RedFlare",0,0,32)
-		F2RE A 1 Bright
-		F2RE B 1 Bright A_SpawnItemEx("BD64RedFlare",0,0,32)
-		F2RE C 1 Bright
-		F2RE D 1 Bright A_SpawnItemEx("BD64RedFlare",0,0,32)
-		F2RE E 1 Bright
-		F2RE F 1 Bright A_SpawnItemEx("BD64RedFlare",0,0,32)
-		F2RE G 1 Bright
-		F2RE H 1 Bright A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F1RE A 1 Bright Light("GROUNDFIRE")
+		F1RE B 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F1RE C 1 Bright Light("GROUNDFIRE")
+		F1RE D 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F1RE E 1 Bright Light("GROUNDFIRE")
+		F1RE F 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F1RE G 1 Bright Light("GROUNDFIRE")
+		F1RE H 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F2RE A 1 Bright Light("GROUNDFIRE")
+		F2RE B 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F2RE C 1 Bright Light("GROUNDFIRE")
+		F2RE D 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F2RE E 1 Bright Light("GROUNDFIRE")
+		F2RE F 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F2RE G 1 Bright Light("GROUNDFIRE")
+		F2RE H 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
 		Loop
 	WaitSight:
 		F1RE ABCDEFGH 1
@@ -503,63 +503,6 @@ alpha 0.4
 	WaitSight:
 		TNT1 A 3
 		Goto Live
-	}
-}
-
-ACTOR BD64YellowFlameTrailsSmall
-{
-Translation "0:255=%[0,0,0]:[1,1,0]"
-Game Doom
-Scale 0.8
-Height 1
-Radius 1
-Speed 4
-Damage 0
-Gravity 0
-Alpha 1.0
-RenderStyle Add
-DamageType Flames
-+MISSILE
-+NOBLOCKMAP
-+NOTELEPORT
-+DONTSPLASH
-+FORCEYBILLBOARD
-+CLIENTSIDEONLY
-+NOINTERACTION
-+NOCLIP
-	States
-	{
-	Spawn:
-		FIR1 AABBCCDEFGHII 1 BRIGHT
-		Stop
-	}
-}
-
-actor 64YellowTorch : RedTorch 9917
-{
-//$category "Maps/BD64_Lights
-Scale 0.75
-	States
-	{
-	Spawn:
-		TSTI A 0 Bright
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2BrighterLess",36,36,0)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2BrighterLess",-36,36,0)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2BrighterLess",36,-36,0)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2BrighterLess",-36,-36,0)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2Fast",0,0,64)
-		TSTI A 1
-	Stay:
-		TNT1 A 0 A_CheckSight("StayBlank")
-		//TNT1 A 0 A_Playsound("BDfireplace")
-		TNT1 A 0 A_CustomMissile("BD64YellowFlameTrailsSmall",60,0,random(0,360),2,random(70,110))
-		TNT1 A 0 A_CustomMissile("BallGettingReadyYellow",60,0,random(0,140),2,random(0,160))
-		TSTI AA 2 A_SpawnItemEx("LensFlareTorchYellow",0,0,60)
-		Loop
-	StayBlank:
-		//TNT1 A 0 A_Playsound("BDfireplace")
-		TSTI A 3
-		Goto Stay
 	}
 }
 
