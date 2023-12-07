@@ -11,6 +11,13 @@ TEXTURE M_SKULL1
 	pic 7 tics 3
 	pic 8 tics 3
 
+//TECH PANEL SMALL LIGHTS
+TEXTURE TILEBDFC
+	pic TILEBDFC rand 4 4
+	pic TILEBDFD rand 4 4
+	pic TILEBDFE rand 4 4
+	pic TILEBDFF rand 4 4
+
 //BAR GRAPH MONITOR
 texture TILECF11
 	pic TILECF11 rand 3 3

@@ -128,6 +128,9 @@ brightmap sprite TILECF12	{map "brightmaps/TILECF11_BR.png"}
 brightmap sprite TILECF13	{map "brightmaps/TILECF11_BR.png"}
 brightmap sprite TILECF14	{map "brightmaps/TILECF11_BR.png"}
 brightmap sprite TILEBDFC	{map "brightmaps/TILEBDFC_BR.png"}
+brightmap sprite TILEBDFD	{map "brightmaps/TILEBDFD_BR.png"}
+brightmap sprite TILEBDFE	{map "brightmaps/TILEBDFE_BR.png"}
+brightmap sprite TILEBDFF	{map "brightmaps/TILEBDFF_BR.png"}
 
 //TELEPORTERS
 brightmap sprite XPORTAL2	{map "brightmaps/XPORTAL2_BR.png"}
