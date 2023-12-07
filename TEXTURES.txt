@@ -101,26 +101,6 @@ Texture "LPANEL1", 64, 128	//WAS GSTFONT
 	Patch "TILEBDFC", 0, 64
 }
 
-Texture "F_SKY1", 256, 128
-{
-	Patch "SKY1", 0, 0
-}
-
-Texture "SKY1", 256, 128
-{
-	Patch "RSKY1", 0, 0
-}
-
-Texture "SKY2", 256, 128
-{
-	Patch "RSKY2", 0, 0
-}
-
-Texture "SKY3", 256, 125
-{
-	Patch "RSKY3", 0, 0
-}
-
 Texture "SMONLC1", 128, 128
 {
 	Patch "TILE8C88", 0, 0
@@ -541,6 +521,11 @@ Texture "CLEAR", 1, 1
 {
 	NoDecals
 	NullTexture
+}
+
+Texture "F_SKY1", 64, 64
+{
+	Patch "SKY1", 0, 0
 }
 
 // End of texture definitions
