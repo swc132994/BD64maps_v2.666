@@ -414,7 +414,7 @@ Renderstyle Add
 	{
 	Spawn:
 		TNT1 A 1
-		TNT1 A 0 A_PlaySound("AmbientThunder")
+		TNT1 A 0 A_PlaySound("AmbientThunder",CHAN_AUTO)
 		TNT1 A 0 A_Jump(128,"Live1","Live2")
 	Live1:
 		THUN A 1 BRIGHT
@@ -582,7 +582,7 @@ radius 4
 	{
 	Active:
 	Spawn:
-		TNT1 A 0 NoDelay A_PlaySound("Sparks/Spawn")
+		TNT1 A 0 NoDelay A_PlaySound("Sparks/Spawn",CHAN_AUTO)
 		TNT1 A 0 A_Jump(256,1,2,3,4,5,6)
 		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 		goto SpawnSparks
@@ -644,7 +644,7 @@ radius 4
 	{
 	Active:
 	Spawn:
-		TNT1 A 0 NoDelay A_PlaySound("Sparks/Spawn")
+		TNT1 A 0 NoDelay A_PlaySound("Sparks/Spawn",CHAN_AUTO)
 		TNT1 A 0 A_Jump(256,1,2,3,4,5,6)
 		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
 		goto SpawnSparks
@@ -778,7 +778,7 @@ Renderstyle Translucent
 	states
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_Playsound("props/redfire")
+		TNT1 A 0 NoDelay A_Playsound("props/redfire",CHAN_BODY)
 		F1RE ABCDEFGH 1 bright
 		F2RE ABCDEFGH 1 bright
 		Loop
@@ -819,7 +819,7 @@ Radius 6
 		Goto Spawn2
 	Spawn2:
 		TNT1 A 0 A_CheckSight("SpawnLess")
-		TNT1 A 0 A_PlaySound("AMBRAIN",CHAN_7,1,1)
+		TNT1 A 0 A_PlaySound("AMBRAIN",CHAN_7,1,TRUE)
 		TNT1 A 2 A_SpawnItemEx("RainDrop",Random(-256,256),0,-2,0,0,0,Random(0,360),128,1)	//WAS 1 TIC
 		Loop
 	SpawnLess:
@@ -936,7 +936,7 @@ ActiveSound "world/waterdrips"
 		DRIP H 25
 		Stop
 	Death:
-		DRIP A 1 //A_PlaySound("DSWDRIP")
+		DRIP A 1 //A_PlaySound("DSWDRIP",CHAN_BODY)
 		DRIP BCDEFGH 1
 		TNT1 A 1
 		Stop
@@ -1001,7 +1001,7 @@ Health 30
 		TNT1 AAAAAA 0 A_CustomMissile("StoneParticle4",0,0,random(0,360),2,random(10,40))
 		TNT1 AAAAAA 0 A_CustomMissile("DestroyedBuildingSmoke",0,0,random(0,360),2,random(10,40))
 		TNT1 AAAAAA 0 A_CustomMissile("DestroyedBuildingSmokeSpawner",0,0,random(0,360),2,random(10,40))
-		TNT1 A 0 A_PlaySound("ROCKFAL")
+		TNT1 A 0 A_PlaySound("ROCKFAL",CHAN_WEAPON)
 		TNT1 A 500
 		Stop
 	}
@@ -1019,7 +1019,7 @@ Health 30
 		TNT1 AAAA 0 A_CustomMissile("SFXWoodParticle3",0,0,random(0,360),2,random(30,60))
 		TNT1 AAAA 0 A_CustomMissile("SFXWoodParticle4",0,0,random(0,360),2,random(30,60))
 		TNT1 AAA 0 A_CustomMissile("SFXBrownSmoke",20,0,random(0,360),2,random(10,40))
-		TNT1 A 0 A_PlaySound("DSBRK2")
+		TNT1 A 0 A_PlaySound("DSBRK2",CHAN_WEAPON)
 		TNT1 A 500
 		Stop
 	}
@@ -1036,7 +1036,7 @@ Health 30
 		TNT1 AAAA 0 A_CustomMissile("SFXGlassParticle2",random(0,40),random(-20,20),random(0,360),2,random(30,60))
 		TNT1 AAAA 0 A_CustomMissile("SFXGlassParticle3",random(0,40),random(-20,20),random(0,360),2,random(30,60))
 		TNT1 AAAA 0 A_CustomMissile("SFXGlassParticle4",random(0,40),random(-20,20),random(0,360),2,random(30,60))
-		TNT1 A 0 A_PlaySound("GLSFAL")
+		TNT1 A 0 A_PlaySound("GLSFAL",CHAN_WEAPON)
 		TNT1 A 500
 		Stop
 	}
@@ -1054,7 +1054,7 @@ Actor D4Map02TerraformingParticles : ExplosiveArea
 		TNT1 A 0 A_CustomMissile("StoneParticle4",0,0,random(0,360),2,random(10,40))
 		TNT1 AAAA 0 A_CustomMissile("DestroyedBuildingSmoke",0,0,random(0,360),2,random(10,40))
 		TNT1 AAA 0 A_CustomMissile("DestroyedBuildingSmokeSpawner",0,0,random(0,360),2,random(10,40))
-		TNT1 A 0 A_PlaySound("ROCKFAL")
+		TNT1 A 0 A_PlaySound("ROCKFAL",CHAN_WEAPON)
 		TNT1 A 0 A_Explode(1000,125)
 		TNT1 A 120
 		Stop
@@ -1766,7 +1766,7 @@ ACTOR AmbientSoundWaterFall1 21006
 	States
 	{
 	Spawn:
-		TNT1 A 1 NoDelay A_PlaySound("WAFALL1",1,1)
+		TNT1 A 1 NoDelay A_PlaySound("WAFALL1",CHAN_WEAPON,1)
 		TNT1 A 100
 		Loop
 	}
@@ -1781,7 +1781,7 @@ ACTOR AmbientSoundWaterFall2 21007
 	States
 	{
 	Spawn:
-		TNT1 A 1 NoDelay A_PlaySound("WAFALL2",1,1)
+		TNT1 A 1 NoDelay A_PlaySound("WAFALL2",CHAN_WEAPON,1)
 		TNT1 A 100
 		Loop
 	}
@@ -1797,7 +1797,7 @@ Radius 16
 	{
 	Spawn:
 		TNT1 A 6
-		TNT1 A 0 A_PlaySound("FIREFIT3")
+		TNT1 A 0 A_PlaySound("FIREFIT3",CHAN_WEAPON)
 		TNT1 A 4000
 		Stop
 	}
@@ -1814,7 +1814,7 @@ Radius 16
 	{
 	Spawn:
 		TNT1 A 2
-		TNT1 A 0 A_PlaySound("FIREFIT2",1,1,1)
+		TNT1 A 0 A_PlaySound("FIREFIT2",CHAN_WEAPON,1,TRUE)
 		TNT1 A 100
 		Loop
 	}
@@ -1829,7 +1829,7 @@ ACTOR AmbientSoundWaterFlowing 21008
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_PlaySound("WFLOW",1,1,1)
+		TNT1 A 0 NoDelay A_PlaySound("WFLOW",CHAN_WEAPON,1,TRUE)
 		TNT1 A 120
 		Loop
 	}
@@ -1844,7 +1844,7 @@ ACTOR AmbientSoundHeavyWind 21009
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_PlaySound("WIND1",1,1,1)
+		TNT1 A 0 NoDelay A_PlaySound("WIND1",CHAN_WEAPON,1,TRUE)
 		TNT1 A 110
 		Loop
 	}
@@ -1859,7 +1859,7 @@ ACTOR AmbientSoundMilitaryRadioChat 21010
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_PlaySound("RDIOCHAT",1,1,1)
+		TNT1 A 0 NoDelay A_PlaySound("RDIOCHAT",CHAN_WEAPON,1,TRUE)
 		TNT1 A 140
 		Loop
 	}
@@ -1874,7 +1874,7 @@ ACTOR AmbientSoundMilitaryRadioChat23 21011
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_PlaySound("RDIOCHAT",1,1,1)
+		TNT1 A 0 NoDelay A_PlaySound("RDIOCHAT",CHAN_WEAPON,1,TRUE)
 		TNT1 A 110
 		Loop
 	}
@@ -1889,7 +1889,7 @@ ACTOR AmbientSoundCarAlarm 21012
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_PlaySound("CARALARM",1,1,1)
+		TNT1 A 0 NoDelay A_PlaySound("CARALARM",CHAN_WEAPON,1,TRUE)
 		TNT1 A 120
 		Loop
 	}
@@ -2013,11 +2013,11 @@ Health 99999999999
 		TNT1 A -1
 		Stop
 	Death:
-		TNT1 A 0 A_PlaySound("FLYBYFAR")
+		TNT1 A 0 A_PlaySound("FLYBYFAR",CHAN_WEAPON)
 		TNT1 A 30
 		TNT1 A 0 A_CustomMissile("F35Bombing",5,0,0,2)
 		TNT1 A 10
-		TNT1 A 0 A_PlaySound("FLYBYCLO")
+		TNT1 A 0 A_PlaySound("FLYBYCLO",CHAN_BODY)
 		TNT1 A 500
 		Stop
 	}
@@ -2075,7 +2075,7 @@ PROJECTILE
 		TNT1 AAA 0 A_CustomMissile("SFXBigExplosionFlamesSpawner",10,0,random(0,360),2,random(10,40))
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_AlertMonsters
-		TNT1 A 0 A_PlaySound("HUGEEXPL",1)
+		TNT1 A 0 A_PlaySound("HUGEEXPL",CHAN_WEAPON)
 		EXPL ABCDEFGH 3 BRIGHT
 		TNT1 A 10
 		Stop
@@ -2102,7 +2102,7 @@ Health 99999999999
 		TNT1 A 5
 		TNT1 A 0 A_CustomMissile("F35Bombing2",5,0,0,2)
 		TNT1 A 10
-		TNT1 A 0 A_PlaySound("FLYBYCLO")
+		TNT1 A 0 A_PlaySound("FLYBYCLO",CHAN_BODY)
 		TNT1 A 500
 		Stop
 	}
@@ -2144,7 +2144,7 @@ ACTOR SummonFighterType2Random: SummonFighterType1 2174
 	Missile:
 		TNT1 A 0 A_CustomMissile("DecorativeFighter",5,0,0,2)
 		TNT1 A 50
-		TNT1 A 0 A_PlaySound("FLYBYFAR")
+		TNT1 A 0 A_PlaySound("FLYBYFAR",CHAN_WEAPON)
 		TNT1 A 500
 		Goto Spawn
 	}
@@ -2187,10 +2187,10 @@ PROJECTILE
 		Stop
 	Xdeath:
 		TNT1 A 1
-		TNT1 A 1 A_PlaySound("NAILFLE")
+		TNT1 A 1 A_PlaySound("NAILFLE",CHAN_WEAPON)
 		Stop
 	Death:
-		DART B 1 bright A_PlaySound("NAILHIT")
+		DART B 1 bright A_PlaySound("NAILHIT",CHAN_WEAPON)
 		TNT1 A 0 A_SpawnItemEx("HitPuff")
 		DART C 4 bright
 		DART D 4
