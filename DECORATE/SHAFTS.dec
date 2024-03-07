@@ -75,9 +75,9 @@ Renderstyle Add
 	States
 	{
 	Spawn:
-		TNT1 A 1
-		TNT1 A 0 ACS_NamedExecuteAlways("LightAndFogChecker",0,0,0,0)
-		TNT1 A 1	
+		TNT1 A 0
+	SpawnLoop:
+		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
 		SHF1 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
@@ -85,13 +85,13 @@ Renderstyle Add
 		SHF3 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		SHF4 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		SHF5 ABCDEFGHIJKLMNOPQRSTUVW 2
-		Goto Spawn
+		Goto SpawnLoop
 	WaitSight:
 		TNT1 A 3
 		Goto Live
 	NoShaft:
 		TNT1 A 525
-		Goto Spawn
+		Goto SpawnLoop
 	}
 }
 
@@ -112,22 +112,20 @@ Alpha 0.15
 		TNT1 A 0 A_Recoil(3)
 		TNT1 A 2
 		TNT1 A 0 A_Stop
-	SpawnCP:
-		TNT1 A 1
-		TNT1 A 0 ACS_NamedExecuteAlways("LightAndFogChecker",0,0,0,0)
-		TNT1 A 1	
+	SpawnLoop:
+		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
 		FBB3 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		FBB4 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		FBB5 ABCDEFGHIJKL 2
-		Goto SpawnCP
+		Goto SpawnLoop
 	WaitSight:
 		TNT1 A 3
 		Goto Live
 	NoShaft:
 		TNT1 A 525
-		Goto SpawnCP
+		Goto SpawnLoop
 	}
 }
 
@@ -166,18 +164,16 @@ Scale 5.0
 		TNT1 A 0 A_Recoil(2)
 		TNT1 A 2
 		TNT1 A 0 A_Stop
-	SpawnCP:
-		TNT1 A 1
-		TNT1 A 0 ACS_NamedExecuteAlways("LightAndFogChecker",0,0,0,0)
-		TNT1 A 1	
+	SpawnLoop:
+		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
 		FBB1 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		FBB2 ABCDE 2
-		Goto SpawnCP
+		Goto SpawnLoop
 	NoShaft:
 		TNT1 A 525
-		Goto SpawnCP
+		Goto SpawnLoop
 	WaitSight:
 		TNT1 A 3
 		Goto Live
@@ -405,19 +401,19 @@ alpha 0.99
 	states
 	{
 	Spawn:
-		TNT1 A 1
-		TNT1 A 0 ACS_NamedExecuteAlways("LightAndFogChecker",0,0,0,0)
-		TNT1 A 1
+		TNT1 A 0
+	SpawnLoop:
+		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
 		LENS A 525
-		Goto Spawn
+		Goto SpawnLoop
 	WaitSight:
 		TNT1 A 3
 		Goto Live
 	NoLight:
 		TNT1 A 525
-		Goto Spawn
+		Goto SpawnLoop
 	}
 }
 
@@ -443,16 +439,16 @@ Actor BD64ShortWhiteFlareSmallInfGrav : BD64ShortWhiteFlareSmall
 	states
 	{
 	Spawn:
-		TNT1 A 1
-		TNT1 A 0 ACS_NamedExecuteAlways("LightAndFogChecker",0,0,0,0)
-		TNT1 A 1
+		TNT1 A 0
+	SpawnLoop:
+		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
 		LENS A 525
-		Goto Spawn
+		Goto SpawnLoop
 	NoLight:
 		TNT1 A 525
-		Goto Spawn
+		Goto SpawnLoop
 	WaitSight:
 		TNT1 A 3
 		Goto Live
@@ -470,16 +466,16 @@ alpha 0.8
 	states
 	{
 	Spawn:
-		TNT1 A 1
-		TNT1 A 0 ACS_NamedExecuteAlways("LightAndFogChecker",0,0,0,0)
-		TNT1 A 1
+		TNT1 A 0
+	SpawnLoop:
+		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
 		LENS A 525
-		Goto Spawn
+		Goto SpawnLoop
 	NoLight:
 		TNT1 A 525
-		Goto Spawn
+		Goto SpawnLoop
 	WaitSight:
 		TNT1 A 3
 		Goto Live
