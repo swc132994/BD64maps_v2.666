@@ -1,3 +1,19 @@
+ACTOR TeleportHelishSound 8741
+{
+//$category "Maps/BD64_Effects
+Height 16
+Radius 16
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_PlaySound("HELLSC",CHAN_WEAPON,1,TRUE)
+		TNT1 A 4000
+		Loop
+	}
+}
+
 ACTOR D64HomingFireBallLauncher
 {
 Speed 0
@@ -1536,139 +1552,6 @@ Gravity 0
 	}
 }
 
-Actor AshSpawner400 6903
-{
-//$category "Maps/BD64_Effects
-Tag "Old Ash Spawner"
-Height 1
-Radius 24
-+NoClip
-+NoGravity
-+ClientSideOnly
-+SpawnCeiling
-	States
-	{
-	Spawn:
-		TNT1 A 1
-		TNT1 A 0 ThrustThingZ(0,955,0,1)
-		Goto Spawn550
-	Spawn550:
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2","Spawn3","Spawn4","Spawn5","Spawn6","Spawn7","Spawn8","Spawn9","Spawn10","Spawn11","Spawn12")
-	Spawn1:
-		TNT1 A 5 A_SpawnItemEx("FloatingAshLight1",Random(-200,200),Random(-200,200))
-		Goto Spawn
-	Spawn2:
-		TNT1 A 5 A_SpawnItemEx("FloatingAshLight2",Random(-200,200),Random(-200,200))
-		Goto Spawn
-	Spawn3:
-		TNT1 A 5 A_SpawnItemEx("FloatingAshLight3",Random(-200,200),Random(-200,200))
-		Goto Spawn
-	Spawn4:
-		TNT1 A 5 A_SpawnItemEx("FloatingAshGrey1",Random(-200,200),Random(-200,200))
-		Goto Spawn
-	Spawn5:
-		TNT1 A 5 A_SpawnItemEx("FloatingAshGrey2",Random(-200,200),Random(-200,200))
-		Goto Spawn
-	Spawn6:
-		TNT1 A 5 A_SpawnItemEx("FloatingAshGrey3",Random(-200,200),Random(-200,200))
-		Goto Spawn
-	Spawn7:
-		TNT1 A 5 A_SpawnItemEx("FloatingAshDarkGrey1",Random(-200,200),Random(-200,200))
-		Goto Spawn
-	Spawn8:
-		TNT1 A 5 A_SpawnItemEx("FloatingAshDarkGrey2",Random(-200,200),Random(-200,200))
-		Goto Spawn
-	Spawn9:
-		TNT1 A 5 A_SpawnItemEx("FloatingAshDarkGrey3",Random(-200,200),Random(-200,200))
-		Goto Spawn
-	Spawn10:
-		TNT1 A 5 A_SpawnItemEx("FloatingAshDark1",Random(-200,200),Random(-200,200))
-		Goto Spawn
-	Spawn11:
-		TNT1 A 5 A_SpawnItemEx("FloatingAshDark2",Random(-200,200),Random(-200,200))
-		Goto Spawn
-	Spawn12:
-		TNT1 A 5 A_SpawnItemEx("FloatingAshDark3",Random(-200,200),Random(-200,200))
-		Goto Spawn
-	}
-}
-
-Actor FloatingAshLight1
-{
-Scale 0.12
-Height 1
-Radius 1
-Mass 0
-Gravity 0.01
-Alpha 0.9
-RenderStyle Translucent
-ReactionTime 250
-+Missile
-+NoBlockmap
-+DONTSPLASH
-+CLIENTSIDEONLY
-	States
-	{
-	Spawn:
-		ASHX A 0 NoDelay A_Jump(128,"Spawn2")
-	Spawn1:
-		ASHX ABCDEFGH 2 A_CountDown
-		Loop
-	Spawn2:
-		ASHX HGFEDCBA 2 A_CountDown
-		Loop
-	Death:
-		ASHX F 2 A_FadeOut(0.06)
-		Wait
-	}
-}
-
-Actor FloatingAshLight2 : FloatingAshLight1
-{
-Scale 0.10
-}
-
-Actor FloatingAshLight3 : FloatingAshLight1
-{
-Scale 0.08
-}
-
-Actor FloatingAshGrey1 : FloatingAshLight1 {translation "80:111=[64,64,64]:[0,0,0]"}
-
-Actor FloatingAshGrey2 : FloatingAshGrey1
-{
-Scale 0.10
-}
-
-Actor FloatingAshGrey3 : FloatingAshGrey1
-{
-Scale 0.08
-}
-
-Actor FloatingAshDarkGrey1 : FloatingAshLight1 {translation "80:111=97:111"}
-
-Actor FloatingAshDarkGrey2 : FloatingAshDarkGrey1
-{
-Scale 0.10
-}
-
-Actor FloatingAshDarkGrey3 : FloatingAshDarkGrey1
-{
-Scale 0.08
-}
-
-Actor FloatingAshDark1 : FloatingAshLight1 {translation "80:111=100:111"}
-
-Actor FloatingAshDark2: FloatingAshDark1
-{
-Scale 0.10
-}
-
-Actor FloatingAshDark3: FloatingAshDark1
-{
-Scale 0.08
-}
-
 ACTOR ReflectionStaticGreen : TopLight1Red 8291
 {
 //$category "Maps/BD64_Effects
@@ -1850,51 +1733,6 @@ ACTOR AmbientSoundHeavyWind 21009
 	}
 }
 
-ACTOR AmbientSoundMilitaryRadioChat 21010
-{
-//$category "Maps/BD64_Effects
--SHOOTABLE
-+NOBLOCKMAP
-+NOGRAVITY
-	States
-	{
-	Spawn:
-		TNT1 A 0 NoDelay A_PlaySound("RDIOCHAT",CHAN_WEAPON,1,TRUE)
-		TNT1 A 140
-		Loop
-	}
-}
-
-ACTOR AmbientSoundMilitaryRadioChat23 21011
-{
-//$category "Maps/BD64_Effects
--SHOOTABLE
-+NOBLOCKMAP
-+NOGRAVITY
-	States
-	{
-	Spawn:
-		TNT1 A 0 NoDelay A_PlaySound("RDIOCHAT",CHAN_WEAPON,1,TRUE)
-		TNT1 A 110
-		Loop
-	}
-}
-
-ACTOR AmbientSoundCarAlarm 21012
-{
-//$category "Maps/BD64_Effects
--SHOOTABLE
-+NOBLOCKMAP
-+NOGRAVITY
-	States
-	{
-	Spawn:
-		TNT1 A 0 NoDelay A_PlaySound("CARALARM",CHAN_WEAPON,1,TRUE)
-		TNT1 A 120
-		Loop
-	}
-}
-
 ACTOR SplashGenerator 8859
 {
 //$category "Maps/BD64_Effects
@@ -1941,57 +1779,6 @@ Renderstyle Add
 	Death:
 	Spawn:
 		W3PH HIJKLMNOP 2
-		Stop
-	}
-}
-
-ACTOR NewTree01 4827
-{
-//$category "Maps/BD64_Props
-Game Doom
-Height 128
-Radius 16
-ProjectilePassHeight -16
-+SOLID
-+USESPECIAL
-	States
-	{
-	Spawn:
-		TREE F -1
-		Stop
-	}
-}
-
-ACTOR NewTree02 4838
-{
-//$category "Maps/BD64_Props
-Game Doom
-Height 128
-Radius 16
-ProjectilePassHeight -16
-+SOLID
-+USESPECIAL
-	States
-	{
-	Spawn:
-		TREE G -1
-		Stop
-	}
-}
-
-ACTOR NewTree03 4829
-{
-//$category "Maps/BD64_Props
-Game Doom
-Height 128
-Radius 16
-ProjectilePassHeight -16
-+SOLID
-+USESPECIAL
-	States
-	{
-	Spawn:
-		TREE H -1
 		Stop
 	}
 }
