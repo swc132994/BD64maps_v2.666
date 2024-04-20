@@ -1,0 +1,744 @@
+		Textures/CUSTOMAN.png	(804b3c95) duplicated by	Textures/FTILEBCE.png	Textures/TILEBCEC.png
+Textures/CUSTOMBU.png	(8124ef6b) duplicated by	Textures/CUSTOMCF.png	Textures/FTILEECA.png	Textures/TILEECAD.png
+Textures/CUSTOMBW.png	(81afb65c) duplicated by	Textures/TILEF602.png
+Textures/FTILE436.png	(81d61468) duplicated by	Textures/TILE435B.png
+Textures/CUSTOMBF.png	(86d6bbaf) duplicated by	Textures/FTILED5F.png	Textures/TILED5F0.png
+Textures/FTILE762.png	(89b93de7) duplicated by	Textures/TILE7620.png
+Textures/CUSTOMGK.png	(8bd8271e) duplicated by	Textures/FTILEE56.png	Textures/TILEE56B.png
+Textures/CUSTOMV.png	(8c89f651) duplicated by	Textures/FTILEA19.png	Textures/TILEA19B.png
+Textures/CUSTOMJ.png	(9159c375) duplicated by	Textures/FTILE8ED.png	Textures/TILE8ED8.png
+Textures/CUSTOM86.png	(91d5e74f) duplicated by	Textures/FTILE6CE.png	Textures/TILE6CEC.png
+Textures/CUSTOMK.png	(91df863f) duplicated by	Textures/FTILE934.png	Textures/TILE9344.png
+Textures/CUSTOMAW.png	(9402c359) duplicated by	Textures/FTILEC83.png	Textures/TILEC83E.png
+Textures/FTILE9C6.png	(966b612f) duplicated by	Textures/TILE9C68.png
+Textures/CUSTOMBM.png	(97d8e9ce) duplicated by	Textures/FTILEE58.png
+Textures/CUSTOMAP.png	(97dd7fd1) duplicated by	Textures/FTILEBEA.png	Textures/TILEBEA0.png
+Textures/CUSTOMCC.png	(97fbb49d) duplicated by	Textures/FTILE3B1.png	Textures/TILE3B12.png
+Textures/CUSTOM45.png	(9a4f062b) duplicated by	Textures/FTILE2B8.png	Textures/TILE2B88.png
+Textures/CUSTOMBJ.png	(9d3d7057) duplicated by	Textures/FTILEDCE.png	Textures/TILEDCE1.png
+Textures/FTILED5E.png	(9ec5332a) duplicated by	Textures/TILED5FB.png
+Textures/CUSTOMBD.png	(a02b31bc) duplicated by	Textures/FTILED5B.png	Textures/TILED5FC.png
+Textures/CUSTOM73.png	(a0723e57) duplicated by	Textures/FTILE573.png
+		Textures/CUSTOM37.png	(a1d9cbe9) duplicated by	Textures/FTILE240.png	Textures/TILE241E.png
+Textures/CUSTOMBC.png	(a344113f) duplicated by	Textures/FTILED48.png	Textures/TILED48E.png
+Textures/TILED0C8.png	(a434bb35) duplicated by	Textures/TILED0C9.png
+Textures/FTILEF77.png	(a6c88cf1) duplicated by	Textures/TILEF771.png
+Textures/CUSTOMBS.png	(a6ce02a3) duplicated by	Textures/FTILEEBD.png	Textures/TILEEBDC.png
+Textures/CUSTOM70.png	(a82981ec) duplicated by	Textures/CUSTOMZ.png
+Textures/CUSTOM99.png	(aaa23e77) duplicated by	Textures/FTILE7BE.png	Textures/TILE7BE3.png
+Textures/CUSTOM78.png	(aab38229) duplicated by	Textures/FTILE5EF.png	Textures/TILE5EFE.png
+		Textures/CUSTOMAR.png	(aabefd80) duplicated by	Textures/FTILEC23.png	Textures/TILEC24C.png
+Textures/CUSTOM25.png	(afab7ed7) duplicated by	Textures/FTILE171.png
+Textures/FTILED74.png	(b08a0c05) duplicated by	Textures/TILED747.png
+Textures/CUSTOMAY.png	(b0c5a065) duplicated by	Textures/FTILEC98.png	Textures/TILEC989.png
+Textures/CUSTOM32.png	(b0d06f5b) duplicated by	Textures/FTILE1D2.png
+Textures/CUSTOM31.png	(b173d0f0) duplicated by	Textures/FTILE1CE.png
+Textures/CUSTOMBL.png	(b42aa165) duplicated by	Textures/FTILEE57.png	Textures/TILEE574.png
+Textures/FTILEFA4.png	(b4eb274d) duplicated by	Textures/TILEFA49.png
+Textures/CUSTOM62.png	(b61ba017) duplicated by	Textures/FTILE43A.png
+Textures/CUSTOM91.png	(b6f2a554) duplicated by	Textures/FTILE74F.png	Textures/TILE74FE.png
+Textures/CUSTOM65.png	(bb1183d2) duplicated by	Textures/FTILE4BB.png	Textures/TILE4BB3.png
+Textures/CUSTOMAL.png	(bb39ec7e) duplicated by	Textures/FTILEB56.png	Textures/TILEB56E.png
+Textures/CUSTOMCA.png	(bbd5d274) duplicated by	Textures/FTILEF9E.png	Textures/TILEF9EB.png
+		Textures/CUSTOMAX.png	(bbda1957) duplicated by	Textures/FTILEC8B.png	Textures/TILEC8B9.png
+Textures/CUSTOM67.png	(bc36d07d) duplicated by	Textures/FTILE4EF.png	Textures/TILE4EF7.png
+Textures/CUSTOMP.png	(be45078e) duplicated by	Textures/FTILE9A5.png	Textures/TILE9A5C.png
+Textures/FTILEDBC.png	(c05bb03f) duplicated by	Textures/TILEDBC3.png
+Textures/CUSTOM20.png	(c0604c7c) duplicated by	Textures/FTILE111.png	Textures/TILE1113.png
+		Textures/CUSTOM4.png	(c1709dbb) duplicated by	Textures/FTILEA40.png	Textures/TILED173.png
+Textures/CUSTOMD.png	(c259d23f) duplicated by	Textures/FTILE84B.png	Textures/TILE84BD.png
+Textures/TILE3B6E.png	(c2c4c1f7) duplicated by	Textures/TILE3B6F.png
+Textures/CUSTOMBO.png	(c335b86e) duplicated by	Textures/FTILEE66.png	Textures/TILEE66C.png
+Textures/CUSTOM64.png	(c536bf35) duplicated by	Textures/FTILE48F.png	Textures/TILE48FB.png
+Textures/CUSTOM49.png	(c673eee3) duplicated by	Textures/FTILE2FC.png	Textures/TILE2FC2.png
+Textures/CUSTOMBX.png	(c700bc60) duplicated by	Textures/FTILEF66.png	Textures/TILEF664.png
+Textures/CUSTOM47.png	(c9fd7fcc) duplicated by	Textures/FTILE2E0.png	Textures/TILE2E02.png
+Textures/FTILEB38.png	(ca39ed43) duplicated by	Textures/TILEB38C.png
+Textures/FTILE9EE.png	(cc1542bc) duplicated by	Textures/TILE9EE3.png
+Textures/FTILE766.png	(cc4d86b9) duplicated by	Textures/TILE7663.png
+Textures/CUSTOMO.png	(cd822082) duplicated by	Textures/FTILE955.png	Textures/TILE955D.png
+Textures/CUSTOMU.png	(cf52f8a7) duplicated by	Textures/FTILEFAF.png
+Textures/FTILEA5A.png	(d3eafa42) duplicated by	Textures/TILEA5A9.png
+Textures/CUSTOM1.png	(d5eaab0b) duplicated by	Textures/FTILE7BA.png	Textures/TILE7BE4.png
+Textures/CUSTOM2.png	(d9927e70) duplicated by	Textures/FTILE778.png	Textures/TILE7776.png
+Textures/FTILED1E.png	(da0deb4a) duplicated by	Textures/TILED1E5.png
+Textures/CUSTOMCL.png	(db65d54b) duplicated by	Textures/FTILE460.png	Textures/TILE4604.png
+Textures/CUSTOMCH.png	(dceda122) duplicated by	Textures/FTILE6C8.png	Textures/TILE6C84.png
+Textures/CUSTOM54.png	(dd97372b) duplicated by	Textures/FTILE391.png
+Textures/CUSTOMY.png	(e22d53be) duplicated by	Textures/FTILE8EE.png	Textures/TILE8EE6.png
+Textures/CUSTOMAT.png	(e3e0c7f5) duplicated by	Textures/FTILEC3C.png	Textures/TILEC3CC.png
+Textures/CUSTOM50.png	(e7d7d6a1) duplicated by	Textures/FTILE2FE.png
+Textures/CUSTOM40.png	(e8ec2b37) duplicated by	Textures/FTILE252.png	Textures/TILE252D.png
+Textures/CUSTOMAB.png	(e906aafd) duplicated by	Textures/FTILEA79.png	Textures/TILEA796.png
+Textures/FTILEEC1.png	(ec5ecd95) duplicated by	Textures/TILEEC13.png
+Textures/CUSTOMCN.png	(ee69b838) duplicated by	Textures/FTILE6A9.png	Textures/TILE6A9C.png
+Textures/TILE6D1E.png	(ef8c95ad) duplicated by	Textures/TILE6D1F.png
+Textures/CUSTOM26.png	(f929b929) duplicated by	Textures/CUSTOMCG.png	Textures/FTILE196.png	Textures/FTILEFBE.png	Textures/TILE1963.png
+Textures/CUSTOM55.png	(fa708097) duplicated by	Textures/FTILE3BA.png
+Textures/CUSTOM27.png	(fa70e829) duplicated by	Textures/FTILE1B2.png
+Textures/FTILE860.png	(fabedabb) duplicated by	Textures/TILE860E.png
+Textures/CUSTOM77.png	(fde6d8f4) duplicated by	Textures/FTILE5ED.png	Textures/TILE5ED2.png
+Textures/CUSTOMAH.png	(feb3303f) duplicated by	Textures/FTILEB2F.png	Textures/TILEB2FE.png
+Textures/CUSTOMAA.png	(ffe604df) duplicated by	Textures/FTILEA96.png	Textures/TILEA97C.png
+		Textures/CUSTOM59.png	(  36c0a7) duplicated by	Textures/FTILE406.png	Textures/TILE406C.png
+		Textures/CUSTOM58.png	( 29f3e8c) duplicated by	Textures/FTILE400.png	Textures/TILE4004.png
+Textures/CUSTOM5.png	( 3859180) duplicated by	Textures/FTILE02F.png	Textures/TILE02F6.png
+Textures/CUSTOM88.png	( 5259026) duplicated by	Textures/FTILE722.png	Textures/TILE7224.png
+Textures/CUSTOM41.png	( 97e088f) duplicated by	Textures/FTILE255.png
+Textures/CUSTOMAE.png	( 9a82fdf) duplicated by	Textures/FTILEADA.png	Textures/TILEADAB.png
+Textures/CUSTOMAD.png	( ae757ce) duplicated by	Textures/FTILEABC.png	Textures/TILEABC2.png
+Textures/FTILE77A.png	( c8cbd03) duplicated by	Textures/TILE77A0.png
+Textures/CUSTOM63.png	( cc9e7f5) duplicated by	Textures/FTILE45C.png
+Textures/CUSTOM13.png	( ce9c426) duplicated by	Textures/FTILE07C.png	Textures/TILE07CD.png
+Textures/CUSTOM72.png	( dfea381) duplicated by	Textures/FTILE54E.png	Textures/TILE54E1.png
+Textures/FTILEC79.png	( f834089) duplicated by	Textures/TILEC795.png
+Textures/CUSTOM89.png	( fefcc7a) duplicated by	Textures/FTILE73C.png	Textures/TILE73C9.png
+Textures/CUSTOM74.png	(110ab48e) duplicated by	Textures/FTILE589.png
+Textures/CUSTOM79.png	(14772c3e) duplicated by	Textures/FTILE65C.png	Textures/TILE65CE.png
+Textures/CUSTOM82.png	(1484f0d8) duplicated by	Textures/FTILE686.png	Textures/TILE6860.png
+Textures/CUSTOM28.png	(162cea02) duplicated by	Textures/FTILE1B4.png	Textures/TILE1B4E.png
+Textures/CUSTOM7.png	(19e493cf) duplicated by	Textures/FTILE044.png	Textures/TILE0442.png
+Textures/CUSTOM36.png	(1bad5f74) duplicated by	Textures/FTILE21A.png
+Textures/CUSTOMC.png	(1cc4cc03) duplicated by	Textures/FTILE7F5.png	Textures/TILE7F57.png
+Textures/CUSTOMAC.png	(1ebbc454) duplicated by	Textures/FTILEA97.png	Textures/TILEA97D.png
+Textures/CUSTOMAK.png	(20408301) duplicated by	Textures/FTILEB45.png	Textures/TILEB450.png
+Textures/CUSTOMI.png	(2114b76d) duplicated by	Textures/FTILE8B8.png	Textures/TILE8B82.png
+Textures/CUSTOMCK.png	(2128bb27) duplicated by	Textures/FTILE7F9.png	Textures/TILE7F95.png
+Textures/FTILEF9C.png	(245fb29a) duplicated by	Textures/TILEF9C7.png
+Textures/CUSTOM6.png	(24d2667b) duplicated by	Textures/FTILE036.png	Textures/TILE0364.png
+Textures/TILEF516.png	(25b2db36) duplicated by	Textures/TILEF517.png
+		Textures/CUSTOMAO.png	(25dd06b5) duplicated by	Textures/FTILEBDF.png	Textures/TILEBDFC.png
+Textures/CUSTOM83.png	(26217191) duplicated by	Textures/FTILE688.png	Textures/TILE6885.png
+Textures/CUSTOMAS.png	(26442e14) duplicated by	Textures/FTILEC24.png
+Textures/TILE37CC.png	(26c3abf1) duplicated by	Textures/TILE37CD.png
+Textures/CUSTOM8.png	(27beadcc) duplicated by	Textures/TILE0484.png
+Textures/TILEF124.png	(27bf9a31) duplicated by	Textures/TILEF125.png
+Textures/CUSTOM52.png	(29a73753) duplicated by	Textures/FTILE36A.png
+Textures/CUSTOMW.png	(2b7a375b) duplicated by	Textures/FTILEA2A.png	Textures/TILEA2AA.png
+Textures/FTILEEBA.png	(2d328242) duplicated by	Textures/TILEEBA1.png
+Textures/TILE55F2.png	(2dca9330) duplicated by	Textures/TILE55F3.png
+Textures/CUSTOM90.png	(2eb0647e) duplicated by	Textures/TILE747A.png
+Textures/CUSTOM16.png	(2f45fb08) duplicated by	Textures/CUSTOM38.png	Textures/FTILE241.png	Textures/TILE2415.png
+Textures/CUSTOM12.png	(30be66e4) duplicated by	Textures/FTILE06A.png
+Textures/CUSTOM60.png	(31f48d83) duplicated by	Textures/FTILE40D.png	Textures/TILE400D.png
+		Textures/CUSTOMBQ.png	(3335405d) duplicated by	Textures/FTILEE87.png	Textures/TILEE87E.png
+Textures/CUSTOM43.png	(34af0af4) duplicated by	Textures/FTILE274.png
+Textures/CUSTOM51.png	(37f653ff) duplicated by	Textures/FTILE34C.png	Textures/TILE34C7.png
+Textures/CUSTOM95.png	(38609be5) duplicated by	Textures/FTILE52C.png
+Textures/CUSTOM22.png	(38e4c3a3) duplicated by	Textures/FTILE143.png
+Textures/CUSTOMM.png	(3938f1f6) duplicated by	Textures/FTILE949.png	Textures/TILE9494.png
+Textures/CUSTOM61.png	(3c6937dd) duplicated by	Textures/FTILE435.png	Textures/TILE435A.png
+Textures/TILE9F34.png	(3d783653) duplicated by	Textures/TILE9F35.png
+Textures/CUSTOM97.png	(3f8274a1) duplicated by	Textures/FTILE7A4.png	Textures/TILE7A44.png
+Textures/CUSTOM18.png	(41b53dff) duplicated by	Textures/FTILE0E9.png
+Textures/CUSTOM33.png	(42594107) duplicated by	Textures/FTILE1DB.png
+Textures/GRATE.png	(44c3cc7b) duplicated by	Textures/MIDSPACE.png
+Textures/CUSTOM69.png	(44dbcbda) duplicated by	Textures/FTILE53E.png
+Textures/CUSTOM19.png	(44ecc0e1) duplicated by	Textures/FTILE0F5.png
+Textures/FTILEE60.png	(4639bbc1) duplicated by	Textures/TILEE608.png
+Textures/FTILEC4A.png	(485badd3) duplicated by	Textures/TILEC4AD.png
+Textures/CUSTOMB.png	(4adecde5) duplicated by	Textures/FTILE7E3.png	Textures/TILE7E3A.png
+Textures/CUSTOMCE.png	(4ce6e87b) duplicated by	Textures/FTILE2CF.png	Textures/TILE2CFE.png
+Textures/FTILECB6.png	(4f5068e6) duplicated by	Textures/TILECB62.png
+Textures/CUSTOMBH.png	(52c1ae7e) duplicated by	Textures/FTILED88.png
+Textures/CUSTOML.png	(54abaa34) duplicated by	Textures/FTILE944.png	Textures/TILE944B.png
+Textures/FTILECAF.png	(55561031) duplicated by	Textures/TILECAF2.png
+Textures/CUSTOM53.png	(5745b7f9) duplicated by	Textures/FTILE386.png	Textures/TILE3862.png
+Textures/FTILE9FC.png	(59240199) duplicated by	Textures/TILE9FC8.png
+Textures/CUSTOM30.png	(5a54d3d6) duplicated by	Textures/FTILE1CB.png
+Textures/CUSTOM76.png	(5b6804f2) duplicated by	Textures/FTILE5D3.png
+Textures/CUSTOM39.png	(5f4e14e3) duplicated by	Textures/FTILE24A.png	Textures/TILE24A2.png
+Textures/TILE077A.png	(5f5f7ec1) duplicated by	Textures/TILE077E.png
+Textures/CUSTOMN.png	(5ff31571) duplicated by	Textures/FTILE94F.png	Textures/TILE94FE.png
+Textures/CUSTOMBY.png	(61194612) duplicated by	Textures/FTILEF69.png	Textures/TILEF69B.png
+Textures/FTILE777.png	(61401076) duplicated by	Textures/TILE7775.png
+Textures/CUSTOM66.png	(62320fc8) duplicated by	Textures/FTILE4E9.png	Textures/FTILEFB0.png	Textures/TILE4E99.png
+Textures/TILE5DD0.png	(63d44750) duplicated by	Textures/TILE5DD1.png
+Textures/CUSTOM34.png	(666742da) duplicated by	Textures/FTILE1E1.png
+Textures/FTILE747.png	(66caace2) duplicated by	Textures/TILE747C.png
+		Textures/CUSTOMF.png	(66d0e26e) duplicated by	Textures/FTILE862.png	Textures/TILE8620.png
+Textures/CUSTOM44.png	(67880e88) duplicated by	Textures/FTILE2AB.png	Textures/TILE2ABF.png
+Textures/CUSTOM21.png	(68dbfdf6) duplicated by	Textures/FTILE135.png	Textures/TILE135E.png
+Textures/CUSTOM23.png	(6929a87b) duplicated by	Textures/FTILE157.png	Textures/TILE1578.png
+Textures/CUSTOM15.png	(697679c3) duplicated by	Textures/FTILE0B5.png	Textures/TILE0B52.png
+Textures/FTILEA30.png	(69ce3e2c) duplicated by	Textures/TILEA301.png
+Textures/CUSTOM9.png	(6bca142f) duplicated by	Textures/FTILE053.png	Textures/TILE0539.png
+Textures/FTILE699.png	(6d303fc0) duplicated by	Textures/TILE699C.png
+Textures/CUSTOMAQ.png	(6f8d3758) duplicated by	Textures/FTILEC1B.png
+Textures/TILEC078.png	(702293ac) duplicated by	Textures/TILEC079.png
+Textures/CUSTOM29.png	(7271d1a1) duplicated by	Textures/FTILE1BB.png	Textures/TILE1BB5.png
+Textures/CUSTOMT.png	(7438f311) duplicated by	Textures/FTILE9F7.png	Textures/TILE9F7D.png
+Textures/CUSTOMCD.png	(7624989b) duplicated by	Textures/FTILEFBD.png	Textures/TILEFBD6.png
+Textures/CUSTOM71.png	(77f406b2) duplicated by	Textures/FTILE54D.png
+Textures/CUSTOMBV.png	(79415762) duplicated by	Textures/FTILEEE5.png	Textures/TILEEE57.png
+Textures/CUSTOM80.png	(79c2d9a0) duplicated by	Textures/CUSTOMAJ.png
+Textures/CUSTOMH.png	(7ac57c32) duplicated by	Textures/FTILE895.png	Textures/TILE8958.png
+Textures/CUSTOM17.png	(7af19987) duplicated by	Textures/FTILE0DE.png	Textures/TILE0DE6.png
+Textures/CUSTOMBG.png	(7b2e4ff5) duplicated by	Textures/FTILED71.png	Textures/TILED71B.png
+Textures/CUSTOM57.png	(7e25ffef) duplicated by	Textures/FTILE3D2.png
+Textures/CUSTOM87.png	(7e496599) duplicated by	Textures/FTILE6F2.png	Textures/FTILE6FC.png	Textures/TILE6FC1.png
+Textures/CUSTOM10.png	(7e623fe9) duplicated by	Textures/FTILE054.png
+Textures/CUSTOMA.png	(7fe101eb) duplicated by	Textures/FTILE7C1.png
+
+
+BFALL1		SMONLC1
+DBRAIN1		GARGOY1
+FIREMAG1	GMONITR1
+BLODRIP1	KEYPANL1
+GSTFONT1	LPANEL1
+
+SW1BLUE		SW1LIFT
+SW1BRIK		SW1ELEV
+SW1COMM		SW1EVIL
+SW1DIRT		SW1PANL
+SW1EXIT		SW1EIGH
+SW1GRAY1	SW1THRE
+SW1METAL	SW1TEN
+SW1SKIN		SW1FOUR
+SW1SLAD		SW1EPAN
+SW1STON1	SW1TWO
+SW1TEK		SW1TECH
+
+
+
+
+// Texture definitions generated by SLADE3
+// on Thu Jun 22 12:03:34 2023
+
+Texture "BLODRIP1", 48, 128
+{
+	Patch "TILE7AF9", 0, 0
+	Patch "TILE4C5E", 16, 0
+	Patch "TILE7448", 32, 0
+}
+
+Texture "BLODRIP2", 48, 128
+{
+	Patch "TILE31A4", 0, 0
+	Patch "TILE6D7A", 16, 0
+	Patch "TILE7EEA", 32, 0
+}
+
+Texture "BLODRIP3", 48, 128
+{
+	Patch "TILE1418", 0, 0
+	Patch "TILEF2C3", 16, 0
+	Patch "TILE682C", 32, 0
+}
+
+Texture "BLODRIP4", 48, 128
+{
+	Patch "TILE31A4", 0, 0
+	Patch "TILE6D7A", 16, 0
+	Patch "TILE7EEA", 32, 0
+}
+
+Texture "DBRAIN1", 128, 64
+{
+	Patch "TILE241E", 0, 0
+	Patch "TILE86C8", 64, 0
+}
+
+Texture "DBRAIN2", 128, 64
+{
+	Patch "TILE37A9", 0, 0
+	Patch "TILE86C8", 64, 0
+}
+
+Texture "DBRAIN3", 128, 64
+{
+	Patch "TILE6144", 0, 0
+	Patch "TILE86C8", 64, 0
+}
+
+Texture "DBRAIN4", 128, 64
+{
+	Patch "TILE37A9", 0, 0
+	Patch "TILE44BE", 64, 0
+}
+
+Texture "FIREMAG1", 128, 128
+{
+	Patch "TILEFB85", 0, 0
+	Patch "TILEFB85", 0, 64
+	Patch "TILE8C88", 64, 0
+	Patch "TILE8C88", 64, 64
+}
+
+Texture "FIREMAG2", 128, 128
+{
+	Patch "TILEFB86", 0, 0
+	Patch "TILEFB86", 0, 64
+	Patch "TILE5A63", 64, 64
+	Patch "TILE5A63", 64, 0
+}
+
+Texture "FIREMAG3", 128, 128
+{
+	Patch "TILEFB87", 0, 0
+	Patch "TILEFB87", 0, 64
+	Patch "TILED4E8", 64, 0
+	Patch "TILED4E8", 64, 64
+}
+
+Texture "GOREFLOO", 128, 128
+{
+	Patch "GOREFLO1", 0, 0
+	Patch "GOREFLO2", 64, 0
+	{
+		FlipX
+	}
+	Patch "GOREFLO1", 64, 64
+	{
+		FlipX
+		FlipY
+	}
+	Patch "GOREFLO2", 0, 64
+	{
+		FlipY
+	}
+}
+
+Texture "GSTFONT1", 64, 128
+{
+	Patch "TILEBDFC", 0, 0
+	Patch "TILEBDFC", 0, 64
+}
+
+Texture "F_SKY1", 256, 128
+{
+	Patch "SKY1", 0, 0
+}
+
+Texture "SKY1", 256, 128
+{
+	Patch "RSKY1", 0, 0
+}
+
+Texture "SKY2", 256, 128
+{
+	Patch "RSKY2", 0, 0
+}
+
+Texture "SKY3", 256, 125
+{
+	Patch "RSKY3", 0, 0
+}
+
+Texture "SMONLC1", 128, 128
+{
+	Patch "TILE8C88", 0, 0
+	Patch "TILEC24C", 64, 0
+	Patch "TILEFE95", 0, 64
+	Patch "TILEFE85", 64, 64
+}
+
+Texture "SMONLC2", 128, 128
+{
+	Patch "TILE5A63", 0, 0
+	Patch "TILEBCEC", 64, 0
+	Patch "TILEFE96", 0, 64
+	Patch "TILEFE86", 64, 64
+}
+
+Texture "SMONLC3", 128, 128
+{
+	Patch "TILED4E8", 0, 0
+	Patch "TILE4004", 64, 0
+	Patch "TILEFE95", 0, 64
+	Patch "TILEFE86", 64, 64
+}
+
+Texture "SMONLC4", 128, 128
+{
+	Patch "TILE5A63", 0, 0
+	Patch "TILEBCEC", 64, 0
+	Patch "TILEFE96", 0, 64
+	Patch "TILEFE85", 64, 64
+}
+
+Texture "SW1BLUE", 128, 192
+{
+	Patch "TILEBFD8", 0, 0
+	Patch "TILEBFD8", 0, 64
+	Patch "TILE5482", 32, 0
+	Patch "TILE5482", 64, 0
+	Patch "TILE5482", 32, 64
+	Patch "TILE5482", 64, 64
+	Patch "TILEBFD8", 96, 0
+	Patch "TILEBFD8", 96, 64
+	Patch "TILE0330", 48, 128
+}
+
+Texture "SW1BRIK", 64, 256
+{
+	Patch "TILE83B6", 0, 0
+	Patch "TILE83B6", 0, 64
+	Patch "TILE83B6", 0, 128
+	Patch "TILE83B6", 0, 192
+	Patch "TILEB4BB", 16, 208
+}
+
+Texture "SW1COMM", 32, 32
+{
+	Patch "TILE699A", 0, 0
+}
+
+Texture "SW1DIRT", 32, 128
+{
+	Patch "TILE5482", 0, 0
+	Patch "TILEB4BB", 0, 64
+}
+
+Texture "SW1EXIT", 256, 128
+{
+	Patch "TILE53ED", 0, 0
+	Patch "TILE53ED", 0, 64
+	Patch "TILEAC79", 16, 80
+	Patch "TILEE87E", 64, 0
+	Patch "TILE699A", 80, 16
+	Patch "TILEE25F", 64, 64
+	Patch "TILE0328", 80, 80
+	Patch "TILED173", 128, 0
+	Patch "TILE0328", 144, 16
+	Patch "TILEBF97", 128, 64
+	Patch "TILEA8F6", 144, 80
+	Patch "TILE573E", 192, 0
+	Patch "TILE0326", 208, 16
+	Patch "TILE3479", 192, 64
+	Patch "TILEA894", 208, 80
+}
+
+Texture "SW1FINAL", 64, 64
+{
+	Patch "TILE0011", 0, 0
+}
+
+Texture "SW1GRAY1", 192, 128
+{
+	Patch "TILE7639", 0, 0
+	Patch "TILE7639", 16, 0
+	Patch "TILE7639", 32, 0
+	Patch "TILE7639", 48, 0
+	Patch "TILE699A", 16, 16
+	Patch "TILEC8B9", 64, 0
+	Patch "TILEC8B9", 64, 64
+	Patch "TILEA8F6", 80, 16
+	Patch "TILEB850", 128, 0
+	Patch "TILEB850", 128, 64
+	Patch "TILEA894", 144, 16
+}
+
+Texture "SW1METAL", 64, 160
+{
+	Patch "TILE729B", 0, 0
+	Patch "TILE699A", 32, 0
+	Patch "TILEA894", 0, 32
+	Patch "TILEA8F6", 32, 32
+	Patch "TILEB4BB", 0, 64
+	Patch "TILE4C07", 32, 64
+	Patch "TILEAC79", 0, 96
+	Patch "TILE0328", 32, 96
+	Patch "TILE0326", 0, 128
+	Patch "TILE0330", 32, 128
+}
+
+Texture "SW1SKIN", 256, 64
+{
+	Patch "TILE8620", 0, 0
+	Patch "TILE699A", 16, 16
+	Patch "TILE7639", 64, 0
+	Patch "TILE7639", 80, 0
+	Patch "TILE7639", 96, 0
+	Patch "TILE7639", 112, 0
+	Patch "TILE699A", 80, 16
+	Patch "TILE3C5C", 128, 0
+	Patch "TILE0328", 144, 16
+	Patch "TILE406C", 192, 0
+	Patch "TILEA8F6", 208, 16
+}
+
+Texture "SW1SLAD", 32, 128
+{
+	Patch "TILE6FC1", -4, 0
+	Patch "TILE6FC1", -4, 64
+	Patch "TILEA8F6", 0, 80
+}
+
+Texture "SW1STON1", 128, 64
+{
+	Patch "TILE29EF", 0, 0
+	Patch "TILEA894", 16, 16
+	Patch "TILE0006", 64, 0
+}
+
+Texture "SW1TEK", 32, 32
+{
+	Patch "TILEB4BB", 0, 0
+}
+
+Texture "SW2BLUE", 128, 192
+{
+	Patch "TILEBFD8", 0, 0
+	Patch "TILEBFD8", 96, 0
+	Patch "TILEBFD8", 0, 64
+	Patch "TILEBFD8", 96, 64
+	Patch "TILE5482", 32, 0
+	Patch "TILE5482", 32, 64
+	Patch "TILE5482", 64, 0
+	Patch "TILE5482", 64, 64
+	Patch "TILE0331", 48, 128
+}
+
+Texture "SW2BRIK", 64, 256
+{
+	Patch "TILE83B6", 0, 0
+	Patch "TILE83B6", 0, 64
+	Patch "TILE83B6", 0, 128
+	Patch "TILE83B6", 0, 192
+	Patch "TILE0B0C", 16, 208
+}
+
+Texture "SW2COMM", 32, 32
+{
+	Patch "TILEA4E6", 0, 0
+}
+
+Texture "SW2DIRT", 32, 128
+{
+	Patch "TILE5482", 0, 0
+	Patch "TILE0B0C", 0, 64
+}
+
+Texture "SW2EXIT", 256, 128
+{
+	Patch "TILE53ED", 0, 0
+	Patch "TILE53ED", 0, 64
+	Patch "TILED45E", 16, 80
+	Patch "TILEE25F", 64, 64
+	Patch "TILE0329", 80, 80
+	Patch "TILEE87E", 64, 0
+	Patch "TILEA4E6", 80, 16
+	Patch "TILED173", 128, 0
+	Patch "TILE0329", 144, 16
+	Patch "TILEBF97", 128, 64
+	Patch "TILEC562", 144, 80
+	Patch "TILE573E", 192, 0
+	Patch "TILE0327", 208, 16
+	Patch "TILE3479", 192, 64
+	Patch "TILEC870", 208, 80
+}
+
+Texture "SW2FINAL", 64, 64
+{
+	Patch "TILE0012", 0, 0
+}
+
+Texture "SW2GRAY1", 192, 128
+{
+	Patch "TILE7639", 0, 0
+	Patch "TILE7639", 16, 0
+	Patch "TILE7639", 32, 0
+	Patch "TILE7639", 48, 0
+	Patch "TILEA4E6", 16, 16
+	Patch "TILEC8B9", 64, 0
+	Patch "TILEC8B9", 64, 64
+	Patch "TILEC562", 80, 16
+	Patch "TILEB850", 128, 0
+	Patch "TILEB850", 128, 64
+	Patch "TILEC870", 144, 16
+}
+
+Texture "SW2METAL", 64, 160
+{
+	Patch "TILE10D0", 0, 0
+	Patch "TILEA4E6", 32, 0
+	Patch "TILEC870", 0, 32
+	Patch "TILEC562", 32, 32
+	Patch "TILE32A4", 32, 64
+	Patch "TILE0B0C", 0, 64
+	Patch "TILED45E", 0, 96
+	Patch "TILE0329", 32, 96
+	Patch "TILE0327", 0, 128
+	Patch "TILE0331", 32, 128
+}
+
+Texture "SW2SKIN", 256, 64
+{
+	Patch "TILE8620", 0, 0
+	Patch "TILEA4E6", 16, 16
+	Patch "TILE7639", 64, 0
+	Patch "TILE7639", 80, 0
+	Patch "TILE7639", 96, 0
+	Patch "TILE7639", 112, 0
+	Patch "TILEA4E6", 80, 16
+	Patch "TILE3C5C", 128, 0
+	Patch "TILE0329", 144, 16
+	Patch "TILE406C", 192, 0
+	Patch "TILEC562", 208, 16
+}
+
+Texture "SW2SLAD", 32, 128
+{
+	Patch "TILE6FC1", -4, 0
+	Patch "TILE6FC1", -4, 64
+	Patch "TILEC562", 0, 80
+}
+
+Texture "SW2STON1", 128, 64
+{
+	Patch "TILE29EF", 0, 0
+	Patch "TILEC870", 16, 16
+	Patch "TILE0006", 64, 0
+	Patch "TILE32A4", 80, 16
+}
+
+Texture "SW2TEK", 32, 32
+{
+	Patch "TILE0B0C", 0, 0
+}
+
+Texture "TILE0365", 64, 128
+{
+	Patch "TILE0364", 0, 0
+	Patch "TILE0364", 0, 64
+}
+
+Texture "TILE0582", 64, 128
+{
+	Patch "TILE0581", 0, 0
+	Patch "TILE0581", 0, 64
+}
+
+Texture "TILE0583", 64, 256
+{
+	Patch "TILE0581", 0, 0
+	Patch "TILE0581", 0, 128
+}
+
+Texture "TILE1444", 64, 256
+{
+	Patch "TILE889F", 0, 0
+	Patch "TILE1443", 0, 128
+	Patch "TILE889F", 0, 64
+	Patch "TILE1443", 0, 192
+}
+
+Texture "TILE29D", 64, 128
+{
+	Patch "TILE8C88", 0, 0
+	Patch "TILEC24C", 0, 64
+}
+
+Texture "TILE2CFF", 64, 128
+{
+	Patch "TILE2CFE", 0, 0
+	Patch "TILE2CFE", 0, 64
+}
+
+Texture "TILE4B61", 64, 64
+{
+	Patch "TILE6FC1", 0, 0
+}
+
+Texture "TILE52CA", 64, 64
+{
+	Patch "TILE52C0", 0, 0
+}
+
+Texture "TILE53EA", 64, 64
+{
+	Patch "TILE53ED", 0, 0
+}
+
+Texture "TILE7F58", 64, 128
+{
+	Patch "TILE7F57", 0, 0
+	Patch "TILE7F57", 0, 64
+}
+
+Texture "TILE92A6", 32, 320
+{
+	Patch "TILE92A5", 0, 0
+	Patch "TILE92A5", 0, 128
+	Patch "TILE92A5", 0, 256
+}
+
+Texture "TILE9F36", 32, 128
+{
+	Patch "TILE9F35", -16, 0
+}
+
+Texture "TILEABC3", 64, 64
+{
+	Patch "TILEABC2", 0, 0
+}
+
+Texture "TILEB709", 64, 128
+{
+	Patch "TILEB708", 0, 0
+	Patch "TILEB708", 0, 64
+}
+
+Texture "TILEB93D", 48, 128
+{
+	Patch "TILEB93C", -8, 0
+	Patch "TILEB93C", -8, 64
+}
+
+Texture "TILEC8B8", 64, 128
+{
+	Patch "TILEC8B9", 0, 0
+	Patch "TILEC8B9", 0, 64
+}
+
+Texture "TILECDA1", 64, 128
+{
+	Patch "TILECDA0", 0, 0
+	Patch "TILECDA0", 0, 64
+}
+
+Texture "TILED628", 64, 128
+{
+	Patch "TILED627", 0, 0
+	Patch "TILED627", 0, 64
+}
+
+Texture "TILEE963", 64, 256
+{
+	Patch "TILEE962", 0, 0
+	Patch "TILEE962", 0, 128
+}
+
+Texture "TILEEE58", 64, 320
+{
+	Patch "TILEEE57", 0, 0
+	Patch "TILEEE57", 0, 64
+	Patch "TILEEE57", 0, 128
+	Patch "TILEEE57", 0, 192
+	Patch "TILEEE57", 0, 256
+	Patch "TILEEE57", 0, 0
+}
+
+Texture "TILEEE5A", 64, 64
+{
+	Patch "TILE955D", 0, 0
+}
+
+Texture "TILEEFDC", 64, 64
+{
+	Patch "TILEA40E", 0, 0
+}
+
+Texture "TILEF505", 16, 128
+{
+	Patch "TILEF504", -8, 0
+}
+
+Texture "TILESCT1", 64, 256
+{
+	Patch "TILE5D09", 0, 0
+	Patch "TILE5D09", 0, 128
+}
+
+// End of texture definitions
