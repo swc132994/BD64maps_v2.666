@@ -455,8 +455,8 @@ ACTOR VolumetricLight 3436
 //$category "Maps/BD64_Effects
 XScale 2.9
 YScale 2.9
-Height 1
-Radius 8
+Height 8
+Radius 4
 Alpha 0.15
 Renderstyle Add
 +NOGRAVITY
@@ -466,23 +466,21 @@ Renderstyle Add
 	States
 	{
 	Spawn:
-		LITS B -1 BRIGHT
+		L2TS B -1 BRIGHT
 		stop
 	}
 }
 
-ACTOR VolumetricLightLong : VolumetricLight  3476
+ACTOR VolumetricLightLong : VolumetricLight 3476
 {
 //$category "Maps/BD64_Effects
 XScale 1.0
 YScale 3.0
-Alpha 0.2
 }
 
 ACTOR VolumetricLightGreen : VolumetricLight 3437
 {
 //$category "Maps/BD64_Effects
-Alpha 0.2
 	States
 	{
 	Spawn:
@@ -505,12 +503,10 @@ ACTOR VolumetricLightOrange : VolumetricLight 3438
 ACTOR VolumetricLightRed : VolumetricLight 3439
 {
 //$category "Maps/BD64_Effects
-XScale 2.9
-YScale 2.2
 	States
 	{
 	Spawn:
-		LITS E -1 BRIGHT
+		L2TS E -1 BRIGHT
 		stop
 	}
 }

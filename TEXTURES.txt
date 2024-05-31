@@ -412,21 +412,6 @@ Texture "TILE2CFF", 64, 128
 	Patch "TILE2CFE", 0, 64
 }
 
-Texture "TILE4B61", 64, 64
-{
-	Patch "TILE6FC1", 0, 0
-}
-
-Texture "TILE52CA", 64, 64
-{
-	Patch "TILE52C0", 0, 0
-}
-
-Texture "TILE53EA", 64, 64
-{
-	Patch "TILE53ED", 0, 0
-}
-
 Texture "TILE7F58", 64, 128
 {
 	Patch "TILE7F57", 0, 0
@@ -438,16 +423,6 @@ Texture "TILE92A6", 32, 320
 	Patch "TILE92A5", 0, 0
 	Patch "TILE92A5", 0, 128
 	Patch "TILE92A5", 0, 256
-}
-
-Texture "TILE9F36", 32, 128
-{
-	Patch "TILE9F35", -16, 0
-}
-
-Texture "TILEABC3", 64, 64
-{
-	Patch "TILEABC2", 0, 0
 }
 
 Texture "TILEB709", 64, 128
@@ -494,21 +469,6 @@ Texture "TILEEE58", 64, 320
 	Patch "TILEEE57", 0, 192
 	Patch "TILEEE57", 0, 256
 	Patch "TILEEE57", 0, 0
-}
-
-Texture "TILEEE5A", 64, 64
-{
-	Patch "TILE955D", 0, 0
-}
-
-Texture "TILEEFDC", 64, 64
-{
-	Patch "TILEA40E", 0, 0
-}
-
-Texture "TILEF505", 16, 128
-{
-	Patch "TILEF504", -8, 0
 }
 
 Texture "TILESCT1", 64, 256

@@ -33,3 +33,9 @@ door 0
 	attenuation surround
 	nostopcutoff
 end
+
+:BreakMesh
+	play Mesh/Break
+	attenuation surround
+	nostopcutoff
+end

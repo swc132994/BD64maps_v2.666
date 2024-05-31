@@ -70,6 +70,8 @@ DSMTHDTH		DSMTHDTH
 STGNPUMP		STGNPUMP	//shotgun pump sound for ending
 DSSLOP			DSSLOP		//motherdemon gore sound
 
+Mesh/Break		PILRGLSS
+
 //MAP08 sounds
 DSeqInit		DSeqInit	//destruct sequence
 
