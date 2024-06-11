@@ -741,9 +741,9 @@ Actor Detonator
 {
 Scale 0.8
 Health 99999
+Mass 0x7FFFFFFF
 height 64
 radius 64
-mass 999999
 +SOLID
 +SHOOTABLE
 +NOBLOOD
@@ -900,9 +900,9 @@ Actor ExplosiveArea 1437
 //$category "Maps/BD64_Effects
 Scale 0.5
 Health 40
+Mass 0x7FFFFFFF
 height 1
 radius 1
-Mass 9999999
 damagefactor "Blood",0.0
 -SOLID
 +SHOOTABLE
@@ -1028,7 +1028,7 @@ Radius 0
 	}
 }
 
-Actor GlassOnTHeFloor
+Actor GlassOnTheFloor
 {
 xscale 0.9
 yscale 0.4
@@ -1155,41 +1155,48 @@ ACTOR StoneParticle1 : BasicParticle
 Scale 0.8
 Height 2
 Radius 2
-Damage 0
 Speed 16
-Gravity 0.8
++MISSILE
++NOBLOCKMAP
++NOTELEPORT
++MOVEWITHSECTOR
++CLIENTSIDEONLY
+-DONTSPLASH
++THRUGHOST
++THRUACTORS
++FLOORCLIP
++ISMONSTER		//INFRARED
 BounceType "Doom"
-BounceFactor 0.4
+BounceCount 0
+BounceFactor 0.5
 	States
 	{
 	Spawn:
 		FLRB KLMN 3
 		Loop
 	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
 		FLRB K -1
 		Stop
 	}
 }
 
-ACTOR StoneParticle2 : BasicParticle
+ACTOR StoneParticle2 : StoneParticle1
 {
 Scale 0.4
-Height 2
-Radius 2
-Damage 0
 Speed 14
-Gravity 0.7
-BounceType "Doom"
-BounceFactor 0.4
--NOGRAVITY
-+BOUNCEONACTORS
-+THRUACTORS
+Gravity 0.4
 	States
 	{
 	Spawn:
 		FLRB NMLK 3
 		Loop
 	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
 		FLRB N -1
 		Stop
 	}
@@ -1204,6 +1211,9 @@ Scale 0.8
 		FLRB ABCD 3
 		Loop
 	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
 		FLRB E -1
 		Stop
 	}
@@ -1212,13 +1222,16 @@ Scale 0.8
 ACTOR StoneParticle4 : StoneParticle1
 {
 Scale 0.6
-BounceType "None"
+BounceFactor 0.1
 	States
 	{
 	Spawn:
 		FLRB FGHI 3
 		Loop
 	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
 		FLRB J -1
 		Stop
 	}
@@ -1235,6 +1248,9 @@ BounceFactor 0.2
 		SHRP ABCD 3
 		Loop
 	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
 		SHRP B -1
 		Stop
 	}
@@ -1270,6 +1286,9 @@ BounceFactor 0.2
 		WOOD ABCD 3
 		Loop
 	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
 		WOOD B -1
 		Stop
 	}
@@ -1299,7 +1318,7 @@ ACTOR SFXGlassParticle1 : SFXShrapnelParticle1
 {
 Scale 0.6
 Speed 7
-BounceFactor 0.5
+BounceFactor 0.1
 Alpha 0.9
 Renderstyle Add
 	States
@@ -1308,6 +1327,9 @@ Renderstyle Add
 		GLSP ABCDEFGH 3
 		Loop
 	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
 		GLSP C -1
 		Stop
 	}
