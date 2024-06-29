@@ -340,7 +340,7 @@ map D6428 Lookup "The Ultimate Absolution"
 	InterMusic = "INTERG"
 	Next = "ENDINGMA"
 	exitpic = "INTERPI3"
-	REDIRECT = "AbsMapCheck","D6428A"	//Jump to original BD64 Map28
+	REDIRECT = "VMapCheck","D6428A"	//Jump to original BD64 Map28
 }
 
 map ENDINGMA Lookup "End"
