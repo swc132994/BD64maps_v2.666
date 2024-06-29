@@ -1,0 +1,645 @@
+Actor BD64HangingTechLampb 9923
+{
+//$category "Maps/BD64_Lights
+Game Doom
+Height 56
+Radius 16
++NOGRAVITY
++SPAWNCEILING
+	States
+	{
+	Spawn:
+		HGLM A 0 NoDelay A_SpawnItemEx("BD64LightShaft2",25,25,-50,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",25,-25,-60,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-25,25,-60,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-25,-25,-60,0,0,0,0,SXF_ABSOLUTEPOSITION)
+	Live:
+		HGLM A 4 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",3,3,6,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",3,-3,6,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",-3,3,6,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",-3,-3,6,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		HGLM A -1
+		Stop
+	}
+}
+
+actor BD64CeilingLightb 9924
+{
+//$category "Maps/BD64_Lights
+Game Doom
+Height 16
+Radius 16
++NOGRAVITY
++SPAWNCEILING
+	States
+	{
+	Spawn:
+		CEIL A 0 NoDelay A_SpawnItemEx("BD64LightShaft1",0,0,-105,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",36,36,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-36,36,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",36,-36,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-36,-36,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",92,92,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-92,92,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",92,-92,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-92,-92,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",0,-120,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",0,120,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",120,0,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-120,0,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+	Live:
+		CEIL A 4 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",3,3,0,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",3,-3,0,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",-3,3,0,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",-3,-3,0,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		CEIL A -1
+		Stop
+	}
+}
+
+actor BD64LightShaft1
+{
+Game Doom
+Scale 0.8
+Alpha 0.5
+Renderstyle Add
++FORCEYBILLBOARD
++CLIENTSIDEONLY
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 0
+	SpawnLoop:
+		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+	Live:
+		TNT1 A 0 A_CheckSight("WaitSight")
+		SHF1 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+		SHF2 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+		SHF3 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+		SHF4 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+		SHF5 ABCDEFGHIJKLMNOPQRSTUVW 2
+		Goto SpawnLoop
+	WaitSight:
+		TNT1 A 3
+		Goto Live
+	NoShaft:
+		TNT1 A 525
+		Goto SpawnLoop
+	}
+}
+
+actor BD64LightShaft2 : BD64LightShaft1
+{
+Scale 2.0
+Alpha 0.15
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_SetAngle(random(0,360))
+		TNT1 A 0 A_Recoil(3)
+		TNT1 A 2
+		TNT1 A 0 A_Stop
+	SpawnLoop:
+		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+	Live:
+		TNT1 A 0 A_CheckSight("WaitSight")
+		FBB3 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+		FBB4 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+		FBB5 ABCDEFGHIJKL 2
+		Goto SpawnLoop
+	WaitSight:
+		TNT1 A 3
+		Goto Live
+	NoShaft:
+		TNT1 A 525
+		Goto SpawnLoop
+	}
+}
+
+actor BD64LightShaft2Brighter : BD64LightShaft2
+{
+Alpha 0.25
+Scale 2.5
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Goto Live
+	}
+}
+
+actor BD64LightShaft2BrighterLess : BD64LightShaft2
+{
+Alpha 0.19
+Scale 2.5
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Goto Live
+	}
+}
+
+actor BD64LightShaft2Fast : BD64LightShaft2
+{
+Alpha 0.25
+Scale 5.0
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_SetAngle(random(0,360))
+		TNT1 A 0 A_Recoil(2)
+		TNT1 A 2
+		TNT1 A 0 A_Stop
+	SpawnLoop:
+		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+	Live:
+		TNT1 A 0 A_CheckSight("WaitSight")
+		FBB1 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+		FBB2 ABCDE 2
+		Goto SpawnLoop
+	NoShaft:
+		TNT1 A 525
+		Goto SpawnLoop
+	WaitSight:
+		TNT1 A 3
+		Goto Live
+	}
+}
+
+actor BD64LampFlareSpawn1 9321
+{
+//$category "Maps/BD64_Lights
+Game Doom
+Height 1
+Radius 4
++NOGRAVITY
++SPAWNCEILING
+-SHOOTABLE
+	States
+	{
+	Spawn:
+		TNT1 A 3
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft3",0,0,-40)
+	Live:
+		TNT1 A 2
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanentOnSurface")
+		TNT1 AA 0 A_SpawnItemEx("BD64WhiteFlareCeilingTexture")
+		TNT1 A -1
+		Stop
+	}
+}
+
+actor BD64LampFlareSpawn2OnFloor 9322
+{
+//$category "Maps/BD64_Lights
+Game Doom
+Height 4
+Radius 4
+-SHOOTABLE
+-NOGRAVITY
+	States
+	{
+	Spawn:
+		TNT1 A 3
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft3upsidedown")
+	Live:
+		TNT1 A 1
+		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallInfGrav")
+		TNT1 AA 0 A_SpawnItemEx("BD64WhiteFlareFloorTexture")
+		TNT1 A -1
+		Stop
+	}
+}
+
+actor BD64LightShaft3
+{
+XScale 0.6
+YScale 0.8
+Height 55
+Radius 2
+Speed 0
+Alpha 0.35
+Renderstyle Add
+-SPAWNCEILING
+-SHOOTABLE
+-SOLID
++NOCLIP
++NOINTERACTION
++THRUACTORS
++NOGRAVITY
++FORCEYBILLBOARD
++FLOAT
++CLIENTSIDEONLY
+	States
+	{
+	Spawn:
+		S9FA A 1
+	Live:
+		S9FA A -1
+		Stop
+	}
+}
+
+actor BD64LightShaft3upsidedown
+{
+XScale 0.6
+YScale 0.8
+Height 32
+Radius 2
+Speed 0
+Alpha 0.35
+Renderstyle Add
++THRUACTORS
++FORCEYBILLBOARD
++CLIENTSIDEONLY
+	States
+	{
+	Spawn:
+		S9FA B 1
+	Live:
+		S9FA B -1
+		Stop
+	}
+}
+
+Actor BD64VolumetricLightningSpawn 6699
+{
+//$category "Maps/BD64_Lights
+Height 4
+Radius 4
++NOBLOCKMAP
+	States
+	{
+	Spawn:
+		TNT1 A 1 NoDelay A_SpawnItemEx("BD64LightShaft2")
+		Stop
+	}
+}
+
+actor BD64GroundFire 9929
+{
+//$category "Maps/BD64_Lights
+Game Doom
+scale 0.6
+Height 8
+Radius 6
+Alpha 0.8
+RenderStyle Add
+	states
+	{
+	Spawn:
+		F1RE A 0 NoDelay A_SpawnItemEx("BD64LightShaft2",36,36,0)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-36,36,0)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",36,-36,0)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-36,-36,0)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2Fast",0,0,32)
+	Stay:
+		TNT1 A 0 A_CheckSight("WaitSight")
+		//TNT1 A 0 A_Playsound("BDfireplace",CHAN_VOICE)
+		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY)
+		F1RE A 1 Bright Light("GROUNDFIRE")
+		F1RE B 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F1RE C 1 Bright Light("GROUNDFIRE")
+		F1RE D 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F1RE E 1 Bright Light("GROUNDFIRE")
+		F1RE F 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F1RE G 1 Bright Light("GROUNDFIRE")
+		F1RE H 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F2RE A 1 Bright Light("GROUNDFIRE")
+		F2RE B 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F2RE C 1 Bright Light("GROUNDFIRE")
+		F2RE D 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F2RE E 1 Bright Light("GROUNDFIRE")
+		F2RE F 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		F2RE G 1 Bright Light("GROUNDFIRE")
+		F2RE H 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("BD64RedFlare",0,0,32)
+		Loop
+	WaitSight:
+		F1RE ABCDEFGH 1
+		F2RE ABCDEFGH 1
+		Goto Stay
+	}
+}
+
+Actor BD64Flare_General
+{
+scale 0.4
+height 1
+radius 1
+Speed 0
+alpha 0.4
+renderstyle Add
++MISSILE
++NOINTERACTION
++NOGRAVITY
++CLIENTSIDEONLY
++THRUACTORS
++NOCLIP
+}
+
+Actor BD64RedFlare : BD64Flare_General
+{
+	States
+	{
+	Spawn:
+		LENR A 0 NoDelay A_Jump(128,2)
+		LENR A 2 Bright
+		Stop
+		LENR B 2 Bright
+		Stop
+	}
+}
+
+Actor BD64WhiteFlareCeilingTexture : BD64Flare_General
+{
+XScale 0.5
+YScale 0.2
+height 0
+radius 0
+alpha 0.99
+-FORCEYBILLBOARD
++FORCEXYBILLBOARD
++NOCLIP
++NOGRAVITY
++FLOAT
+	states
+	{
+	Spawn:
+		LENS A -1
+		Stop
+	}
+}
+
+Actor BD64WhiteFlareFloorTexture : BD64Flare_General
+{
+XScale 0.5
+YScale 0.2
+Height 1
+radius 1
+alpha 0.99
+-NOGRAVITY
+-FLOAT
+-NOCLIP
+-NOINTERACTION
+-FORCEYBILLBOARD
++FORCEXYBILLBOARD
+	states
+	{
+	Spawn:
+		TNT1 A 0
+	SpawnLoop:
+		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+	Live:
+		TNT1 A 0 A_CheckSight("WaitSight")
+		LENS A 525
+		Goto SpawnLoop
+	WaitSight:
+		TNT1 A 3
+		Goto Live
+	NoLight:
+		TNT1 A 525
+		Goto SpawnLoop
+	}
+}
+
+Actor BD64ShortWhiteFlareSmall : BD64Flare_General
+{
+XScale 0.5
+Yscale 0.2
+alpha 0.6
+-FORCEYBILLBOARD
++FORCEXYBILLBOARD
+	states
+	{
+	Spawn:
+		LENS A 5
+		Stop
+	}
+}
+
+Actor BD64ShortWhiteFlareSmallInfGrav : BD64ShortWhiteFlareSmall
+{
+-NOGRAVITY
+-FLOAT
+-NOCLIP
+-NOINTERACTION
+-FORCEYBILLBOARD
++FORCEXYBILLBOARD
+	states
+	{
+	Spawn:
+		TNT1 A 0
+	SpawnLoop:
+		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+	Live:
+		TNT1 A 0 A_CheckSight("WaitSight")
+		LENS A 525
+		Goto SpawnLoop
+	NoLight:
+		TNT1 A 525
+		Goto SpawnLoop
+	WaitSight:
+		TNT1 A 3
+		Goto Live
+	}
+}
+
+Actor BD64ShortWhiteFlareSmallPermanent : BD64Flare_General
+{
+XScale 0.6
+Yscale 0.2
+alpha 0.8
+-FORCEYBILLBOARD
++FORCEXYBILLBOARD
++NOBLOCKMAP
+	states
+	{
+	Spawn:
+		TNT1 A 0
+	SpawnLoop:
+		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+	Live:
+		TNT1 A 0 A_CheckSight("WaitSight")
+		LENS A 525
+		Goto SpawnLoop
+	NoLight:
+		TNT1 A 525
+		Goto SpawnLoop
+	WaitSight:
+		TNT1 A 3
+		Goto Live
+	}
+}
+
+Actor BD64ShortWhiteFlareSmallPermanentOnSurface : BD64Flare_General
+{
+XScale 0.6
+Yscale 0.15
+alpha 0.4
+-FORCEYBILLBOARD
++FORCEXYBILLBOARD
++NOBLOCKMAP
+	states
+	{
+	Spawn:
+		LENS A 0
+	Live:
+		TNT1 A 0 A_CheckSight("WaitSight")
+		LENS A 525
+		Goto Spawn
+	NoLight:
+		TNT1 A 525
+		Goto Spawn
+	WaitSight:
+		TNT1 A 3
+		Goto Live
+	}
+}
+
+ACTOR EndingDoomguy 19431
+{
+//$category "Maps/BD64_Ending
+Height 14
+Radius 14
++THRUACTORS
++NOBLOCKMAP
++NOGRAVITY
++FLOAT
+	states
+	{
+	Spawn:
+		CINM ABABABABABABABAB 12
+		CINM CDDD 6
+		CINM F 4 Bright A_PlaySound("weapons/shotgf",CHAN_WEAPON)
+		CINM E 40
+		CINM G 150
+		CINM J 25
+		TNT1 A 0 A_PlaySound("STGNPUMP",CHAN_WEAPON)
+		CINM ILMNNMLIJ 2
+		CINM J -1
+		Stop
+	}
+}
+
+ACTOR EndingMotherdemon 19432
+{
+//$category "Maps/BD64_Ending
+Scale 1.1
+Height 14
+Radius 14
++THRUACTORS
++NOBLOCKMAP
+	states
+	{
+	Spawn:
+		CIND A 0
+		TNT1 A 0 A_PlaySound("DSMTHACT",CHAN_BODY)
+		CIND ABABABABAB 12
+		TNT1 A 0 A_PlaySound("DSMTHACT",CHAN_BODY)
+		CIND ABABAB 12
+		TNT1 A 0 A_PlaySound("DSMTHDTH",CHAN_BODY)
+		CIND ABABABA 3
+		TNT1 AA 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
+		TNT1 AA 0 A_CustomMissile("XDeath2",32,0,random(150,210),2,random(10,50))
+		TNT1 AA 0 A_CustomMissile("XDeath3",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeath5",32,0,random(150,210),2,random(10,50))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPiece",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathEyes",40,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAAAA 0 A_CustomMissile("BloodmistBig",45,0,random(0,360),2,random(10,90))
+		TNT1 AAAAAA 0 A_CustomMissile("Bloodmist",45,0,random(0,360),2,random(10,90))
+		TNT1 AAAAAAAAAAAAA 0 A_SpawnItemEx("Blood",0,0,45)
+		TNT1 A 0 A_PlaySound("misc/xdeath",CHAN_BODY)
+		CIND D 6
+		CIND E -1
+		Stop
+	}
+}
+
+ACTOR EndinngScaredDemon1 19433
+{
+//$category "Maps/BD64_Ending
+Height 14
+Radius 14
+MONSTER
++THRUACTORS
++FRIENDLY
+	states
+	{
+	Spawn:
+		DI64 A 1
+		DI64 A 300
+		DI64 ABCDABCDABCDABCD 4 A_REcoil(-1)
+		DI64 A 180
+		DI64 A 1 A_setAngle(0)
+		DI64 ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCD 2 A_Recoil(-1)
+		Stop
+	}
+}
+
+ACTOR EndinngScaredDemon2 19434
+{
+//$category "Maps/BD64_Ending
+Height 14
+Radius 14
+MONSTER
++THRUACTORS
++FRIENDLY
+	states
+	{
+	Spawn:
+		SARG A 1
+		SARG A 300
+		SARG ABCDABCDABCDABCD 4 A_REcoil(-1)
+		SARG A 180
+		SARG A 1 A_setAngle(0)
+		SARG ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCD 2 A_Recoil(-1)
+		Stop
+	}
+}
+
+ACTOR EndinngScaredDemon3 19435
+{
+//$category "Maps/BD64_Ending
+Height 14
+Radius 14
+MONSTER
++THRUACTORS
++FRIENDLY
+	states
+	{
+	Spawn:
+		BOSS A 1
+		BOSS A 300
+		BOSS ABCDABCDABCDABCD 4 A_REcoil(-1)
+		BOSS A 180
+		BOSS A 1 A_setAngle(0)
+		BOSS ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCD 2 A_Recoil(-1)
+		Stop
+	}
+}
+
+ACTOR EndinngScaredDemon4 19436
+{
+//$category "Maps/BD64_Ending
+Height 14
+Radius 14
+MONSTER
++THRUACTORS
++FRIENDLY
+	states
+	{
+	Spawn:
+		FATT A 1
+		FATT A 300
+		FATT ABCDABCDABCDABCD 4 A_REcoil(-1)
+		FATT A 180
+		FATT A 1 A_setAngle(0)
+		FATT ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCD 2 A_Recoil(-1)
+		Stop
+	}
+}

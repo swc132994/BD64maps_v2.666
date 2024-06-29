@@ -1,0 +1,2038 @@
+ACTOR TeleportHelishSound 8741
+{
+//$category "Maps/BD64_Effects
+Height 16
+Radius 16
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_PlaySound("HELLSC",CHAN_WEAPON,1,TRUE)
+		TNT1 A 4000
+		Loop
+	}
+}
+
+ACTOR D64HomingFireBallLauncher
+{
+Speed 0
+MONSTER
+-COUNTKILL
+-SHOOTABLE
++NOGRAVITY
++FLOAT
++LOOKALLAROUND
++THRUACTORS
++MISSILEMORE
++MISSILEEVENMORE
+	States
+	{
+	Spawn:
+		TNT1 AAAAAAA 1 NoDelay A_Chase
+		Goto Missile
+	Missile:
+		TNT1 A 1
+		TNT1 A 0 A_CheckSight("DontFire")
+		TNT1 A 1 A_FaceTarget
+		TNT1 A 0 A_CustomMissile("RevenantTracer",40)
+		TNT1 A 1 A_NoBlocking
+		Stop
+	DontFire:
+		TNT1 A 1 A_NoBlocking
+		Stop
+	}
+}
+
+ACTOR D64Icon 8347
+{
+//$category "Maps/BD64_Effects
+Scale 0.2
+Speed 0
+MONSTER
+-COUNTKILL
+-SHOOTABLE
++NOGRAVITY
++FLOAT
++LOOKALLAROUND
++THRUACTORS
++MISSILEMORE
++MISSILEEVENMORE
+	States
+	{
+	Spawn:
+		ICON AAAAAAA 1
+		Loop
+	}
+}
+
+ACTOR TopLight1Red 8892
+{
+//$category "Maps/BD64_Effects
+XScale 0.5
+YScale 1.0
+Height 1
+Radius 4
+Alpha 0.2
+Renderstyle Add
++SPAWNCEILING
++NOGRAVITY
++FORCEYBILLBOARD
++CLIENTSIDEONLY
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_SpawnItemEx("WorldRedFlare",0,0,-2)
+		LTRD A -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR FloorLight1Red 7892
+{
+//$category "Maps/BD64_Effects
+XScale 0.5
+YScale -1.0
+Height 1
+Radius 4
+Alpha 0.2
+Renderstyle Add
++CLIENTSIDEONLY
++NOINTERACTION
++FORCEYBILLBOARD
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_SpawnItemEx("WorldRedFlare",0,0,0)
+		LTRD A -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR WorldRedFlare : TopLight1Red
+{
+XScale 0.4
+YScale 0.2
+Alpha 0.4
++FORCEXYBILLBOARD
+-FORCEYBILLBOARD
+	States
+	{
+	Spawn:
+		LEYS R -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR TopLight1Green : TopLight1Red 8893
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_SpawnItemEx("WorldGreenFlare",0,0,-2)
+		LTRD B -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR WorldGreenFlare : WorldRedFlare
+{
+	States
+	{
+	Spawn:
+		LEYS G -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR TopLight1White : TopLight1Red 8894
+{
+//$category "Maps/BD64_Effects
+Alpha 0.2
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_SpawnItemEx("WorldWhiteFlare",0,0,-2)
+		LTRD C -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR WorldWhiteFlare : WorldRedFlare
+{
+	States
+	{
+	Spawn:
+		LENZ A -1 BRIGHT
+		stop
+	}
+}
+
+ACTOR WorldWhiteFlareLarge : WorldRedFlare
+{
+XScale 1.7
+YScale 0.8
+Alpha 0.6
+	States
+	{
+	Spawn:
+		LENZ A -1 BRIGHT
+		stop
+	}
+}
+
+ACTOR WorldWhiteFlareVeryLarge: WorldWhiteFlareLarge
+{
+XScale 5.4
+YScale 3.6
+Alpha 1.0
++FLOATBOB
++FORCEXYBILLBOARD
+	States
+	{
+	Spawn:
+		LENZ A -1 BRIGHT
+		stop
+	}
+}
+
+ACTOR TopLight1WhiteLarge : TopLight1Red 8694
+{
+//$category "Maps/BD64_Effects
+Scale 1.2
+Alpha 0.2
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_SpawnItemEx("WorldWhiteFlareLarge",0,0,-6)
+		LTRD C -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR TopLight1Yellow : TopLight1Red 8895
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_SpawnItemEx("WorldYellowFlare",0,0,-2)
+		LTRD D -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR WorldYellowFlare : WorldRedFlare
+{
+	States
+	{
+	Spawn:
+		LEYS Y -1 BRIGHT
+		stop
+	}
+}
+
+ACTOR TopLight1Blue : TopLight1Red 8896
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_SpawnItemEx("WorldBlueFlare",0,0,-2)
+		LTRD E -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR WorldBlueFlare: WorldRedFlare
+{
+	States
+	{
+	Spawn:
+		LEYS B -1 BRIGHT
+		stop
+	}
+}
+
+ACTOR LowerLight1White : TopLight1Red 8897
+{
+//$category "Maps/BD64_Effects
+-SPAWNCEILING
+-NOGRAVITY
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_SpawnItemEx("WorldWhiteFlare",0,0,-2)
+		LTRD F -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR TopLight1Orange : TopLight1Red 8898
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_SpawnItemEx("WorldOrangeFlare",0,0,-2)
+		LTRD G -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR WorldOrangeFlare : WorldRedFlare
+{
+	States
+	{
+	Spawn:
+		LEYS O -1 BRIGHT
+		stop
+	}
+}
+
+ACTOR TunnelLights 3826
+{
+//$category "Maps/BD64_Effects
+XScale 1.4
+YScale 2.0
+Height 1
+Alpha 0.22
+Renderstyle Add
++NOGRAVITY
++NOCLIP
++SPAWNCEILING
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_SpawnItemEx("WorldWhiteFlareLarge",0,0,-6)
+		LITS A -1 BRIGHT
+		stop
+	}
+}
+
+Actor LightsUnderwaterSpawner 4828
+{
+//$category "Maps/BD64_Effects
+Radius 4
+Height 4
++NOGRAVITY
+	States
+	{
+	Spawn:
+		TNT1 A 1 NoDelay A_SpawnItemEx("LightsUnderWater",0,0,32)
+		//TNT1 A 1 A_SpawnItemEx("WorldWhiteFlareVeryLarge",0,0,32)
+		Stop
+	}
+}
+
+ACTOR LightsUnderWater
+{
+XScale 1.8
+YScale 2.4
+Height 1
+Radius 8
+Alpha 0.99
+Renderstyle Add
++NOGRAVITY
++NOCLIP
++FORCEYBILLBOARD
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Goto Live
+	Live:
+		LITM ABCDEFGH 1 BRIGHT
+		Loop
+	}
+}
+
+ACTOR LightsUnderWaterBlue : LightsUnderWater 4830
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Goto Live
+	Live:
+		LBTM ABCDEFGH 1 BRIGHT
+		Loop
+	}
+}
+
+ACTOR LightsUnderWaterOrange : LightsUnderWater 4831
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Goto Live
+	Live:
+		LOTM ABCDEFGH 1 BRIGHT
+		Loop
+	}
+}
+
+ACTOR LightsUnderWaterRed : LightsUnderWater 4832
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Goto Live
+	Live:
+		LRTM ABCDEFGH 1 BRIGHT
+		Loop
+	}
+}
+
+ACTOR LightsUnderWaterGreen : LightsUnderWater 4833
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Goto Live
+	Live:
+		LGTM ABCDEFGH 1 BRIGHT
+		Loop
+	}
+}
+
+ACTOR ThunderSpawner : LightsUnderWater 4834
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		TNT1 A 0 A_Jump(64,"SpawnThunder")
+		TNT1 A 600
+	SpawnThunder:
+		TNT1 A 1 A_SpawnItemEx("ThunderEffects",(random(-2,2)),(random(-2,2)))
+		TNT1 A 1
+		Goto Spawn
+	}
+}
+
+ACTOR ThunderEffects
+{
+Scale 0.2
+Alpha 0.01
+Renderstyle Add
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		TNT1 A 0 A_PlaySound("AmbientThunder",CHAN_AUTO)
+		TNT1 A 0 A_Jump(128,"Live1","Live2")
+	Live1:
+		THUN A 1 BRIGHT
+		THUN AAAAA 1 BRIGHT A_FadeIn(0.1)
+		THUN A 3 BRIGHT
+		THUN AAAAAAAAAAAAAAAAAAAA 1 A_FadeOut(0.02)
+		Goto Dead
+	Live2:
+		THUN B 1 BRIGHT
+		THUN BBBBB 1 BRIGHT A_FadeIn(0.1)
+		THUN B 3 BRIGHT
+		THUN BBBBBBBBBBBBBBBBBBBBB 1 A_FadeOut(0.02)
+		Goto Dead
+	Dead://Makes sound effect not get cut
+		TNT1 A 1000
+		Stop
+	}
+}
+
+ACTOR VolumetricLight 3436
+{
+//$category "Maps/BD64_Effects
+XScale 2.9
+YScale 2.9
+Height 8
+Radius 4
+Alpha 0.15
+Renderstyle Add
++NOGRAVITY
++CLIENTSIDEONLY
++NOCLIP
++FORCEYBILLBOARD
+	States
+	{
+	Spawn:
+		L2TS B -1 BRIGHT
+		stop
+	}
+}
+
+ACTOR VolumetricLightLong : VolumetricLight 3476
+{
+//$category "Maps/BD64_Effects
+XScale 1.0
+YScale 3.0
+}
+
+ACTOR VolumetricLightGreen : VolumetricLight 3437
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		LITS C -1 BRIGHT
+		stop
+	}
+}
+
+ACTOR VolumetricLightOrange : VolumetricLight 3438
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		LITS D -1 BRIGHT
+		stop
+	}
+}
+
+ACTOR VolumetricLightRed : VolumetricLight 3439
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		L2TS E -1 BRIGHT
+		stop
+	}
+}
+
+ACTOR TunnelLightsLowContrast : TunnelLights 3827
+{
+//$category "Maps/BD64_Effects
+XScale 0.9
+YScale 0.5
+Alpha 0.15
+}
+
+actor SpawnSpark_Down 8914
+{
+//$category "Maps/BD64_Effects
+height 8
+radius 4
++NOBLOCKMAP
++NOGRAVITY
++NOSECTOR
++NOCLIP
++SPAWNCEILING
++CLIENTSIDEONLY
+	states
+	{
+	Active:
+	Spawn:
+		TNT1 A 0 NoDelay A_PlaySound("Sparks/Spawn",CHAN_AUTO)
+		TNT1 A 0 A_Jump(256,1,2,3,4,5,6)
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
+		goto SpawnSparks
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
+		goto SpawnSparks
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
+		goto SpawnSparks
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
+		goto SpawnSparks
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
+		goto SpawnSparks
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
+	SpawnSparks:
+		TNT1 AA 0 A_CustomMissile("Spark_W1",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W2",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W3",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W4",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W5",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W6",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W7",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W8",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W9",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W10",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W11",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W12",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W13",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W14",0.0,0,random(0,360),2,random(270,315))
+		TNT1 AA 0 A_CustomMissile("Spark_W15",0.0,0,random(0,360),2,random(270,315))
+		TNT1 A 0 A_Jump(256,1,2,3,4,5,6)
+		TNT1 A 100
+		Goto Spawn
+		TNT1 A 120
+		Goto Spawn
+		TNT1 A 540
+		Goto Spawn
+		TNT1 A 80
+		Goto Spawn
+		TNT1 A 140
+		Goto Spawn
+		TNT1 A 160
+		Goto Spawn
+	Inactive:
+		TNT1 A -1
+		stop
+	}
+}
+
+actor SpawnSpark_Up 8901
+{
+//$category "Maps/BD64_Effects
+height 8
+radius 4
++NOBLOCKMAP
++NOGRAVITY
++NOSECTOR
++NOCLIP
++CLIENTSIDEONLY
+	states
+	{
+	Active:
+	Spawn:
+		TNT1 A 0 NoDelay A_PlaySound("Sparks/Spawn",CHAN_AUTO)
+		TNT1 A 0 A_Jump(256,1,2,3,4,5,6)
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
+		goto SpawnSparks
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
+		goto SpawnSparks
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
+		goto SpawnSparks
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
+		goto SpawnSparks
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
+		goto SpawnSparks
+		TNT1 A 1 A_SpawnItemEx("SparkFlare_W1")
+	SpawnSparks:
+		TNT1 AA 0 A_CustomMissile("Spark_W1",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W2",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W3",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W4",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W5",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W6",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W7",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W8",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W9",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W10",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W11",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W12",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W13",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W14",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W15",0.0,0,random(0,360),2,random(67,113))
+		TNT1 AA 0 A_CustomMissile("Spark_W16",0.0,0,random(0,360),2,random(67,113))
+		TNT1 A 0 A_Jump(256,1,2,3,4,5,6)
+		TNT1 A 100
+		Goto Spawn
+		TNT1 A 120
+		Goto Spawn
+		TNT1 A 540
+		Goto Spawn
+		TNT1 A 80
+		Goto Spawn
+		TNT1 A 140
+		Goto Spawn
+		TNT1 A 160
+		Goto Spawn
+	Inactive:
+		TNT1 A -1
+		stop
+	}
+}
+
+actor SparkFlare_W1
+{
+scale 0.25
+height 0
+radius 0
+mass 0
+renderstyle Add
++MISSILE
++NOBLOCKMAP
++NOCLIP
++NOGRAVITY
++CLIENTSIDEONLY
+	states
+	{
+	Spawn:
+		SPRK A 1 bright A_FadeOut(0.1)
+		loop
+	}
+}
+
+actor Spark_W1
+{
+scale 0.02
+height 1
+radius 2
+speed 0.25
+mass 0
+Gravity 0.125
+BounceType "Doom"
+bouncefactor 0.2
+renderstyle Add
++MISSILE
++CLIENTSIDEONLY
++NOBLOCKMAP
+	states
+	{
+	Spawn:
+		SPRK A 1 bright
+		loop
+	Death:
+		SPRK A 1 bright A_FadeOut(0.1)
+		Wait
+	}
+}
+
+actor Spark_W2 : Spark_W1	{speed 0.5}
+actor Spark_W3 : Spark_W1	{speed 0.75}
+actor Spark_W4 : Spark_W1	{speed 1.0}
+actor Spark_W5 : Spark_W1	{speed 1.25}
+actor Spark_W6 : Spark_W1	{speed 1.5}
+actor Spark_W7 : Spark_W1	{speed 1.75}
+actor Spark_W8 : Spark_W1	{speed 2.0}
+actor Spark_W9 : Spark_W1	{speed 2.25}
+actor Spark_W10 : Spark_W1	{speed 2.5}
+actor Spark_W11 : Spark_W1	{speed 2.75}
+actor Spark_W12 : Spark_W1	{speed 3.0}
+actor Spark_W13 : Spark_W1	{speed 3.25}
+actor Spark_W14 : Spark_W1	{speed 3.5}
+actor Spark_W15 : Spark_W1	{speed 3.75}
+actor Spark_W16 : Spark_W1	{speed 4.0}
+
+ACTOR WallExplosion : Rocket
+{
+Speed 0
+	States
+	{
+	Spawn:
+		Goto Death
+	}
+}
+
+Actor FirePitsOfHell 1276
+{
+//$category "Maps/BD64_Effects
+Scale 1.5
+height 32
+radius 32
+Renderstyle Translucent
++NOCLIP
++NOBLOCKMAP
++LOOKALLAROUND
++CLIENTSIDEONLY
+	states
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_Playsound("props/redfire",CHAN_BODY)
+		F1RE ABCDEFGH 1 bright
+		F2RE ABCDEFGH 1 bright
+		Loop
+	}
+}
+
+Actor Detonator
+{
+Scale 0.8
+Health 99999
+Mass 0x7FFFFFFF
+height 64
+radius 64
++SOLID
++SHOOTABLE
++NOBLOOD
++NOGRAVITY
+	states
+	{
+	Spawn:
+		TNT1 A 4
+		Stop
+	}
+}
+
+Actor SFXRainSpawner256 4543
+{
+//$category "Maps/BD64_Effects
+Height 4
+Radius 6
++NOCLIP
++SPAWNCEILING
++NOGRAVITY
+	States
+	{
+	Spawn:
+		RNDR A 0 NoDelay ThrustThingZ(0,955,0,1)
+		Goto Spawn2
+	Spawn2:
+		TNT1 A 0 A_CheckSight("SpawnLess")
+		TNT1 A 0 A_PlaySound("AMBRAIN",CHAN_7,1,TRUE)
+		TNT1 A 2 A_SpawnItemEx("RainDrop",Random(-256,256),0,-2,0,0,0,Random(0,360),128,1)	//WAS 1 TIC
+		Loop
+	SpawnLess:
+		TNT1 A 0 A_StopSound(CHAN_7)
+		TNT1 A 8 A_SpawnItemEx("RainDrop",Random(-256,256),0,-2,0,0,0,Random(0,360),128,1)
+		Goto Spawn2
+	}
+}
+
+Actor RainDrop
+{
+Scale 1.0
+Height 2
+Radius 2
+Mass 0
+Speed 0
+Alpha 0.8
+Renderstyle Translucent
++MISSILE
+-NOGRAVITY
++CLIENTSIDEONLY
++DONTSPLASH
+	States
+	{
+	Spawn:
+		RNDR A 1
+		Loop
+	Death:
+		RNDR BCDEFGH 1 A_FadeOut(0.15)
+		Stop
+	}
+}
+
+Actor SnowSpawner512 7544		//repurposed to ash for fire sky maps
+{
+//$category "Maps/BD64_Effects
+Height 1
+Radius 6
++NOCLIP
++SPAWNCEILING
++NOGRAVITY
+	States
+	{
+	Spawn:
+		SNOW A 0 NoDelay ThrustThingZ(0,955,0,1)
+		Goto Spawn2
+	Spawn2:
+		TNT1 A 6 A_SpawnItemEx("SnowParticle",Random(-256,256),0,-2,0,0,0,Random(0,360),128,1)
+		Loop
+	}
+}
+
+Actor SnowParticle
+{
+Translation "0:255=%[0,0,0]:[0,0,0]"	//changes colour to black
+Scale 0.6
+Height 1
+Radius 1
+Damage 0
+Mass 0
+Gravity 0.05
+Alpha 0
+RenderStyle Translucent
++MISSILE
+-NOGRAVITY
++NOBLOCKMAP
++DONTSPLASH
+	States
+	{
+	Spawn:
+		SNOW AAAAAAAAA 2 NoDelay A_FadeIn(0.1)
+	Spawn2:
+		SNOW A 3
+		Loop
+	Death:
+		SNOW A 1 A_FadeOut(0.05)
+		Loop
+	}
+}
+
+ACTOR WaterDriping 2225
+{
+//$category "Maps/BD64_Effects
+Height 1
++NOBLOCKMAP
++SPAWNCEILING
++NOGRAVITY
++FLOAT
+	States
+	{
+	Spawn:
+		CDRP A 20
+		CDRP BC 4
+		TNT1 A 0 A_SpawnItemEx("BrutalWaterDropOnFloor")
+		TNT1 D 4
+		Loop
+	}
+}
+
+ACTOR BrutalWaterDropOnFloor
+{
+Height 1
+Radius 1
+Mass 1
+Speed 0
+Gravity 1.0
+ActiveSound "world/waterdrips"
++MISSILE
+-NOGRAVITY
++NOBLOCKMAP
+	States
+	{
+	Spawn:
+		DRIP H 25
+		Stop
+	Death:
+		DRIP A 1 //A_PlaySound("DSWDRIP",CHAN_BODY)
+		DRIP BCDEFGH 1
+		TNT1 A 1
+		Stop
+	}
+}
+
+Actor ExplosiveArea 1437
+{
+//$category "Maps/BD64_Effects
+Scale 0.5
+Health 40
+Mass 0x7FFFFFFF
+height 1
+radius 1
+damagefactor "Blood",0.0
+-SOLID
++SHOOTABLE
++NOBLOOD
++NOGRAVITY
++THRUACTORS
+	states
+	{
+	Spawn:
+		TNT1 A -1
+		Stop
+	Death:
+		TNT1 A 1
+		TNT1 A 0 A_SpawnItemEx("Rocket")
+		TNT1 A 0 A_SpawnItemEx("Detonator")
+		TNT1 A 0 A_SpawnItemEx("Detonator")
+		TNT1 A 1
+		Stop
+	}
+}
+
+Actor ExplosiveArea2 : ExplosiveArea 1438
+{
+//$category "Maps/BD64_Effects
+height 96
+radius 32
+Health 200
+}
+
+Actor ExplosiveArea3 : ExplosiveArea 1439
+{
+//$category "Maps/BD64_Effects
+height 96
+radius 32
+Health 400
+}
+
+Actor WallDestroySpawnRubble : ExplosiveArea 5439
+{
+//$category "Maps/BD64_Effects
+Health 30
+	states
+	{
+	Death:
+		TNT1 AAAAAA 0 A_CustomMissile("StoneParticle2",0,0,random(0,360),2,random(10,40))
+		TNT1 AAAAAA 0 A_CustomMissile("StoneParticle1",0,0,random(0,360),2,random(10,40))
+		TNT1 AAAAAA 0 A_CustomMissile("StoneParticle3",0,0,random(0,360),2,random(10,40))
+		TNT1 AAAAAA 0 A_CustomMissile("StoneParticle4",0,0,random(0,360),2,random(10,40))
+		TNT1 AAAAAA 0 A_CustomMissile("DestroyedBuildingSmoke",0,0,random(0,360),2,random(10,40))
+		TNT1 AAAAAA 0 A_CustomMissile("DestroyedBuildingSmokeSpawner",0,0,random(0,360),2,random(10,40))
+		TNT1 A 0 A_PlaySound("ROCKFAL",CHAN_WEAPON)
+		TNT1 A 500
+		Stop
+	}
+}
+
+Actor WallDestroySpawnWood : ExplosiveArea 5441
+{
+//$category "Maps/BD64_Effects
+Health 30
+	states
+	{
+	Death:
+		TNT1 AAAA 0 A_CustomMissile("SFXWoodParticle2",0,0,random(0,360),2,random(30,60))
+		TNT1 AAAA 0 A_CustomMissile("SFXWoodParticle1",0,0,random(0,360),2,random(30,60))
+		TNT1 AAAA 0 A_CustomMissile("SFXWoodParticle3",0,0,random(0,360),2,random(30,60))
+		TNT1 AAAA 0 A_CustomMissile("SFXWoodParticle4",0,0,random(0,360),2,random(30,60))
+		TNT1 AAA 0 A_CustomMissile("SFXBrownSmoke",20,0,random(0,360),2,random(10,40))
+		TNT1 A 0 A_PlaySound("DSBRK2",CHAN_WEAPON)
+		TNT1 A 500
+		Stop
+	}
+}
+
+Actor WallDestroySpawnGlass : ExplosiveArea 5440
+{
+//$category "Maps/BD64_Effects
+Health 30
+	states
+	{
+	Death:
+		TNT1 AAAA 0 A_CustomMissile("SFXGlassParticle1",random(0,40),random(-20,20),random(0,360),2,random(30,60))
+		TNT1 AAAA 0 A_CustomMissile("SFXGlassParticle2",random(0,40),random(-20,20),random(0,360),2,random(30,60))
+		TNT1 AAAA 0 A_CustomMissile("SFXGlassParticle3",random(0,40),random(-20,20),random(0,360),2,random(30,60))
+		TNT1 AAAA 0 A_CustomMissile("SFXGlassParticle4",random(0,40),random(-20,20),random(0,360),2,random(30,60))
+		TNT1 A 0 A_PlaySound("GLSFAL",CHAN_WEAPON)
+		TNT1 A 500
+		Stop
+	}
+}
+
+Actor D4Map02TerraformingParticles : ExplosiveArea
+{
+	states
+	{
+	Death:
+	Spawn:
+		TNT1 A 0 NoDelay A_CustomMissile("StoneParticle2",0,0,random(0,360),2,random(10,40))
+		TNT1 A 0 A_CustomMissile("StoneParticle1",0,0,random(0,360),2,random(10,40))
+		TNT1 A 0 A_CustomMissile("StoneParticle3",0,0,random(0,360),2,random(10,40))
+		TNT1 A 0 A_CustomMissile("StoneParticle4",0,0,random(0,360),2,random(10,40))
+		TNT1 AAAA 0 A_CustomMissile("DestroyedBuildingSmoke",0,0,random(0,360),2,random(10,40))
+		TNT1 AAA 0 A_CustomMissile("DestroyedBuildingSmokeSpawner",0,0,random(0,360),2,random(10,40))
+		TNT1 A 0 A_PlaySound("ROCKFAL",CHAN_WEAPON)
+		TNT1 A 0 A_Explode(1000,125)
+		TNT1 A 120
+		Stop
+	}
+}
+
+Actor SummonGlass 1336
+{
+//$category "Maps/BD64_Effects
+Height 0
+Radius 0
++NOINTERACTION
+	states
+	{
+	Spawn:
+		TNT1 AAAAAAA 0 NoDelay A_SpawnItemEx("GlassOntheFloor",random(45,-45),random(45,-45))
+		TNT1 A 1
+		Stop
+	}
+}
+
+Actor GlassOnTheFloor
+{
+xscale 0.9
+yscale 0.4
+Height 0
+Radius 0
+alpha 0.8
+renderstyle add
+-SOLID
++CLIENTSIDEONLY
++FORCEXYBILLBOARD
+	states
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_jump(255,"death1","death2","death3","death4","death5","death6")
+	Death1:
+		GLP1 A 500
+		TNT1 A 0 A_ChangeFlag("NOINTERACTION",TRUE)
+		GLP1 A -1
+		Stop
+	Death2:
+		GLP1 B 500
+		TNT1 A 0 A_ChangeFlag("NOINTERACTION",TRUE)
+		GLP1 B -1
+		Stop
+	Death3:
+		GLP1 C 500
+		TNT1 A 0 A_ChangeFlag("NOINTERACTION",TRUE)
+		GLP1 C -1
+		Stop
+	Death4:
+		GLP1 D 500
+		TNT1 A 0 A_ChangeFlag("NOINTERACTION",TRUE)
+		GLP1 D -1
+		Stop
+	Death5:
+		GLP1 E 500
+		TNT1 A 0 A_ChangeFlag("NOINTERACTION",TRUE)
+		GLP1 E -1
+		Stop
+	Death6:
+		GLP1 F 500
+		TNT1 A 0 A_ChangeFlag("NOINTERACTION",TRUE)
+		GLP1 F -1
+		Stop
+	}
+}
+
+ACTOR BasicParticle
+{
+Radius 0
+Height 0
++MISSILE
+-NOGRAVITY
++NOTELEPORT
++DONTSPLASH
++FORCEXYBILLBOARD
++CLIENTSIDEONLY
++THRUACTORS
+}
+
+ACTOR ExplosionFire : BasicParticle
+{
+Scale 1.5
+Height 1
+Radius 1
+Speed 3
+Alpha 1.0
+RenderStyle Translucent
+BounceType "Doom"
++NOGRAVITY
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Goto Death
+	Death:
+		FIR3 ABCDEFGHIJKLMNOP 1 BRIGHT A_SpawnItemEx("RedFlare")
+		Stop
+	}
+}
+
+ACTOR DestroyedBuildingSmoke : BasicParticle
+{
+Scale 1.0
+Height 1
+Radius 1
+Speed 2
+Gravity 0.1
+BounceType "Doom"
+BounceFactor 0.1
+Alpha 0.4
+RenderStyle Translucent
+-NOGRAVITY
+	States
+	{
+	Spawn:
+		SMO3 A 50
+		SMO3 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_FadeOut(0.006)
+		Goto Death
+	Death:
+		SMO3 A 1 A_FadeOut(0.006)
+		Wait
+	}
+}
+
+ACTOR DestroyedBuildingSmokeSpawner : DestroyedBuildingSmoke
+{
+Speed 10
+Gravity 0.2
+	States
+	{
+	Spawn:
+		SMO3 AAAA 10 NoDelay A_SpawnItemEx("DestroyedBuildingSmoke")
+		SMO3 AAAAAAAAAAAAAAAA 1 A_FadeOut(0.03)
+		Goto Death
+	Death:
+		TNT1 A 1
+		Stop
+	}
+}
+
+ACTOR StoneParticle1 : BasicParticle
+{
+Scale 0.8
+Height 2
+Radius 2
+Speed 16
++MISSILE
++NOBLOCKMAP
++NOTELEPORT
++MOVEWITHSECTOR
++CLIENTSIDEONLY
+-DONTSPLASH
++THRUGHOST
++THRUACTORS
++FLOORCLIP
++ISMONSTER		//INFRARED
+BounceType "Doom"
+BounceCount 0
+BounceFactor 0.5
+	States
+	{
+	Spawn:
+		FLRB KLMN 3
+		Loop
+	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
+		FLRB K -1
+		Stop
+	}
+}
+
+ACTOR StoneParticle2 : StoneParticle1
+{
+Scale 0.4
+Speed 14
+Gravity 0.4
+	States
+	{
+	Spawn:
+		FLRB NMLK 3
+		Loop
+	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
+		FLRB N -1
+		Stop
+	}
+}
+
+ACTOR StoneParticle3 : StoneParticle1
+{
+Scale 0.8
+	States
+	{
+	Spawn:
+		FLRB ABCD 3
+		Loop
+	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
+		FLRB E -1
+		Stop
+	}
+}
+
+ACTOR StoneParticle4 : StoneParticle1
+{
+Scale 0.6
+BounceFactor 0.1
+	States
+	{
+	Spawn:
+		FLRB FGHI 3
+		Loop
+	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
+		FLRB J -1
+		Stop
+	}
+}
+
+ACTOR SFXShrapnelParticle1 : StoneParticle1
+{
+Scale 1.0
+Speed 8
+BounceFactor 0.2
+	States
+	{
+	Spawn:
+		SHRP ABCD 3
+		Loop
+	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
+		SHRP B -1
+		Stop
+	}
+}
+
+ACTOR SFXShrapnelParticle2 : SFXShrapnelParticle1
+{
+XScale -1.0
+BounceFactor 0.5
+}
+
+ACTOR SFXShrapnelParticle3 : SFXShrapnelParticle1
+{
+Scale 0.5
+BounceFactor 0.6
+}
+
+ACTOR SFXShrapnelParticle4 : SFXShrapnelParticle1
+{
+XScale -0.5
+YScale 0.5
+BounceFactor 0.3
+}
+
+ACTOR SFXWoodParticle1 : StoneParticle1
+{
+Scale 2.0
+Speed 10
+BounceFactor 0.2
+	States
+	{
+	Spawn:
+		WOOD ABCD 3
+		Loop
+	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
+		WOOD B -1
+		Stop
+	}
+}
+
+ACTOR SFXWoodParticle2 : SFXWoodParticle1
+{
+XScale -1.5
+YScale 1.5
+BounceFactor 0.5
+}
+
+ACTOR SFXWoodParticle3 : SFXWoodParticle1
+{
+Scale 0.5
+BounceFactor 0.6
+}
+
+ACTOR SFXWoodParticle4: SFXWoodParticle1
+{
+XScale -0.7
+YScale 0.7
+BounceFactor 0.3
+}
+
+ACTOR SFXGlassParticle1 : SFXShrapnelParticle1
+{
+Scale 0.6
+Speed 7
+BounceFactor 0.1
+Alpha 0.9
+Renderstyle Add
+	States
+	{
+	Spawn:
+		GLSP ABCDEFGH 3
+		Loop
+	Death:
+		TNT1 A 0 A_Stop
+		TNT1 A 0 ThrustThingZ(0,1,0,1)
+	Rest:
+		GLSP C -1
+		Stop
+	}
+}
+
+ACTOR SFXGlassParticle2 : SFXGlassParticle1
+{
+XScale -0.8
+BounceFactor 0.6
+}
+
+ACTOR SFXGlassParticle3 : SFXGlassParticle1
+{
+XScale -0.3
+YScale 0.3
+BounceFactor 0.4
+}
+
+ACTOR SFXGlassParticle4 : SFXGlassParticle1
+{
+Scale 0.4
+BounceFactor 0.3
+}
+
+ACTOR SFXBrownSmoke : DestroyedBuildingSmoke
+{
+Scale 0.6
+Speed 1
+Alpha 0.35
++NOGRAVITY
+	States
+	{
+	Spawn:
+		SMO4 A 50
+		SMO4 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_FadeOut(0.012)
+		Goto Death
+	Death:
+		SMO4 A 1 A_FadeOut(0.012)
+		Wait
+	}
+}
+
+ACTOR SFXBigExplosionBlackSmoke : BasicParticle
+{
+Scale 3.0
+Height 1
+Radius 1
+Speed 1
+BounceType "Doom"
+BounceFactor 0.1
+Alpha 0.1
+RenderStyle Translucent
++NOGRAVITY
++SKYEXPLODE
+	States
+	{
+	Spawn:
+		SMK7 HHHHHHH 2 NoDelay A_FadeIn(0.1)
+		SMK7 H 50
+		SMK7 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH 1 A_FadeOut(0.002)
+		Goto Death
+	Death:
+		SMK7 H 2 A_FadeOut(0.004)
+		Wait
+	}
+}
+
+ACTOR SFXSmallExplosionBlackSmoke : SFXBigExplosionBlackSmoke
+{
+Scale 0.7
+	States
+	{
+	Spawn:
+		SMK7 HHHHHH 2 NoDelay A_FadeIn(0.1)
+		SMK7 H 50
+		SMK7 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH 2 A_FadeOut(0.001)
+		Goto Death
+	Death:
+		SMK7 H 2 A_FadeOut(0.004)
+		Wait
+	}
+}
+
+ACTOR SFXTinyExplosionBlackSmoke : SFXBigExplosionBlackSmoke
+{
+Scale 0.3
+	States
+	{
+	Spawn:
+		SMK7 HHHHH 2 NoDelay A_FadeIn(0.1)
+		SMK7 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH 1 A_FadeOut(0.004)
+		Goto Death
+	Death:
+		SMK7 H 1 A_FadeOut(0.008)
+		Wait
+	}
+}
+
+ACTOR SFXDistantExplosionSmokeBombing : SFXBigExplosionBlackSmoke
+{
+Scale 2.0
+	States
+	{
+	Spawn:
+		SMK7 KKKK 2 NoDelay A_FadeIn(0.1)
+		SMK7 K 50
+		SMK7 KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 1 A_FadeOut(0.001)
+		Goto Death
+	Death:
+		SMK7 K 1 A_FadeOut(0.004)
+		Wait
+	}
+}
+
+ACTOR SFXBigExplosionFlames : BasicParticle
+{
+Scale 5.0
+Height 1
+Radius 1
+Speed 2
+Alpha 1.0
+RenderStyle Normal
++NOGRAVITY
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Goto Death
+	Death:
+		FIR3 ABCDEFGHIJKLM 2 BRIGHT
+		TNT1 A 0 A_CustomMissile("SFXBigExplosionBlackSmoke",0,0,random(0,360),2,random(10,40))
+		FIR3 NOP 3 BRIGHT
+		Stop
+	}
+}
+
+ACTOR SFXBigExplosionFlamesNoSmoke : SFXBigExplosionFlames
+{
+Speed 4
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Goto Death
+	Death:
+		FIR3 ABCDEFGHIJKLMNOP 2 BRIGHT
+		Stop
+	}
+}
+
+ACTOR SFXBigExplosionFlamesSpawner : DestroyedBuildingSmoke
+{
+Speed 40
+Gravity 0
+	States
+	{
+	Spawn:
+		TNT1 AAAAAA 5 NoDelay A_CustomMissile("SFXBigExplosionFlames",0,0,random(0,360),2,random(10,40))
+		Goto Death
+	Death:
+		TNT1 A 1
+		Stop
+	}
+}
+
+ACTOR SFXBigExplosionFlamesSpawner2 : DestroyedBuildingSmoke
+{
+Speed 40
+Gravity 0
+	States
+	{
+	Spawn:
+		TNT1 A 5 NoDelay A_CustomMissile("SFXBigExplosionFlames",0,0,random(0,360),2,random(10,40))
+		Goto Death
+	Death:
+		TNT1 A 1
+		Stop
+	}
+}
+
+ACTOR ReflectionStaticGreen : TopLight1Red 8291
+{
+//$category "Maps/BD64_Effects
+XScale 2.0
+YScale 3.5
+Health 9
+Alpha 0.4
++FORCEYBILLBOARD
++ISMONSTER
+	States
+	{
+	Spawn:
+		LTRU G -1 BRIGHT
+		Stop
+	Death:
+		TNT1 A 0 A_NoBlocking
+		TNT1 A 1
+		Stop
+	}
+}
+
+ACTOR ReflectionStaticBlue : ReflectionStaticGreen 8292
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		LTRU B -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR ReflectionStaticRed : ReflectionStaticGreen 8293
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		LTRU R -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR ReflectionStaticYellow : ReflectionStaticGreen 8294
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		LTRU Y -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR ReflectionStaticWhite : ReflectionStaticGreen 8295
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		LTRU W -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR ReflectionStaticOrange : ReflectionStaticGreen 8296
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		LTRU O -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR ReflectionStaticWhiteLarge : ReflectionStaticGreen 8297
+{
+//$category "Maps/BD64_Effects
+XScale 5.0
+	States
+	{
+	Spawn:
+		LTRU W -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR AmbientSoundWaterFall1 21006
+{
+//$category "Maps/BD64_Effects
+-SHOOTABLE
++NOBLOCKMAP
++NOGRAVITY
+	States
+	{
+	Spawn:
+		TNT1 A 1 NoDelay A_PlaySound("WAFALL1",CHAN_WEAPON,1)
+		TNT1 A 100
+		Loop
+	}
+}
+
+ACTOR AmbientSoundWaterFall2 21007
+{
+//$category "Maps/BD64_Effects
+-SHOOTABLE
++NOBLOCKMAP
++NOGRAVITY
+	States
+	{
+	Spawn:
+		TNT1 A 1 NoDelay A_PlaySound("WAFALL2",CHAN_WEAPON,1)
+		TNT1 A 100
+		Loop
+	}
+}
+
+ACTOR FirefightIndoorMap01 1476
+{
+//$category "Maps/BD64_Effects
+Height 16
+Radius 16
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_PlaySound("FIREFIT3",CHAN_WEAPON)
+		TNT1 A 4000
+		Stop
+	}
+}
+
+ACTOR FireFightClose 1477
+{
+//$category "Maps/BD64_Effects
+Height 16
+Radius 16
++NOINTERACTION
+
+	States
+	{
+	Spawn:
+		TNT1 A 2
+		TNT1 A 0 A_PlaySound("FIREFIT2",CHAN_WEAPON,1,TRUE)
+		TNT1 A 100
+		Loop
+	}
+}
+
+ACTOR AmbientSoundWaterFlowing 21008
+{
+//$category "Maps/BD64_Effects
+-SHOOTABLE
++NOBLOCKMAP
++NOGRAVITY
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_PlaySound("WFLOW",CHAN_WEAPON,1,TRUE)
+		TNT1 A 120
+		Loop
+	}
+}
+
+ACTOR AmbientSoundHeavyWind 21009
+{
+//$category "Maps/BD64_Effects
+-SHOOTABLE
++NOBLOCKMAP
++NOGRAVITY
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_PlaySound("WIND1",CHAN_WEAPON,1,TRUE)
+		TNT1 A 110
+		Loop
+	}
+}
+
+ACTOR SplashGenerator 8859
+{
+//$category "Maps/BD64_Effects
+Scale 0.3
+Height 8
+Radius 8
+Mass 15
+	States
+	{
+	Spawn:
+		TNT1 A 12
+		TNT1 A 0 A_SpawnItemEx("BD64FootStep")
+		TNT1 A 1
+		Loop
+	}
+}
+
+ACTOR WaterMistGenerator 8860
+{
+//$category "Maps/BD64_Effects
+Scale 0.3
+Height 8
+Radius 8
+Mass 15
+	States
+	{
+	Spawn:
+		TNT1 A 4
+		TNT1 A 0 A_SpawnItemEx("RNWaterMist",random(-12,12),random(-12,12))
+		Loop
+	}
+}
+
+Actor RNWaterMist
+{
+Scale 1.0
+Alpha 0.7
+Renderstyle Add
++THRUACTORS
++CLIENTSIDEONLY
++NOGRAVITY
+	States
+	{
+	Death:
+	Spawn:
+		W3PH HIJKLMNOP 2
+		Stop
+	}
+}
+
+ACTOR SummonFighterType1 2179
+{
+//$category "Maps/BD64_Effects
+Game Doom
+Height 32
+Radius 12
+Health 99999999999
++SOLID
++SHOOTABLE
++NOGRAVITY
++NOBLOOD
+	States
+	{
+	Spawn:
+		TNT1 A -1
+		Stop
+	Death:
+		TNT1 A 0 A_PlaySound("FLYBYFAR",CHAN_WEAPON)
+		TNT1 A 30
+		TNT1 A 0 A_CustomMissile("F35Bombing",5,0,0,2)
+		TNT1 A 10
+		TNT1 A 0 A_PlaySound("FLYBYCLO",CHAN_BODY)
+		TNT1 A 500
+		Stop
+	}
+}
+
+ACTOR F35Bombing
+{
+Scale 2.0
+Height 1
+Radius 1
+Speed 30
+FastSpeed 30
++MISSILE
++RIPPER
++NOGRAVITY
+	States
+	{
+	Spawn:
+		FIGT A 40
+		FIGT AAAA 15 A_CustomMissile("AirstrikeBombs",0,0,0,2)
+		FIGT A 99999
+		Stop
+	Death:
+		TNT1 A 1
+		Stop
+	}
+}
+
+ACTOR AirstrikeBombs
+{
+Scale 3.0
+Height 5
+Radius 5
+Damage 500
+Speed 15
+FastSpeed 15
+Gravity 1.0
+DamageType "ExplosiveImpact"
+PROJECTILE
+-NOGRAVITY
++FORCERADIUSDMG
+	States
+	{
+	Spawn:
+		ARST A 100
+		Loop
+	XDeath:
+	Death:
+		TNT1 A 0 A_Explode(6000,700,0)
+		TNT1 A 0 A_SpawnItemEx("DetectFloorCrater")
+		TNT1 A 0 A_SpawnItemEx("DetectCeilCrater")
+		TNT1 A 0 A_SpawnItemEx("ExplosionFlareSpawner")
+		TNT1 A 0 A_SpawnItemEx("64BarrelExplosion")
+		TNT1 AAAAAAA 0 A_CustomMissile("ExplosionFlames",0,0,random(0,360),2,random(0,360))
+		TNT1 AAA 0 A_CustomMissile("SFXBigExplosionFlamesSpawner",10,0,random(0,360),2,random(10,40))
+		TNT1 A 0 A_Scream
+		TNT1 A 0 A_AlertMonsters
+		TNT1 A 0 A_PlaySound("HUGEEXPL",CHAN_WEAPON)
+		EXPL ABCDEFGH 3 BRIGHT
+		TNT1 A 10
+		Stop
+	}
+}
+
+ACTOR SummonFighterType2 2669
+{
+//$category "Maps/BD64_Effects
+Game Doom
+Height 32
+Radius 12
+Health 99999999999
++SOLID
++SHOOTABLE
++NOGRAVITY
++NOBLOOD
+	States
+	{
+	Spawn:
+		TNT1 A -1
+		Stop
+	Death:
+		TNT1 A 5
+		TNT1 A 0 A_CustomMissile("F35Bombing2",5,0,0,2)
+		TNT1 A 10
+		TNT1 A 0 A_PlaySound("FLYBYCLO",CHAN_BODY)
+		TNT1 A 500
+		Stop
+	}
+}
+
+ACTOR F35Bombing2
+{
+Scale 2.0
+Height 1
+Radius 1
+Speed 30
+FastSpeed 30
++MISSILE
++RIPPER
++NOGRAVITY
+	States
+	{
+	Spawn:
+		FIGT A 40
+		FIGT AAAA 15 A_CustomMissile("AirstrikeBombs",0,0,0,2)
+		FIGT A 1
+		FIGT A 99999
+		Stop
+	Death:
+		TNT1 A 1
+		Stop
+	}
+}
+
+ACTOR SummonFighterType2Random: SummonFighterType1 2174
+{
+//$category "Maps/BD64_Effects
+	States
+	{
+	Spawn:
+		TNT1 A 500
+		TNT1 A 0 A_Jump(24,"Missile")
+		Loop
+	Missile:
+		TNT1 A 0 A_CustomMissile("DecorativeFighter",5,0,0,2)
+		TNT1 A 50
+		TNT1 A 0 A_PlaySound("FLYBYFAR",CHAN_WEAPON)
+		TNT1 A 500
+		Goto Spawn
+	}
+}
+
+ACTOR DecorativeFighter : F35Bombing
+{
+Scale 0.4
+Speed 20
+FastSpeed 20
+	States
+	{
+	Spawn:
+		FIGT A 40
+		Loop
+	Death:
+		TNT1 A 1
+		Stop
+	}
+}
+
+actor NIN
+{
+SpawnID 51
+scale 0.75
+height 4
+Radius 8
+Speed 15
+Damage 5
+Alpha 1
+RenderStyle Normal
+SeeSound "nailfire"
+PROJECTILE
+-PUFFONACTORS
++BLOODSPLATTER
+	States
+	{
+	Spawn:
+		DART A -1
+		Stop
+	Xdeath:
+		TNT1 A 1
+		TNT1 A 1 A_PlaySound("NAILFLE",CHAN_WEAPON)
+		Stop
+	Death:
+		DART B 1 bright A_PlaySound("NAILHIT",CHAN_WEAPON)
+		TNT1 A 0 A_SpawnItemEx("HitPuff")
+		DART C 4 bright
+		DART D 4
+		DART EFG 4
+		stop
+	}
+}
+
+//IMPORTED FAKE KEYS FROM D64 RETRIBUTION
+ACTOR 64FakeBlueCard 1511
+{
+//$category "Maps/BD64_Fake_Items
+Game Doom
+-SOLID
+	States
+	{
+	Spawn:
+		BKEY A 10
+		BKEY B 10 BRIGHT
+		Loop
+	}
+}
+
+ACTOR 64FakeBlueSkull 1512
+{
+//$category "Maps/BD64_Fake_Items
+Game Doom
+-SOLID
+	States
+	{
+	Spawn:
+		BSKU A 10
+		BSKU B 10 BRIGHT
+		Loop
+	}
+}
+
+ACTOR 64FakeRedCard 1513
+{
+//$category "Maps/BD64_Fake_Items
+Game Doom
+-SOLID
+	States
+	{
+	Spawn:
+		RKEY A 10
+		RKEY B 10 BRIGHT
+		Loop
+	}
+}
+
+ACTOR 64FakeRedSkull 1514
+{
+//$category "Maps/BD64_Fake_Items
+Game Doom
+-SOLID
+	States
+	{
+	Spawn:
+		RSKU A 10
+		RSKU B 10 BRIGHT
+		Loop
+	}
+}
+
+ACTOR 64FakeYellowCard 1515
+{
+//$category "Maps/BD64_Fake_Items
+	Game Doom
+	-SOLID
+
+	States
+	{
+	Spawn:
+		YKEY A 10
+		YKEY B 10 BRIGHT
+		Loop
+	}
+}
+
+ACTOR 64FakeYellowSkull 1516
+{
+//$category "Maps/BD64_Fake_Items
+Game Doom
+-SOLID
+	States
+	{
+	Spawn:
+		YSKU A 10
+		YSKU B 10 BRIGHT
+		Loop
+	}
+}
+
+ACTOR 64FakeSoulSphere : Soulsphere 1523
+{
+//$category "Maps/BD64_Fake_Items
+SpawnID 225
+-SOLID
+}
