@@ -903,7 +903,6 @@ Health 40
 Mass 0x7FFFFFFF
 height 1
 radius 1
-damagefactor "Blood",0.0
 -SOLID
 +SHOOTABLE
 +NOBLOOD
