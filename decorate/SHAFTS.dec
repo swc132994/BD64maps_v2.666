@@ -9,10 +9,7 @@ Radius 16
 	States
 	{
 	Spawn:
-		HGLM A 0 NoDelay A_SpawnItemEx("BD64LightShaft2",25,25,-50,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",25,-25,-60,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-25,25,-60,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-25,-25,-60,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		HGLM A 0 NoDelay A_SpawnItemEx("BD64LightShaft2",0,0,-60,0,0,0,0,SXF_ABSOLUTEPOSITION)
 	Live:
 		HGLM A 4 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",0,0,6,0,0,0,0,SXF_ABSOLUTEPOSITION)
 		HGLM A -1
@@ -32,20 +29,9 @@ Radius 16
 	{
 	Spawn:
 		CEIL A 0 NoDelay A_SpawnItemEx("BD64LightShaft1",0,0,-103,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",36,36,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-36,36,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",36,-36,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-36,-36,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",92,92,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-92,92,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",92,-92,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-92,-92,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",0,-120,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",0,120,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",120,0,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-120,0,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",0,0,-96,0,0,0,0,SXF_ABSOLUTEPOSITION)
 	Live:
-		CEIL A 4 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",0,0,5,0,0,0,0,SXF_ABSOLUTEPOSITION)
+		CEIL A 4 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanent",0,0,3,0,0,0,0,SXF_ABSOLUTEPOSITION)
 		CEIL A -1
 		Stop
 	}
@@ -55,7 +41,7 @@ actor BD64LightShaft1
 {
 Game Doom
 Scale 0.8
-Alpha 0.5
+Alpha 0.3
 Renderstyle Add
 +FORCEYBILLBOARD
 +CLIENTSIDEONLY
@@ -160,8 +146,8 @@ actor BD64LampFlareSpawn1 9321
 {
 //$category "Maps/BD64_Lights
 Game Doom
-Height 1
-Radius 4
+Height 3
+Radius 6
 +NOGRAVITY
 +SPAWNCEILING
 -SHOOTABLE
@@ -172,7 +158,7 @@ Radius 4
 		TNT1 A 0 A_SpawnItemEx("BD64LightShaft3",0,0,-40)
 	Live:
 		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallPermanentOnSurface")
-		TNT1 AA 0 A_SpawnItemEx("BD64WhiteFlareCeilingTexture")
+		TNT1 A 0 A_SpawnItemEx("BD64WhiteFlareCeilingTexture")
 		TNT1 A 1
 		Stop
 	}
@@ -182,8 +168,8 @@ actor BD64LampFlareSpawn2OnFloor 9322
 {
 //$category "Maps/BD64_Lights
 Game Doom
-Height 4
-Radius 4
+Height 3
+Radius 6
 -SHOOTABLE
 -NOGRAVITY
 	States
@@ -193,7 +179,7 @@ Radius 4
 		TNT1 A 0 A_SpawnItemEx("BD64LightShaft3upsidedown")
 	Live:
 		TNT1 A 0 A_SpawnItemEx("BD64ShortWhiteFlareSmallInfGrav")
-		TNT1 AA 0 A_SpawnItemEx("BD64WhiteFlareFloorTexture")
+		TNT1 A 0 A_SpawnItemEx("BD64WhiteFlareFloorTexture")
 		TNT1 A 1
 		Stop
 	}
@@ -294,10 +280,7 @@ RenderStyle Add
 	states
 	{
 	Spawn:
-		F1RE A 0 NoDelay A_SpawnItemEx("BD64LightShaft2",36,36,0)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-36,36,0)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",36,-36,0)
-		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2",-36,-36,0)
+		F1RE A 0 NoDelay A_SpawnItemEx("BD64LightShaft2")
 		TNT1 A 0 A_SpawnItemEx("BD64LightShaft2Fast",0,0,32)
 	Stay:
 		TNT1 A 0 A_CheckSight("WaitSight")
@@ -331,8 +314,8 @@ RenderStyle Add
 Actor BD64Flare_General
 {
 scale 0.4
-height 6
-radius 12
+height 3
+radius 6
 alpha 0.4
 renderstyle Add
 +NOINTERACTION
@@ -373,8 +356,7 @@ alpha 1
 		"####" A 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
-		LENS A 1 A_SetScale(0.55,0.25)
-		LENS A 1 A_SetScale(0.54,0.24)
+		LENS A 3
 		Goto SpawnLoop
 	WaitSight:
 		TNT1 A 3
@@ -404,8 +386,7 @@ alpha 1
 		"####" A 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
-		LENS A 1 A_SetScale(0.55,0.25)
-		LENS A 1 A_SetScale(0.54,0.24)
+		LENS A 3
 		Goto SpawnLoop
 	WaitSight:
 		TNT1 A 3
@@ -433,6 +414,8 @@ alpha 0.6
 
 Actor BD64ShortWhiteFlareSmallInfGrav : BD64ShortWhiteFlareSmall
 {
+XScale 0.6
+Yscale 0.3
 -NOGRAVITY
 -FLOAT
 -NOCLIP
@@ -447,8 +430,7 @@ Actor BD64ShortWhiteFlareSmallInfGrav : BD64ShortWhiteFlareSmall
 		"####" A 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
-		LENS A 1 A_SetScale(0.6,0.3)
-		LENS A 1 A_SetScale(0.59,0.29)
+		LENS A 3
 		Goto SpawnLoop
 	NoLight:
 		TNT1 A 175
@@ -475,8 +457,7 @@ alpha 1
 		"####" A 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
-		LENS A 2 A_SetScale(1,0.6)
-		LENS A 2 A_SetScale(0.99,0.59)
+		LENS A 3
 		Goto SpawnLoop
 	NoLight:
 		TNT1 A 175
@@ -503,8 +484,7 @@ alpha 0.4
 		"####" A 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
 		TNT1 A 0 A_CheckSight("WaitSight")
-		LENS A 2 A_SetScale(0.6,0.15)
-		LENS A 2 A_SetScale(0.59,0.14)
+		LENS A 3
 		Goto SpawnLoop
 	NoLight:
 		TNT1 A 175
@@ -590,7 +570,7 @@ MONSTER
 	Spawn:
 		DI64 A 1
 		DI64 A 300
-		DI64 ABCDABCDABCDABCD 4 A_REcoil(-1)
+		DI64 ABCDABCDABCDABCD 4 A_Recoil(-1)
 		DI64 A 180
 		DI64 A 1 A_setAngle(0)
 		DI64 ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCD 2 A_Recoil(-1)
@@ -611,7 +591,7 @@ MONSTER
 	Spawn:
 		SARG A 1
 		SARG A 300
-		SARG ABCDABCDABCDABCD 4 A_REcoil(-1)
+		SARG ABCDABCDABCDABCD 4 A_Recoil(-1)
 		SARG A 180
 		SARG A 1 A_setAngle(0)
 		SARG ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCD 2 A_Recoil(-1)
@@ -632,7 +612,7 @@ MONSTER
 	Spawn:
 		BOSS A 1
 		BOSS A 300
-		BOSS ABCDABCDABCDABCD 4 A_REcoil(-1)
+		BOSS ABCDABCDABCDABCD 4 A_Recoil(-1)
 		BOSS A 180
 		BOSS A 1 A_setAngle(0)
 		BOSS ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCD 2 A_Recoil(-1)
@@ -653,7 +633,7 @@ MONSTER
 	Spawn:
 		FATT A 1
 		FATT A 300
-		FATT ABCDABCDABCDABCD 4 A_REcoil(-1)
+		FATT ABCDABCDABCDABCD 4 A_Recoil(-1)
 		FATT A 180
 		FATT A 1 A_setAngle(0)
 		FATT ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCD 2 A_Recoil(-1)
