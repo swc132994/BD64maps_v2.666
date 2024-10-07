@@ -29,7 +29,7 @@ MONSTER
 	States
 	{
 	Spawn:
-		TNT1 AAAAAAA 1 NoDelay A_Chase
+		TNT1 AAAAAAA 1 A_Chase
 		Goto Missile
 	Missile:
 		TNT1 A 1
