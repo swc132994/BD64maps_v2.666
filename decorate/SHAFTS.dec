@@ -509,7 +509,7 @@ Radius 14
 	Spawn:
 		CINM ABABABABABABABAB 12
 		CINM CDDD 6
-		CINM F 4 Bright A_PlaySound("weapons/shotgf",CHAN_WEAPON)
+		CINM F 4 Bright A_PlaySound("SGFIRE",CHAN_WEAPON)
 		CINM E 40
 		CINM G 150
 		CINM J 25
