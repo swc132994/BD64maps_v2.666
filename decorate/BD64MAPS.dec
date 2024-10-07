@@ -29,7 +29,7 @@ MONSTER
 	States
 	{
 	Spawn:
-		TNT1 AAAAAAA 1 NoDelay A_Chase
+		TNT1 AAAAAAA 1 A_Chase
 		Goto Missile
 	Missile:
 		TNT1 A 1
@@ -1604,7 +1604,7 @@ ACTOR AmbientSoundWaterFall1 21006
 	States
 	{
 	Spawn:
-		TNT1 A 1 NoDelay A_PlaySound("WAFALL1",CHAN_WEAPON,1)
+		TNT1 A 1 NoDelay A_PlaySound("WAFALL1",CHAN_VOICE,1)
 		TNT1 A 100
 		Loop
 	}
@@ -1619,7 +1619,7 @@ ACTOR AmbientSoundWaterFall2 21007
 	States
 	{
 	Spawn:
-		TNT1 A 1 NoDelay A_PlaySound("WAFALL2",CHAN_WEAPON,1)
+		TNT1 A 1 NoDelay A_PlaySound("WAFALL2",CHAN_VOICE,1)
 		TNT1 A 100
 		Loop
 	}
