@@ -154,6 +154,12 @@ brightmap sprite ZPORTAL5	{map "brightmaps/ZPORTAL5_BR.png"}
 
 brightmap sprite ZAPORTAL	{map "brightmaps/ZAPORTAL_BR.png"}
 
+brightmap sprite TILE6EAD	{map "brightmaps/SKKEYPS_BR.png"}
+brightmap sprite TILE6667	{map "brightmaps/SKKEYPS_BR.png"}
+brightmap sprite TILEC571	{map "brightmaps/SKKEYPS_BR.png"}
+
+brightmap sprite TILEC6E3	{map "brightmaps/EXIT_BR.png"}
+
 //GLOWING FLATS
 Glow
 {
@@ -166,11 +172,19 @@ Glow
 		NUKAGE1
 		NUKAGE2
 		NUKAGE3
+		SLIME09
+		SLIME10
+		SLIME11
+		SLIME12
 	}
 Texture "LAVA1",#FF3200,35,fullbright
 Texture "LAVA2",#FF3200,35,fullbright
 Texture "LAVA3",#FF3200,35,fullbright
 Texture "LAVA4",#FF3200,35,fullbright
+Texture "SLIME09",#FF3200,35,fullbright
+Texture "SLIME10",#FF3200,35,fullbright
+Texture "SLIME11",#FF3200,35,fullbright
+Texture "SLIME12",#FF3200,35,fullbright
 Texture "NUKAGE1",#00FF00,45,fullbright
 Texture "NUKAGE2",#00FF00,45,fullbright
 Texture "NUKAGE3",#00FF00,45,fullbright

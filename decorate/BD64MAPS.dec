@@ -708,6 +708,7 @@ actor Spark_W16 : Spark_W1	{speed 4.0}
 
 ACTOR WallExplosion : Rocket
 {
+DamageType "Extreme"
 Speed 0
 	States
 	{
