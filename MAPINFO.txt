@@ -310,9 +310,9 @@ map D6426 Lookup "HardCore"
 
 map D6427 Lookup "Playground"
 {
-	fade = "3C 14 0A"
-	fogdensity = 200
-	Sky1 = "SKY-0052"
+	Fade = "33 66 00"
+	fogdensity = 150
+	Sky1 = "SKY-g052"
 	Music = "MAPWD27"
 	NoInfighting
 	Next = "D6428"
@@ -323,7 +323,7 @@ map D6427 Lookup "Playground"
 map D6428A Lookup "The Absolution"
 {
 	Cluster = "18"
-	Sky1 = "SKY-0052"
+	Sky1 = "SKY-b052"
 	Music = "MAPWD28"
 	NoInfighting
 	InterMusic = "INTERG"
@@ -334,7 +334,7 @@ map D6428A Lookup "The Absolution"
 map D6428 Lookup "The Ultimate Absolution"
 {
 	Cluster = "18"
-	Sky1 = "SKY-0052"
+	Sky1 = "SKY-b052"
 	Music = "MAPWD01"
 	NoInfighting
 	InterMusic = "INTERG"
@@ -346,7 +346,7 @@ map D6428 Lookup "The Ultimate Absolution"
 map ENDINGMA Lookup "End"
 {
 	Cluster = "15"
-	Sky1 = "SKY-0052"
+	Sky1 = "SKY-b052"
 	Music = "MAPWD28"
 	NoInfighting
 	InterMusic = "INTERF"
